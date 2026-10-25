@@ -131,8 +131,8 @@ def export_social(output, video=False, audio_preview=False):
 The carousel and reel are alternative versions of the SAME introduction. Choose one first; do not post both back-to-back as different stories.
 
 - Carousel: upload carousel-01.jpg through carousel-05.jpg in numbered order as one Instagram multi-image post. Each is 1080×1350.
-- Reel (if included): introduction-reel.mp4 is a 1080×1920 H.264 video at 24 fps, with no audio track. Silent-only exports are 20 seconds; an audio preview extends the scene timing as needed. Add your own voiceover using optional-voiceover.txt or choose audio you have rights to use in Instagram's editor. The text is understandable on mute.
-- Audio preview (if included): introduction-audio-preview.mp4 adds an offline synthetic narration voice and original instrumental bed. It may be longer than 20 seconds to let every line finish. This is a voice/mix prototype, not a human recording or an approved final voice. narration-preview.wav and music-original.wav are separate tracks. No witness/company audio or copyrighted song has been sampled. Lower the music or replace the preview voice with your own recording if needed.
+- Reel (if included): introduction-reel.mp4 uses stationary 1080×1920 frames, clean cuts and no zoom/pan animation, at 24 fps. It has no audio track. Silent-only exports are 20 seconds; an audio preview extends scene timing as needed.
+- Audio preview (if included): introduction-audio-preview.mp4 adds local neural narration (Kokoro, af_sarah) and an original arranged instrumental. music-only-preview.mp4 is a separate soundtrack check. These are new review cuts, not approved final posts. narration-preview.wav and music-original.wav are separate tracks. No paid voice API, witness/company recording or sampled song is used. Model provenance and licenses are documented in pilot/VOICE-SOURCES.md in the repository.
 - Use caption.txt, review the exact images/video and approve the final version before posting. This is an editorial introduction, not evidence about a named company. No statistics, fake customer quotes or company-specific allegations are asserted.
 - This replaces the plain first-post concept as a proposed visual direction. The rest of the week's content has not yet been redesigned or source-verified. Nothing has been scheduled or published.
 - Once account access returns, inspect Instagram's crop and interface overlays before posting. Motion and brighter graphics do not guarantee reach. Compare several posts before deciding which format works.
@@ -152,8 +152,12 @@ def make_video(output, slides, narration=None):
         work = Path(temporary)
         counts = [96] * len(slides)
         if narration:
+            if len(narration) != len(slides):
+                raise ValueError('Each video scene requires one narration line')
             from .sound import speak_line, join_narration, original_music
-            spoken = [speak_line(line['text'], work, index) for index, line in enumerate(narration, 1)]
+            from .voice import NeuralVoice
+            speaker = NeuralVoice()
+            spoken = [speak_line(line['text'], work, index, speaker) for index, line in enumerate(narration, 1)]
             counts = [count for _, count in spoken]
             join_narration([line for line, _ in spoken], counts, output / 'narration-preview.wav')
             original_music(output / 'music-original.wav', sum(counts) / 24)
@@ -180,8 +184,7 @@ def make_video(output, slides, narration=None):
             draw_slide(slide, index, height=1920).save(image)
             subprocess.run([
                 'ffmpeg', '-hide_banner', '-loglevel', 'error', '-y',
-                '-i', str(image), '-vf',
-                f"zoompan=z='min(1.025,zoom+0.00026)':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d={counts[index-1]}:s=1080x1920:fps=24,fade=t=in:st=0:d=0.16,format=yuv420p",
+                '-loop', '1', '-framerate', '24', '-i', str(image), '-vf', 'format=yuv420p',
                 '-frames:v', str(counts[index-1]), '-an', '-c:v', 'libx264', '-threads', '2',
                 '-preset', 'veryfast', '-crf', '22', '-movflags', '+faststart', str(segment)
             ], check=True, capture_output=True)
@@ -190,5 +193,6 @@ def make_video(output, slides, narration=None):
         manifest.write_text('\n'.join(f"file '{segment.name}'" for segment in segments) + '\n')
         subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-f', 'concat', '-safe', '1', '-i', str(manifest), '-c', 'copy', '-movflags', '+faststart', str(output / 'introduction-reel.mp4')], check=True, capture_output=True)
         if narration:
-            from .sound import mix_reel
+            from .sound import mix_reel, music_only_reel
             mix_reel(output / 'introduction-reel.mp4', output / 'narration-preview.wav', output / 'music-original.wav', output / 'introduction-audio-preview.mp4')
+            music_only_reel(output / 'introduction-reel.mp4', output / 'music-original.wav', output / 'music-only-preview.mp4')

@@ -1,0 +1,17 @@
+# Tested optional local narration dependencies. Base image export uses requirements.txt.
+kokoro-onnx==0.6.1
+soundfile==0.13.1
+espeakng-loader==0.2.4
+numpy==2.5.4
+onnxruntime==1.31.0
+phonemizer==3.4.0
+cffi==2.1.1
+pycparser==3.12
+flatbuffers==25.12.19
+packaging==26.3
+protobuf==7.36.2
+joblib==1.6.0
+attrs==26.1.0
+dlinfo==2.0.0
+typing-extensions==4.16.0
+cloudpickle==3.1.2

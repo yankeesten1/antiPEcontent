@@ -1,6 +1,6 @@
 # A stronger first impression
 
-The original one-line headline cards were a placeholder, not a strong finished Instagram format. The new introduction is a visual prototype for **@PEUnderScrutiny**, with a five-card carousel and an alternative 20-second vertical motion reel. Choose one to test first; they tell the same story.
+The current introduction is a visual prototype for **@PEUnderScrutiny**, with a five-card carousel and an alternative fixed-frame vertical video. The user rejected the earlier slow zoom and Flite voice. The latest cut uses clean cuts, a local neural narrator and a newly arranged soundtrack. Choose one format first; the carousel and video tell the same story.
 
 ## What changed
 
@@ -9,11 +9,11 @@ The original one-line headline cards were a placeholder, not a strong finished I
 - One job per card: hook, stakeholders, research questions, evidence standard, audience choice.
 - A simple storefront illustration and structured visual labels, rather than a paragraph pasted onto a square.
 - A 1080×1350 portrait carousel; 1080×1920 video layout with important text kept in the center area for later crop/overlay review.
-- A motion version with slow zooms, fast fades and a change of scene every four seconds. It is not a narrated or character-animated documentary. No audio is included; an optional voiceover script is in the ZIP.
+- A video with stationary frames and clean cuts. There is no continuous zoom, pan or scaling. Narration is generated locally with a neural model, and a new instrumental is normalized for the mix. A music-only comparison is included in the latest kit.
 
 ## Use the new files
 
-Download `introduction-v2.zip` and unzip it. For the carousel, select `carousel-01.jpg` through `carousel-05.jpg`, in order, as **one** multi-image Instagram post. For the Reel, choose `introduction-reel.mp4`. Use `caption.txt` and review the exact assets before approval. The account is still under appeal as last reported; nothing has been scheduled or posted.
+Download `fixed-frame-production-kit.zip` and unzip it. For the carousel, select `carousel-01.jpg` through `carousel-05.jpg`, in order, as **one** multi-image Instagram post. The narrated video is `introduction-audio-preview.mp4`; `music-only-preview.mp4` contains the same visuals with music alone. Use `caption.txt` and review the exact assets before approval. Older ZIPs are archived, not the current cut. The account is still under appeal as last reported; nothing has been scheduled or posted.
 
 ## Where content should go next
 

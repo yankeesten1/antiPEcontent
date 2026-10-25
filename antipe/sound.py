@@ -6,13 +6,13 @@ import wave
 from pathlib import Path
 
 
-def speak_line(text, work, index):
-    source = work / f'line-{index}.txt'
+def speak_line(text, work, index, speaker):
+    source = work / f'line-{index}-native.wav'
     result = work / f'line-{index}.wav'
-    source.write_text(text)
+    speaker.write(text, source)
     subprocess.run([
-        'ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-f', 'lavfi',
-        '-i', f'flite=textfile={source}:voice=slt', '-ar', '48000', '-ac', '1',
+        'ffmpeg', '-hide_banner', '-loglevel', 'error', '-y',
+        '-i', str(source), '-ar', '48000', '-ac', '1',
         '-c:a', 'pcm_s16le', str(result)
     ], check=True, capture_output=True)
     with wave.open(str(result)) as audio:
@@ -23,6 +23,8 @@ def speak_line(text, work, index):
 
 
 def join_narration(lines, frames, destination):
+    if len(lines) != len(frames):
+        raise ValueError('Every narration line needs a matching scene duration')
     rate = 48000
     with wave.open(str(destination), 'wb') as out:
         out.setnchannels(1)
@@ -43,19 +45,30 @@ def join_narration(lines, frames, destination):
 
 
 def original_music(destination, seconds):
-    """A quiet, original pulse/pad; no sampled recordings or borrowed melody."""
+    """Original instrumental: midrange arpeggio, chords, bass and percussion."""
     rate = 48000
     samples = array.array('h')
-    # Two restrained chords, with a low pulse. The voice remains dominant.
-    chords = [(130.8128, 155.5635, 195.9977), (103.8262, 130.8128, 155.5635)]
+    chords = [(130.8128, 155.5635, 195.9977), (103.8262, 130.8128, 155.5635),
+              (87.3071, 103.8262, 130.8128), (97.9989, 116.5409, 146.8324)]
+    beat = 60 / 84
+    noise_state = 17
     for sample in range(round(seconds * rate)):
         t = sample / rate
-        chord = chords[int(t // 8) % 2]
-        edge = min(1.0, t / 1.2, max(0.0, seconds - t) / 1.4)
-        pad = sum(math.sin(2 * math.pi * frequency * t) for frequency in chord) / 3
-        pulse_phase = t % .75
-        pulse = math.exp(-pulse_phase * 14) * math.sin(2 * math.pi * 65.4064 * t)
-        value = edge * (.10 * pad + .065 * pulse)
+        chord = chords[int(t // (4 * beat)) % 4]
+        edge = min(1.0, t / .12, max(0.0, seconds - t) / .8)
+        phase = t % beat
+        half_phase = t % (beat / 2)
+        step = int(t / (beat / 2))
+        frequency = chord[(0, 1, 2, 1, 0, 2, 1, 2)[step % 8]] * 4
+        pluck = math.sin(2 * math.pi * frequency * half_phase) * math.exp(-half_phase * 10)
+        pad = sum(math.sin(2 * math.pi * frequency * 2 * t) for frequency in chord) / 3
+        bass = math.sin(2 * math.pi * chord[0] / 2 * phase) * math.exp(-phase * 5)
+        kick = math.sin(2 * math.pi * (48 * phase + 2 * (1 - math.exp(-phase * 35)))) * math.exp(-phase * 22)
+        noise_state = (1664525 * noise_state + 1013904223) & 0xffffffff
+        noise = noise_state / 2147483648 - 1
+        snare = noise * math.exp(-phase * 25) if int(t / beat) % 2 else 0
+        hat = noise * math.exp(-half_phase * 100)
+        value = edge * (.17 * pluck + .06 * pad + .10 * bass + .20 * kick + .10 * snare + .026 * hat)
         samples.append(max(-32767, min(32767, round(value * 32767))))
     import sys
     if sys.byteorder != 'little':
@@ -73,10 +86,19 @@ def mix_reel(video, narration, music, destination):
         '-i', str(video), '-i', str(narration), '-i', str(music),
         '-filter_complex',
         '[1:a]loudnorm=I=-16:TP=-2:LRA=7,asplit=2[voice][key];'
-        '[2:a]volume=0.75[bed];'
-        '[bed][key]sidechaincompress=threshold=0.04:ratio=5:attack=15:release=250[ducked];'
+        '[2:a]loudnorm=I=-23:TP=-3:LRA=7[bed];'
+        '[bed][key]sidechaincompress=threshold=0.08:ratio=2:attack=15:release=180[ducked];'
         '[voice][ducked]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89[mix]',
         '-map', '0:v:0', '-map', '[mix]', '-c:v', 'copy', '-c:a', 'aac',
         '-b:a', '192k', '-ar', '48000', '-ac', '2', '-shortest',
         '-movflags', '+faststart', str(destination)
+    ], check=True, capture_output=True)
+
+
+def music_only_reel(video, music, destination):
+    subprocess.run([
+        'ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', str(video), '-i', str(music),
+        '-map', '0:v:0', '-map', '1:a:0', '-af', 'loudnorm=I=-18:TP=-2:LRA=7',
+        '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-ac', '2',
+        '-shortest', '-movflags', '+faststart', str(destination)
     ], check=True, capture_output=True)

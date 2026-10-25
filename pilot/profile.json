@@ -8,7 +8,11 @@
   "workflow": "manual_pilot",
   "instagram_connected": false,
   "editorial_mode": "documented_cases_no_editorial_opinion",
-  "narration_preference": "natural_ai_pending_price_approval",
+  "narration_preference": "local_neural_under_user_review",
   "paid_voice_connected": false,
-  "paid_voice_spend_authorized": false
+  "paid_voice_spend_authorized": false,
+  "voice_engine": "kokoro-onnx",
+  "voice": "af_sarah",
+  "motion": "fixed_frames_clean_cuts",
+  "music": "original_arrangement_v2"
 }

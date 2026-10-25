@@ -25,8 +25,14 @@ def main():
     social = commands.add_parser('social', help='Render the redesigned introduction carousel and optional motion reel')
     social.add_argument('--output', default='.local/pilot/introduction-v2')
     social.add_argument('--video', action='store_true', help='Also render a 20-second reel; requires FFmpeg')
-    social.add_argument('--audio-preview', action='store_true', help='Add offline synthetic narration and original music; requires FFmpeg with flite')
+    social.add_argument('--audio-preview', action='store_true', help='Add local neural narration and original music; requires optional voice setup and FFmpeg')
+    voice = commands.add_parser('prepare-voice', help='Download and checksum-verify the optional local neural voice model')
+    voice.add_argument('--directory')
     args = parser.parse_args()
+    if args.command == 'prepare-voice':
+        from .voice import prepare_voice
+        print(f'Verified voice model cache: {prepare_voice(args.directory)}')
+        return
     if args.command == 'social':
         print(f'Created social media concept: {export_social(args.output, args.video, args.audio_preview)}')
         return

@@ -44,6 +44,11 @@ class SoundTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, '48 kHz'):
             join_narration([source], [24], self.root / 'joined.wav')
 
+    def test_missing_scene_timing_cannot_drop_a_narration_line(self):
+        source = self.wav('voice.wav', [1000] * 100)
+        with self.assertRaisesRegex(ValueError, 'matching scene duration'):
+            join_narration([source, source], [24], self.root / 'joined.wav')
+
     def test_original_music_has_expected_duration_and_actual_sound(self):
         destination = self.root / 'music.wav'
         original_music(destination, .3)

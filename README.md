@@ -4,16 +4,24 @@ A private editorial inbox for educational Instagram content about private equity
 
 **Current editorial direction:** named, documented cases; no editorial opinion or moral labels. Read the [factual standard and source requirements](pilot/research/FACTUAL-STANDARD.md), [research queue](pilot/research/case-queue.json), and [audio plan/cost estimate](pilot/AUDIO-PLAN.md). The original weekly opinion/concept drafts and their ZIPs are archived prototypes, not the current publication plan. There are no verified case-specific posts yet: primary-source access remains blocked pending the saved network-settings update.
 
-The natural AI narrator is a preference pending current-price verification and spending approval; no paid service is connected. A [local synthetic voice/music preview](pilot/introduction-audio-preview.mp4) is provided for timing and mix review, not as the final voice or a sourced case report. The [audio production kit](pilot/audio-production-kit.zip) includes separate stems, subtitles and source-review documents.
+**Replacement video:** [neural narration + music, with fixed frames](pilot/introduction-fixed-neural.mp4), [music-only comparison](pilot/music-only-fixed.mp4), and [the updated production ZIP](pilot/fixed-frame-production-kit.zip). The user rejected the older Flite/zoom cut; old audio/video ZIPs remain archived and should not be treated as the latest version. The replacement uses local Kokoro neural narration and a newly arranged instrumental, with no paid speech service. See [model provenance and setup](pilot/VOICE-SOURCES.md). This is still an introduction/style preview, not a verified case report.
 
 ## Start with the free manual pilot
 
-**Latest visual direction:** [Download the redesigned introduction](pilot/introduction-v2.zip) or [preview its five-card carousel](pilot/introduction-preview.jpg). This replaces the plain opening card as a proposed direction: bold typography, alternating high-contrast colors, five sequential cards, and a 20-second vertical motion reel. Both are drafts for review, and the rest of the week has not yet been redesigned. The video has no audio track; optional voiceover text is included.
+**Latest visual direction:** [preview the five-card carousel](pilot/introduction-preview.jpg). Videos now use stationary frames and clean cuts, with no slow zoom, pan or scale animation. The fixed-frame/neural-audio links above are the current cuts. Both formats remain drafts for review, and the rest of the week has not yet been redesigned.
 
 Reproduce the new visual prototype locally:
 
 ```sh
 .venv/bin/python -m antipe social --video --output .local/pilot/introduction-v2
+```
+
+For the replacement local neural narrator:
+
+```sh
+.venv/bin/python -m pip install -r requirements-voice.txt
+.venv/bin/python -m antipe prepare-voice
+.venv/bin/python -m antipe social --audio-preview --output .local/pilot/fixed-frames-new
 ```
 
 FFmpeg with H.264 encoding is required for `--video`; omit that flag for carousel-only export. Rendering uses Pillow and local FFmpeg, with no model/API calls. DejaVu Sans Condensed is used when installed, with a Pillow font fallback. This video feature has been validated on the current machine, not in the optional Docker image, which does not install FFmpeg by default.
@@ -115,6 +123,6 @@ python -m unittest discover -s tests -v
 
 Tests cover daily deduplication, Eastern scheduling, source-reference validation, JPEG generation, approval invalidation, single-choice publication, duplicate prevention, uncertain publication and HTTP/CSRF behavior. Verify real OpenAI results, Meta authorization and public image access after connecting external services.
 
-The introduction redesign is also checked by rendering its five 1080×1350 JPEGs and inspecting the 20-second, 1080×1920, 24 fps H.264/YUV420p video with FFprobe. Its actual frames are sampled to check scene changes and movement. These checks do not establish Instagram reach or publishing success.
+The introduction redesign is checked by rendering five 1080×1350 JPEGs, inspecting the 1080×1920, 24 fps H.264/YUV420p video with FFprobe, and sampling frames within each scene to check that their geometry remains stationary. Audio duration, streams and loudness are checked separately. These checks do not establish Instagram reach, subjective voice quality or publishing success.
 
 Official references: [OpenAI web search](https://platform.openai.com/docs/guides/tools-web-search), [Meta publishing](https://developers.facebook.com/docs/instagram-platform/instagram-api-with-facebook-login/content-publishing), [Meta access tokens](https://developers.facebook.com/docs/facebook-login/guides/access-tokens).
