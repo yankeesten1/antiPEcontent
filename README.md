@@ -8,11 +8,19 @@ The selected launch path is now **one account, seven weekly drafts, and manual M
 
 Download the prepared [first-week launch kit](pilot/launch-week-01.zip), or read the [launch guide](pilot/LAUNCH.md) and [editable draft content](pilot/week-01.json) on GitHub. The ZIP contains seven graphics, matching captions and tracking sheets; its factual drafts still require source review before publication.
 
+While Instagram reviews the account, use the expanded [tonight kit](pilot/tonight-kit.zip) and [tonight's checklist](pilot/TONIGHT.md). Unzip the kit and open `review.html` for offline caption editing and downloads. It also includes a circular-crop profile image, copy-ready bio, and a first-post review sheet. Nothing connects to Instagram or publishes from that page.
+
+```sh
+.venv/bin/python -m antipe pilot --launch-assets --output .local/pilot/tonight-kit
+```
+
+An optional, manually triggered [GitHub Actions workflow](.github/workflows/build-launch-kit.yml) builds future kits without a server or API secrets. It must first be available on your default branch. See the checklist for steps, artifact downloads and GitHub allowance considerations. No remote workflow run or Meta account connection has been verified.
+
 ```sh
 .venv/bin/python -m antipe pilot --output .local/pilot/week-01
 ```
 
-This exports seven 1080×1080 JPEGs, matching caption files, a review checklist, post metrics, an eight-week review sheet, and a ZIP. It never calls OpenAI or Meta and refuses to overwrite existing exports. Read [the launch guide](pilot/LAUNCH.md). First-week sources could not be retrieved through this workspace's network policy, so the factual drafts are **not source-verified or approved**. Review their references before publication. No account has been created, no post scheduled, no ChatGPT notification connected and no purchase made.
+This exports seven 1080×1080 JPEGs, matching caption files, a review checklist, post metrics, an eight-week review sheet, and a ZIP. It never calls OpenAI or Meta and refuses to overwrite existing exports. Read [the launch guide](pilot/LAUNCH.md). First-week sources could not be retrieved through this workspace's network policy, so the factual drafts are **not source-verified or approved**. Review their references before publication. The user-confirmed account is **@PEUnderScrutiny**, under appeal as reported on October 25, 2026. This program has not connected to it, scheduled posts, connected ChatGPT notifications or made purchases.
 
 ## Try it locally
 

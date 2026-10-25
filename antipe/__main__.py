@@ -20,9 +20,10 @@ def main():
     pilot = commands.add_parser('pilot', help='Export seven offline drafts, graphics and a metrics tracker; no API calls')
     pilot.add_argument('--output', default='.local/pilot/week-01')
     pilot.add_argument('--batch', default=str(DEFAULT_BATCH))
+    pilot.add_argument('--launch-assets', action='store_true', help='Include profile assets, an offline editing page and tonight’s checklist')
     args = parser.parse_args()
     if args.command == 'pilot':
-        print(f'Created offline launch kit: {export_pilot(args.output, args.batch)}')
+        print(f'Created offline launch kit: {export_pilot(args.output, args.batch, args.launch_assets)}')
         return
     settings = Settings.load()
     store = Store(settings.database)

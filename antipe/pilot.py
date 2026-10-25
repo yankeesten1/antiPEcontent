@@ -11,7 +11,7 @@ from .graphics import render_card
 DEFAULT_BATCH = Path(__file__).resolve().parent.parent / 'pilot' / 'week-01.json'
 
 
-def export_pilot(output, batch_path=DEFAULT_BATCH):
+def export_pilot(output, batch_path=DEFAULT_BATCH, launch_assets=False):
     batch = json.loads(Path(batch_path).read_text())
     posts = batch['posts']
     if len(posts) != 7 or len({post['id'] for post in posts}) != 7:
@@ -62,6 +62,9 @@ def export_pilot(output, batch_path=DEFAULT_BATCH):
     launch = DEFAULT_BATCH.parent / 'LAUNCH.md'
     if launch.exists():
         shutil.copyfile(launch, output / 'START-HERE.md')
+    if launch_assets:
+        from .launch import add_launch_assets
+        add_launch_assets(output, batch)
     # Refuse to replace a prior archive, even when its working folder was moved.
     with zipfile.ZipFile(archive, 'x', compression=zipfile.ZIP_DEFLATED) as bundle:
         for file in sorted(output.iterdir()):

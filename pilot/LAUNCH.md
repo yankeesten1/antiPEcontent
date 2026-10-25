@@ -4,6 +4,8 @@ This is a manual, low-cost pilot. Nothing in this kit creates an account, posts 
 
 ## Account setup — user action
 
+**Current status:** You confirmed **@PEUnderScrutiny**. Instagram access is pending appeal as reported on October 25, 2026. Use [tonight's checklist](TONIGHT.md) to prepare assets while waiting. Account creation below is background guidance; do not create a replacement account just to work around the pending appeal.
+
 1. Create a dedicated Instagram account using your own email and enable two-factor authentication. Choose a **professional Business or Creator** account for insights and scheduling. Do not share your password or recovery codes in chat.
 2. Suggested display name: **PE Under Scrutiny**. Suggested handle: `@peunderscrutiny`, with `@thebuyoutbrief` as an alternative. Availability has not been checked; choose an available handle during signup. No organization, regulator or news outlet affiliation is implied.
 3. Suggested bio (under 150 characters):
@@ -66,4 +68,4 @@ Add automation only when repetitive work is a meaningful burden and results just
 
 Pilot software outlay: **$0 incremental** if your current ChatGPT plan and free Meta tools are sufficient, excluding your time and existing subscription. No purchases have been made. The custom daily automation prototype is optional and still needs credentials, hosting and live validation.
 
-Your next action is to create the professional account and choose its handle. Then review the first seven drafts together before scheduling them. There is no supported Instagram connection in this chat, so account creation and the initial Meta connection must happen in your own account interfaces.
+Your account handle is **@PEUnderScrutiny**. Prepare the offline assets now, review the first seven drafts together, and complete profile/account connection after the appeal is resolved and access is restored. There is no supported Instagram connection in this chat, so account settings and the Meta connection must happen in your own account interfaces.

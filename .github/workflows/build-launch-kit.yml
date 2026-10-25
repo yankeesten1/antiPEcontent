@@ -1,0 +1,50 @@
+name: Build weekly launch kit
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_file:
+        description: Repository path to the seven-post JSON batch
+        default: pilot/week-01.json
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install export dependencies
+        run: python -m pip install --no-cache-dir -r requirements.txt
+      - name: Run workflow tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate selected batch path
+        env:
+          BATCH_FILE: ${{ inputs.batch_file }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          root = Path.cwd().resolve()
+          path = (root / os.environ['BATCH_FILE']).resolve()
+          if not path.is_relative_to(root / 'pilot') or path.suffix != '.json' or not path.is_file():
+              raise SystemExit('Choose an existing JSON batch inside pilot/.')
+          PY
+      - name: Build offline launch kit
+        env:
+          BATCH_FILE: ${{ inputs.batch_file }}
+        run: python -m antipe pilot --batch "$BATCH_FILE" --launch-assets --output "$RUNNER_TEMP/launch-kit"
+      - name: Upload launch ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: launch-kit
+          path: ${{ runner.temp }}/launch-kit.zip
+          if-no-files-found: error
+          retention-days: 7

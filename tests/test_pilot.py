@@ -9,6 +9,7 @@ from unittest.mock import patch
 from PIL import Image
 
 from antipe.pilot import DEFAULT_BATCH, export_pilot
+from antipe.launch import BIO, review_html
 
 
 class PilotTests(unittest.TestCase):
@@ -67,6 +68,35 @@ class PilotTests(unittest.TestCase):
         custom.write_text(json.dumps(batch))
         with self.assertRaisesRegex(ValueError, 'Post IDs'):
             export_pilot(self.root / 'invalid', custom)
+
+    def test_launch_assets_include_usable_avatar_and_offline_editor(self):
+        output = self.root / 'tonight'
+        archive = export_pilot(output, launch_assets=True)
+        self.assertLessEqual(len(BIO), 150)
+        with Image.open(output / 'profile-avatar-1080.png') as avatar:
+            self.assertEqual(avatar.size, (1080, 1080))
+            self.assertEqual(avatar.format, 'PNG')
+        with Image.open(output / 'profile-avatar-320.png') as avatar:
+            self.assertEqual(avatar.size, (320, 320))
+        html = (output / 'review.html').read_text()
+        self.assertEqual(html.count('<textarea '), 7)
+        self.assertEqual(html.count('data-editor='), 7)
+        self.assertIn('Edits are not saved automatically', html)
+        self.assertNotIn('fetch(', html)
+        self.assertIn('not approved', (output / 'FIRST-POST-REVIEW.md').read_text())
+        with zipfile.ZipFile(archive) as bundle:
+            self.assertIsNone(bundle.testzip())
+            self.assertIn('tonight/review.html', bundle.namelist())
+            self.assertIn('tonight/TONIGHT.md', bundle.namelist())
+
+    def test_offline_review_escapes_untrusted_content(self):
+        batch = json.loads(DEFAULT_BATCH.read_text())
+        batch['posts'][0]['title'] = '<img src=x onerror=alert(1)>'
+        batch['posts'][0]['caption'] = '</textarea><script>alert(1)</script>'
+        html = review_html(batch)
+        self.assertNotIn('<img src=x', html)
+        self.assertNotIn('</textarea><script>alert', html)
+        self.assertIn('&lt;/textarea&gt;&lt;script&gt;', html)
 
 
 if __name__ == '__main__':
