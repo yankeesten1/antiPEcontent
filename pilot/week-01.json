@@ -1,0 +1,77 @@
+{
+  "name": "PE / Under scrutiny — week 01",
+  "status": "drafts_requiring_editorial_and_source_review",
+  "note": "No post is approved or scheduled. Source URLs are reference candidates; source pages could not be retrieved in this workspace. Verify the precise supporting passages before publication. No claim of legal advice or a current agency position is made.",
+  "posts": [
+    {
+      "id": "W01-01",
+      "day": 1,
+      "format": "editorial_question",
+      "title": "Your local store. Someone else's exit strategy?",
+      "caption": "Opinion: A business should be judged by how it serves customers and treats workers—not just the price its owners can sell it for.\n\nThat is the question behind this account: when investors buy a business, who benefits, who takes the risk, and what happens to the people who depend on it?\n\nWe will scrutinize private equity using documents, clear explanations and corrections when the evidence changes. An acquisition alone does not prove wrongdoing.\n\nWhat industry should we examine first: housing, healthcare or everyday services?\n\n#PrivateEquity #WorkersRights #ConsumerRights",
+      "claim_checks": ["This is an editorial statement of values, not a claim about a specific transaction.", "Do not describe this new account as having already investigated companies."],
+      "sources": [],
+      "hypothesis": "A clear mission and a concrete question will prompt relevant comments."
+    },
+    {
+      "id": "W01-02",
+      "day": 2,
+      "format": "mechanism_explainer",
+      "title": "Buying a business with borrowed money: who carries the debt?",
+      "caption": "A leveraged buyout uses borrowing to help finance an acquisition. The important follow-up question is where that debt sits and which business must service it. Deal structures differ.\n\nDebt payments can compete with other uses of cash. That creates questions worth investigating—not proof that a particular acquisition caused layoffs, higher prices or worse service.\n\nBefore accepting an owner's success story, ask: how much debt was added, who is responsible for it, and what changed in investment, staffing and service?\n\nOpinion: Customers and workers deserve answers alongside investors.\n\nSave this checklist for the next buyout headline.\n\n#PrivateEquity #FinancialLiteracy #ConsumerRights",
+      "claim_checks": ["Verify the definition of leveraged buyout and debt servicing using an authoritative finance source.", "Keep the language conditional: financing structures vary, and debt does not establish harm in an individual case."],
+      "sources": [{"title": "GAO-08-885 (2008), private equity and leveraged buyouts — historical reference; verify the relevant discussion before use", "url": "https://www.gao.gov/products/gao-08-885", "verification": "not_retrieved_review_required"}],
+      "hypothesis": "A practical financing checklist will earn saves."
+    },
+    {
+      "id": "W01-03",
+      "day": 3,
+      "format": "competition_explainer",
+      "title": "Different signs. The same owner?",
+      "caption": "A different brand name does not always mean a different owner. A roll-up is a strategy of acquiring multiple businesses, often in the same sector.\n\nThe competition question is what those acquisitions do to customers' and workers' real alternatives. Common ownership is a reason to investigate; it is not by itself proof of an unlawful monopoly.\n\nThe DOJ and FTC's 2023 Merger Guidelines discuss examining a pattern or strategy of multiple acquisitions. Guidelines are an analytical framework, not a court finding about any particular company.\n\nOpinion: If your local choices are shrinking, the ownership map deserves attention.\n\nShare this with someone who likes to know who owns the brands they use.\n\n#Competition #PrivateEquity #ConsumerRights",
+      "claim_checks": ["Read Guideline 8 in the 2023 Merger Guidelines and confirm the description.", "The post describes a dated document, not a verified statement of current enforcement policy.", "Do not imply that all common ownership is private equity or that all roll-ups are unlawful."],
+      "sources": [{"title": "DOJ / FTC merger guidelines — locate the 2023 document and Guideline 8", "url": "https://www.justice.gov/atr/merger-guidelines", "verification": "not_retrieved_review_required"}],
+      "hypothesis": "A concrete ownership question will encourage shares."
+    },
+    {
+      "id": "W01-04",
+      "day": 4,
+      "format": "worker_lens",
+      "title": "Workers belong in the deal review.",
+      "caption": "Merger debates should ask what a deal means for employees as well as customers.\n\nThe DOJ and FTC's 2023 Merger Guidelines include an analysis of mergers between competing buyers, including employers buying workers' labor. That is an analytical framework, not a finding that any particular deal harmed employees.\n\nOpinion: A deal's success should include pay, staffing, working conditions and meaningful job alternatives—not only an investor return.\n\nA useful before-and-after checklist: wages, benefits, hours, turnover and staffing. Check other explanations before attributing a change to ownership.\n\nWhat would you add to that checklist? Please avoid sharing confidential information or naming individual coworkers.\n\n#WorkersRights #Competition #PrivateEquity",
+      "claim_checks": ["Read Guideline 10 in the 2023 Merger Guidelines and confirm the employer/labor description.", "This describes the 2023 text, not independently verified current policy.", "Do not imply that this checklist is evidence of harm at a named company."],
+      "sources": [{"title": "DOJ / FTC merger guidelines — locate the 2023 document and Guideline 10", "url": "https://www.justice.gov/atr/merger-guidelines", "verification": "not_retrieved_review_required"}],
+      "hypothesis": "Including workers' concerns will prompt substantive comments."
+    },
+    {
+      "id": "W01-05",
+      "day": 5,
+      "format": "evidence_checklist",
+      "title": "After the buyout isn't proof of because of the buyout.",
+      "caption": "A price increase, closure or staffing cut after an acquisition deserves scrutiny. Timing alone does not establish the cause.\n\nHere is the evidence checklist we want to use:\n1. Confirm the owner and acquisition date.\n2. Document what changed and when.\n3. Read financial filings or other primary records.\n4. Consider competing explanations.\n5. Separate allegations, research findings and opinion.\n\nOpinion: Criticism of private equity is stronger when it can survive a fact check.\n\nSave this for your next research session. If we get something wrong, send the supporting source so we can correct it.\n\n#MediaLiteracy #PrivateEquity #FollowTheMoney",
+      "claim_checks": ["This is a proposed research method, not a report on a specific acquisition.", "Provide a working correction channel in the profile before using the call to action."],
+      "sources": [],
+      "hypothesis": "A useful research checklist will produce saves and establish the account's editorial approach."
+    },
+    {
+      "id": "W01-06",
+      "day": 6,
+      "format": "editorial_question",
+      "title": "A successful exit. A better business for whom?",
+      "caption": "Opinion: An investor's successful exit is not the only scorecard that matters.\n\nWhen an owner sells a business, we should also ask what happened to service quality, affordability, employee pay, business investment and customers' alternatives.\n\nSometimes those outcomes improve. Sometimes they do not. The point is to investigate the actual record rather than treat the sale price as the whole story.\n\nOur position: ordinary customers and employees belong in the assessment of a buyout.\n\nWhich measure would you check first—and why?\n\n#PrivateEquity #WorkersRights #ConsumerRights",
+      "claim_checks": ["Keep this explicitly labeled as opinion.", "No statistics or company-specific claims are asserted."],
+      "sources": [],
+      "hypothesis": "A clear value statement will generate relevant profile visits and follows."
+    },
+    {
+      "id": "W01-07",
+      "day": 7,
+      "format": "audience_research",
+      "title": "Which industry should we investigate next?",
+      "caption": "Help choose our next evidence-led private equity explainer.\n\nA. Healthcare and patient care\nB. Housing and tenant costs\nC. Everyday services and local competition\nD. Another industry: tell us which one\n\nWe are looking for a question we can investigate with records and reliable sources. A personal experience can be a useful lead; it is not enough on its own to establish who caused a problem.\n\nTell us the question you want answered. Please leave out personal data, confidential documents and accusations about individual employees.\n\nOpinion: People affected by business decisions deserve a place in the conversation.\n\n#PrivateEquity #ConsumerRights #WorkersRights",
+      "claim_checks": ["Do not imply that any listed industry is uniformly controlled by private equity.", "Review comments before turning a personal story into a published factual claim."],
+      "sources": [],
+      "hypothesis": "A specific choice will identify an audience interest for week two."
+    }
+  ]
+}
