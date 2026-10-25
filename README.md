@@ -2,6 +2,10 @@
 
 A private editorial inbox for educational Instagram content about private equity's impact on customers, workers and competition. Five researched drafts per day, automatic JPEG graphics, editable captions, source links and explicit approval before publication. Defaults to **9 p.m. America/New_York** (Eastern local time, including daylight saving time).
 
+**Current editorial direction:** named, documented cases; no editorial opinion or moral labels. Read the [factual standard and source requirements](pilot/research/FACTUAL-STANDARD.md), [research queue](pilot/research/case-queue.json), and [audio plan/cost estimate](pilot/AUDIO-PLAN.md). The original weekly opinion/concept drafts and their ZIPs are archived prototypes, not the current publication plan. There are no verified case-specific posts yet: primary-source access remains blocked pending the saved network-settings update.
+
+The natural AI narrator is a preference pending current-price verification and spending approval; no paid service is connected. A [local synthetic voice/music preview](pilot/introduction-audio-preview.mp4) is provided for timing and mix review, not as the final voice or a sourced case report. The [audio production kit](pilot/audio-production-kit.zip) includes separate stems, subtitles and source-review documents.
+
 ## Start with the free manual pilot
 
 **Latest visual direction:** [Download the redesigned introduction](pilot/introduction-v2.zip) or [preview its five-card carousel](pilot/introduction-preview.jpg). This replaces the plain opening card as a proposed direction: bold typography, alternating high-contrast colors, five sequential cards, and a 20-second vertical motion reel. Both are drafts for review, and the rest of the week has not yet been redesigned. The video has no audio track; optional voiceover text is included.
@@ -82,7 +86,7 @@ Required outbound hosts: `api.openai.com` and `graph.facebook.com`. OpenAI handl
 
 The first OpenAI Responses API request uses web search to research five ideas, preferring regulatory documents, court records, company disclosures and credible studies. A second request turns that research into five drafts. Citation IDs must match URLs actually returned in the research response. Those source URLs are appended to captions. This validates citation references, **not** the truth of every claim or interpretation. Check source support, dates, figures and causal claims before approval. Caption edits can change whether a citation supports the text.
 
-The prompt takes a critical, pro-consumer and pro-worker perspective while distinguishing opinion, allegations and established findings. It avoids treating every buyout as harmful or calling a business a monopoly without evidence. It does not monitor Instagram comments, automate engagement or provide legal review.
+The current generator prompt requires case-specific factual reporting without editorial opinions. It distinguishes allegations, established findings, settlements, research associations and measured outcomes, and requires ownership dates, attribution and material responses. It must not pad a quota when research is insufficient. Source-ID validation does not verify quotations or establish causation: the human source-review requirement remains. It does not monitor Instagram comments, automate engagement or provide legal review.
 
 ## Schedule and recovery
 

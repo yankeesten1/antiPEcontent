@@ -6,5 +6,9 @@
   "posting_time": "21:00",
   "timezone": "America/New_York",
   "workflow": "manual_pilot",
-  "instagram_connected": false
+  "instagram_connected": false,
+  "editorial_mode": "documented_cases_no_editorial_opinion",
+  "narration_preference": "natural_ai_pending_price_approval",
+  "paid_voice_connected": false,
+  "paid_voice_spend_authorized": false
 }

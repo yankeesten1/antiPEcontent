@@ -1,0 +1,39 @@
+{
+  "status": "research_targets_only_not_verified_posts",
+  "access_checked": "2026-10-25",
+  "blocker": "Primary-source requests returned proxy/network-policy 403. Required domains have been saved in the environment draft but access has not been restored or verified.",
+  "cases": [
+    {
+      "id": "toys-r-us",
+      "company": "Toys R Us",
+      "proposed_focus": ["job loss", "store closures", "loss of a community retail institution"],
+      "ownership_to_verify": "The acquisition involving Bain Capital, KKR and Vornado; financing, subsequent ownership and the bankruptcy/closure timeline.",
+      "documents_needed": ["Acquisition/financing records", "Bankruptcy filings and employee/closure counts tied to a defined date and geography", "An attributable worker statement with exact wording and context", "Ownership/company response and material alternative explanations"],
+      "claims": [],
+      "verified_quotes": [],
+      "publication_status": "blocked_pending_source_verification"
+    },
+    {
+      "id": "usap-welsh-carson",
+      "company": "U.S. Anesthesia Partners / Welsh Carson",
+      "proposed_focus": ["serial acquisitions", "competition", "prices"],
+      "source_candidates": [{"publisher": "FTC", "url": "https://www.ftc.gov/news-events/news/press-releases/2023/09/ftc-challenges-private-equity-firms-scheme-suppress-competition-anesthesiology-practices-across-texas", "status": "not_retrieved"}],
+      "documents_needed": ["Original complaint and dated agency release", "Subsequent court rulings and any orders/settlements through the actual verification date", "Ownership timeline and transaction mechanism", "Company and investor response"],
+      "framing_requirement": "An agency allegation is not a judicial finding. A 2023 article cannot establish the legal status in 2026.",
+      "claims": [],
+      "verified_quotes": [],
+      "publication_status": "blocked_pending_source_verification"
+    },
+    {
+      "id": "hospital-patient-safety-study",
+      "company": "Hospital acquisitions studied in peer-reviewed research",
+      "proposed_focus": ["patient safety", "service quality"],
+      "source_candidates": [{"publisher": "JAMA / DOI resolver", "url": "https://doi.org/10.1001/jama.2023.23147", "status": "not_retrieved_verify_article_identity"}],
+      "documents_needed": ["Full study, publication details and any corrections", "Population, time window, comparator and confidence intervals", "Absolute and relative changes, including denominators", "Study limitations and the precise causal language supported by its design"],
+      "framing_requirement": "Do not generalize a study's findings to every private-equity-owned hospital. Do not turn an observed association into a claim that an owner deliberately harmed patients.",
+      "claims": [],
+      "verified_quotes": [],
+      "publication_status": "blocked_pending_source_verification"
+    }
+  ]
+}

@@ -98,11 +98,12 @@ def draw_slide(slide, index, height=1350):
     return image
 
 
-def export_social(output, video=False):
+def export_social(output, video=False, audio_preview=False):
     output = Path(output)
     archive = output.with_suffix('.zip')
     if output.exists() or archive.exists():
         raise ValueError('Choose a new output folder; existing review assets are preserved')
+    video = video or audio_preview
     if video and not shutil.which('ffmpeg'):
         raise ValueError('FFmpeg is required for video; omit --video to export the carousel only')
     content = json.loads(SOURCE.read_text())
@@ -124,13 +125,14 @@ def export_social(output, video=False):
     (output / 'storyboard.json').write_text(json.dumps(content, indent=2, ensure_ascii=False) + '\n')
     (output / 'optional-voiceover.txt').write_text('\n\n'.join(f"{line['seconds']} seconds: {line['text']}" for line in content['voiceover_optional']) + '\n')
     if video:
-        make_video(output, content['slides'])
+        make_video(output, content['slides'], content['voiceover_optional'] if audio_preview else None)
     (output / 'READ-ME.md').write_text('''# Introduction redesign — draft, not approved
 
 The carousel and reel are alternative versions of the SAME introduction. Choose one first; do not post both back-to-back as different stories.
 
 - Carousel: upload carousel-01.jpg through carousel-05.jpg in numbered order as one Instagram multi-image post. Each is 1080×1350.
-- Reel (if included): introduction-reel.mp4 is a 20-second, 1080×1920 H.264 video at 24 fps. It has motion, fades and on-screen text, but no audio track. Add your own voiceover using optional-voiceover.txt or choose audio you have rights to use in Instagram's editor. The text is understandable on mute.
+- Reel (if included): introduction-reel.mp4 is a 1080×1920 H.264 video at 24 fps, with no audio track. Silent-only exports are 20 seconds; an audio preview extends the scene timing as needed. Add your own voiceover using optional-voiceover.txt or choose audio you have rights to use in Instagram's editor. The text is understandable on mute.
+- Audio preview (if included): introduction-audio-preview.mp4 adds an offline synthetic narration voice and original instrumental bed. It may be longer than 20 seconds to let every line finish. This is a voice/mix prototype, not a human recording or an approved final voice. narration-preview.wav and music-original.wav are separate tracks. No witness/company audio or copyrighted song has been sampled. Lower the music or replace the preview voice with your own recording if needed.
 - Use caption.txt, review the exact images/video and approve the final version before posting. This is an editorial introduction, not evidence about a named company. No statistics, fake customer quotes or company-specific allegations are asserted.
 - This replaces the plain first-post concept as a proposed visual direction. The rest of the week's content has not yet been redesigned or source-verified. Nothing has been scheduled or published.
 - Once account access returns, inspect Instagram's crop and interface overlays before posting. Motion and brighter graphics do not guarantee reach. Compare several posts before deciding which format works.
@@ -143,11 +145,34 @@ First-frame hook: “Your town. Their exit plan?” The five-card story asks who
     return archive
 
 
-def make_video(output, slides):
+def make_video(output, slides, narration=None):
     # Five 4-second segments. Limit encoders to two threads so rendering does not
     # overwhelm a small development machine. Intermediate files are temporary.
     with tempfile.TemporaryDirectory(prefix='antipe-reel-') as temporary:
         work = Path(temporary)
+        counts = [96] * len(slides)
+        if narration:
+            from .sound import speak_line, join_narration, original_music
+            spoken = [speak_line(line['text'], work, index) for index, line in enumerate(narration, 1)]
+            counts = [count for _, count in spoken]
+            join_narration([line for line, _ in spoken], counts, output / 'narration-preview.wav')
+            original_music(output / 'music-original.wav', sum(counts) / 24)
+            elapsed = 0
+            subtitles = []
+            timings = []
+            def timestamp(seconds):
+                milliseconds = round(seconds * 1000)
+                hours, remainder = divmod(milliseconds, 3600000)
+                minutes, remainder = divmod(remainder, 60000)
+                seconds, milliseconds = divmod(remainder, 1000)
+                return f'{hours:02}:{minutes:02}:{seconds:02},{milliseconds:03}'
+            for index, (line, count) in enumerate(zip(narration, counts), 1):
+                start, end = elapsed / 24 + .15, (elapsed + count) / 24 - .3
+                subtitles.append(f"{index}\n{timestamp(start)} --> {timestamp(end)}\n{line['text']}\n")
+                timings.append({'scene': index, 'start': elapsed / 24, 'end': (elapsed + count) / 24, 'text': line['text']})
+                elapsed += count
+            (output / 'narration-captions.srt').write_text('\n'.join(subtitles))
+            (output / 'voiceover-timing.json').write_text(json.dumps(timings, indent=2) + '\n')
         segments = []
         for index, slide in enumerate(slides, 1):
             image = work / f'scene-{index}.png'
@@ -156,11 +181,14 @@ def make_video(output, slides):
             subprocess.run([
                 'ffmpeg', '-hide_banner', '-loglevel', 'error', '-y',
                 '-i', str(image), '-vf',
-                "zoompan=z='min(1.025,zoom+0.00026)':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=96:s=1080x1920:fps=24,fade=t=in:st=0:d=0.16,format=yuv420p",
-                '-frames:v', '96', '-an', '-c:v', 'libx264', '-threads', '2',
+                f"zoompan=z='min(1.025,zoom+0.00026)':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d={counts[index-1]}:s=1080x1920:fps=24,fade=t=in:st=0:d=0.16,format=yuv420p",
+                '-frames:v', str(counts[index-1]), '-an', '-c:v', 'libx264', '-threads', '2',
                 '-preset', 'veryfast', '-crf', '22', '-movflags', '+faststart', str(segment)
             ], check=True, capture_output=True)
             segments.append(segment)
         manifest = work / 'segments.txt'
         manifest.write_text('\n'.join(f"file '{segment.name}'" for segment in segments) + '\n')
         subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-f', 'concat', '-safe', '1', '-i', str(manifest), '-c', 'copy', '-movflags', '+faststart', str(output / 'introduction-reel.mp4')], check=True, capture_output=True)
+        if narration:
+            from .sound import mix_reel
+            mix_reel(output / 'introduction-reel.mp4', output / 'narration-preview.wav', output / 'music-original.wav', output / 'introduction-audio-preview.mp4')
