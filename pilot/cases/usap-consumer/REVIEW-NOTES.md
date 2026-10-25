@@ -1,6 +1,6 @@
 # The FTC alleged tens of millions in extra anesthesia costs — review draft
 
-**Not approved, scheduled or published.** Heart is the selected voice; the specific script and assets still require user approval.
+**User approved this video and its editorial format.** Nothing has been scheduled or published by this program. The bundled ZIP is an earlier review snapshot; current approval is recorded in case.json.
 
 Coverage: September 2023 complaint through April 23, 2026 published update; documents retrieved October 25, 2026. Not a claim of verified current docket status.
 

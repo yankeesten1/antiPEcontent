@@ -1,4 +1,4 @@
-# Consumer-focused anesthesia reel — review draft
+# Consumer-focused anesthesia reel — user-approved video
 
 The video leads with the FTC’s alleged consumer harm, not the source-checking process. No source dates are spoken. Full dates, legal timeline and historical coverage remain in the caption.
 
@@ -10,4 +10,4 @@ The video leads with the FTC’s alleged consumer harm, not the source-checking 
 
 [Full primary-record links and explanations](../usap/SOURCES.md) · [Claim/source ledger](REVIEW-NOTES.md) · [Caption](caption.txt) · [Video](case-heart.mp4) · [Card preview](carousel-preview.jpg)
 
-Historical coverage ends April 23, 2026; final implementation and later docket events were not independently verified. Source snapshots are copied unchanged and hash-checked. Quotes are checked against the complaint itself. Nothing is approved, scheduled or published by this program.
+Historical coverage ends April 23, 2026; final implementation and later docket events were not independently verified. Source snapshots are copied unchanged and hash-checked. Quotes are checked against the complaint itself. The user approved this video and format. Nothing has been scheduled or published by this program. Future drafts need individual approval.

@@ -20,5 +20,14 @@
   "facebook_page_status": "user_reports_connected_in_meta_business_suite",
   "public_brand_name_status": "change_requested_by_user_not_verified_applied",
   "profile_image_status": "uploaded_in_user_screenshot",
-  "connection_scope": "user_reports_meta_business_suite_publishing_destination_available; app_API_not_connected"
+  "connection_scope": "user_reports_meta_business_suite_publishing_destination_available; app_API_not_connected",
+  "editorial_reference": "pilot/cases/usap-consumer/case.json",
+  "editorial_style_status": "user_approved_consumer_first_format",
+  "editorial_priorities": [
+    "concrete_consumer_or_worker_consequence",
+    "named_ownership_and_plain_mechanism",
+    "brief_attribution_and_material_response",
+    "detailed_sources_dates_and_legal_history_in_caption",
+    "natural_heart_narration_music_fixed_frames"
+  ]
 }

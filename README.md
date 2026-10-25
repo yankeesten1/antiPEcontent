@@ -4,12 +4,12 @@ A private editorial inbox for educational Instagram content about private equity
 
 **Current editorial direction:** named, documented cases; no editorial opinion or moral labels. Read the [factual standard and source requirements](pilot/research/FACTUAL-STANDARD.md), [research queue](pilot/research/case-queue.json), and [audio plan](pilot/AUDIO-PLAN.md). The original weekly opinion/concept drafts and ZIPs are archived prototypes, not the publication plan. FTC, GAO and SEC pages are now accessible; some medical-publisher/abstract requests still return access challenges.
 
-**First case for review:** [USAP case video with Heart](pilot/cases/usap/case-heart.mp4), [six-card preview](pilot/cases/usap/carousel-preview.jpg), [source notes](pilot/cases/usap/SOURCES.md), [caption](pilot/cases/usap/caption.txt), and [full review kit](pilot/cases/usap/review-kit.zip). It quotes an FTC complaint and reports the denial, dismissal, separate consent order and April 2026 preliminary agreement. The source snapshots and quote were checked against primary records; the case is **not approved, scheduled or published**. Coverage ends April 23, 2026; later docket events and final implementation were not independently verified. This is a dated case file, not a current-status news alert.
+**User-approved reference format:** [28-second consumer-focused USAP video](pilot/cases/usap-consumer/case-heart.mp4), [four-card preview](pilot/cases/usap-consumer/carousel-preview.jpg), [caption](pilot/cases/usap-consumer/caption.txt) and [source notes](pilot/cases/usap-consumer/SOURCES.md). Lead with a concrete consequence, explain the ownership and consumer relevance in plain language, and include the material response. Keep detailed dates, sources and legal chronology in the caption. Heart narration, original music, stationary frames and clean cuts remain the default. The user approved this video and style; nothing has been published by this program. Earlier dense versions are archived. Historical coverage ends April 23, 2026; later docket events were not independently verified. Future drafts require individual approval.
 
 Reproduce this case locally after the voice setup:
 
 ```sh
-.venv/bin/python -m antipe case --file pilot/cases/usap/case.json --output .local/cases/usap-new-review
+.venv/bin/python -m antipe case --file pilot/cases/usap-consumer/case.json --output .local/cases/usap-new-review
 ```
 
 The renderer checks snapshot hashes, verbatim quoted wording, claim/source references and caption length before creating assets. These structural checks are not an automatic fact checker. A user must review and approve the final content before posting.

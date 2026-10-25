@@ -2,7 +2,7 @@
   "id": "usap-case-03-consumer",
   "title": "The FTC alleged tens of millions in extra anesthesia costs",
   "source_review": "checked_against_primary_records_by_assistant",
-  "approval": "pending_user_review",
+  "approval": "user_approved_video_and_style",
   "coverage": "September 2023 complaint through April 23, 2026 published update; documents retrieved October 25, 2026. Not a claim of verified current docket status.",
   "sources": [
     {
@@ -264,5 +264,6 @@
     "No spoken source dates, source-reading instructions or source-checking outro. Keep detailed records and legal chronology in caption.",
     "Brief on-screen source attribution and allegation label; audible attribution and company denial.",
     "Statewide extra-cost allegation must not be presented as the cost of the Capitol acquisition alone. No specific premium increase inferred."
-  ]
+  ],
+  "approval_scope": "User called this version perfect and requested the same approach for future drafts. No publishing action taken; future drafts need individual approval."
 }
