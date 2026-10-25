@@ -106,6 +106,8 @@ class Store:
         draft = self.get(draft_id)
         if draft['kind'] == 'demo':
             raise ValueError("Sample drafts cannot be published. Generate researched drafts first.")
+        if draft['kind'] in ('pitches', 'pitch_demo'):
+            raise ValueError("Story pitches are not finished posts. Complete source review and reel preparation, then approve the final video for manual Business Suite upload.")
         public_image_url(draft['image_url'])
         with self.connect() as db:
             # Selecting one draft reserves the day's publishing choice. Approval is a

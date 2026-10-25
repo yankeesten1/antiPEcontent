@@ -1,0 +1,138 @@
+name: Prepare next post
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Sample review pack, researched pitches (paid API), or render checked case
+        type: choice
+        options: [sample, pitches, render]
+        default: sample
+      case_file:
+        description: Primary-source-reviewed case file for render mode
+        type: string
+        default: pilot/cases/usap-consumer/case.json
+  schedule:
+    # Covers daylight and standard Eastern time; the job gates on local hour.
+    - cron: '5 1,2 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: next-post-preparation
+  cancel-in-progress: false
+
+jobs:
+  pitches:
+    if: >-
+      (github.event_name == 'workflow_dispatch' && inputs.mode != 'render') ||
+      (github.event_name == 'schedule' && vars.ENABLE_DAILY_PITCHES == 'true')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Determine Eastern editorial day
+        id: timing
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          local = datetime.now(ZoneInfo('America/New_York'))
+          active = os.environ['EVENT_NAME'] != 'schedule' or local.hour == 21
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f'day={local.date()}\nactive={str(active).lower()}\n')
+          PY
+      - uses: actions/cache/restore@v4
+        if: steps.timing.outputs.active == 'true'
+        id: state
+        with:
+          path: .local/pitch-state.sqlite3
+          key: pitch-state-${{ steps.timing.outputs.day }}-${{ inputs.mode || 'pitches' }}
+      - name: Install review-pack dependencies
+        if: steps.timing.outputs.active == 'true' && steps.state.outputs.cache-hit != 'true'
+        run: python -m pip install --no-cache-dir -r requirements.txt
+      - name: Generate five story candidates
+        if: steps.timing.outputs.active == 'true' && steps.state.outputs.cache-hit != 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTIPE_MODEL: ${{ vars.ANTIPE_MODEL || 'gpt-4.1' }}
+          ANTIPE_DATABASE: .local/pitch-state.sqlite3
+          MODE: ${{ inputs.mode || 'pitches' }}
+          EDITORIAL_DAY: ${{ steps.timing.outputs.day }}
+        run: |
+          if [ "$MODE" = sample ]; then
+            python -m antipe pitches --demo --day "$EDITORIAL_DAY" --output .local/daily-pitches
+          else
+            python -m antipe pitches --day "$EDITORIAL_DAY" --output .local/daily-pitches
+          fi
+      - name: Preserve the attempt to avoid automatic paid retries
+        uses: actions/cache/save@v4
+        if: always() && steps.timing.outputs.active == 'true' && steps.state.outputs.cache-hit != 'true'
+        with:
+          path: .local/pitch-state.sqlite3
+          key: pitch-state-${{ steps.timing.outputs.day }}-${{ inputs.mode || 'pitches' }}
+      - uses: actions/upload-artifact@v4
+        if: success() && steps.timing.outputs.active == 'true' && steps.state.outputs.cache-hit != 'true'
+        with:
+          name: daily-pitches-${{ steps.timing.outputs.day }}
+          path: .local/daily-pitches/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 14
+      - name: Explain previously attempted batch
+        if: steps.state.outputs.cache-hit == 'true'
+        run: echo 'This date and mode were already attempted. Inspect the original run; no further paid request was made.'
+
+  render:
+    if: github.event_name == 'workflow_dispatch' && inputs.mode == 'render'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate case path
+        env:
+          CASE_FILE: ${{ inputs.case_file }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          root = Path.cwd().resolve()
+          path = (root / os.environ['CASE_FILE']).resolve()
+          if not path.is_relative_to(root / 'pilot' / 'cases') or not path.is_file() or path.name != 'case.json':
+              raise SystemExit('Choose a case.json inside pilot/cases/.')
+          PY
+      - name: Install local renderer and Heart voice
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --no-cache-dir -r requirements.txt -r requirements-voice.txt
+      - uses: actions/cache@v4
+        with:
+          path: .local/voice
+          key: kokoro-voice-verified-v1
+      - name: Render selected, source-reviewed case
+        env:
+          CASE_FILE: ${{ inputs.case_file }}
+        run: python -m antipe case --file "$CASE_FILE" --output .local/post-ready
+      - uses: actions/upload-artifact@v4
+        with:
+          name: post-ready
+          path: |
+            .local/post-ready/case-heart.mp4
+            .local/post-ready/caption.txt
+            .local/post-ready/carousel-preview.jpg
+            .local/post-ready/narration-script.txt
+            .local/post-ready/REVIEW-NOTES.md
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 14

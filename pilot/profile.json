@@ -5,7 +5,7 @@
   "account_status": "user_reports_profile_access_restored_2026-10-25",
   "posting_time": "21:00",
   "timezone": "America/New_York",
-  "workflow": "manual_pilot",
+  "workflow": "five_pitches_select_source_review_render_approve_manual_business_suite",
   "instagram_connected": true,
   "editorial_mode": "documented_cases_no_editorial_opinion",
   "narration_preference": "local_neural_heart_user_selected",
@@ -31,5 +31,7 @@
     "natural_heart_narration_music_fixed_frames"
   ],
   "first_post_url": "https://www.instagram.com/p/De7ovZEgCqq/",
-  "first_post_status": "published_as_reported_by_user"
+  "first_post_status": "published_as_reported_by_user",
+  "daily_automation_status": "prepared_not_activated",
+  "notification_channel": "not_connected"
 }

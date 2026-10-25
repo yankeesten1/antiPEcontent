@@ -19,6 +19,10 @@ def main():
     generator = commands.add_parser('generate')
     generator.add_argument('--demo', action='store_true')
     generator.add_argument('--retry', action='store_true', help='Explicitly retry a failed daily batch; may incur API charges')
+    pitches = commands.add_parser('pitches', help='Export five story candidates for selection; no video rendering or posting')
+    pitches.add_argument('--output', required=True)
+    pitches.add_argument('--day', help='Editorial date YYYY-MM-DD; defaults to today in the configured timezone')
+    pitches.add_argument('--demo', action='store_true', help='Exercise the review flow without API calls; samples are not post candidates')
     pilot = commands.add_parser('pilot', help='Export seven offline drafts, graphics and a metrics tracker; no API calls')
     pilot.add_argument('--output', default='.local/pilot/week-01')
     pilot.add_argument('--batch', default=str(DEFAULT_BATCH))
@@ -37,6 +41,14 @@ def main():
     case.add_argument('--file', required=True)
     case.add_argument('--output', required=True)
     args = parser.parse_args()
+    if args.command == 'pitches':
+        from datetime import date
+        from .pitches import export_pitches
+        from .service import local_day
+        settings = Settings.load()
+        day = date.fromisoformat(args.day).isoformat() if args.day else local_day(settings)
+        print(f'Created story review pack: {export_pitches(settings, day, args.output, args.demo)}')
+        return
     if args.command == 'case':
         from .cases import export_case
         print(f'Created case review: {export_case(args.file, args.output)}')
