@@ -33,3 +33,9 @@ On October 25, 2026, subsequent requests successfully retrieved FTC records, the
 ## Audio
 
 Use clear documentary narration, with music below speech. Quotes are read as attributed quotations, never presented as a real recording of the quoted person. No voice cloning or simulated company/witness audio. A modest bed can support pacing without manufacturing evidence. The selected narrator is local Kokoro **Heart**. Videos use fixed frames and clean cuts. No paid voice service is connected here.
+
+## Readability and spoken wording (user feedback)
+
+Build each short reel around one outcome or allegation, using three or four cards with one main idea each. Keep card bodies to one short sentence where possible. Retain attribution, material denials and necessary qualifications in the reel; put the detailed procedural chronology in the caption and source notes. Never simplify a claim into a stronger assertion than the evidence supports.
+
+Write narration to be spoken naturally: spell out unfamiliar acronyms, avoid sound-effect words such as “cha-ching,” and do not force a quotation into the voiceover. An exact quote can stay in the source record without appearing in the reel. Preview the actual speech before approving a post. The simplified USAP revision is `pilot/cases/usap-simple/`; the original dense cut remains archived in `pilot/cases/usap/`.

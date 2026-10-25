@@ -6,7 +6,7 @@
   "posting_time": "21:00",
   "timezone": "America/New_York",
   "workflow": "manual_pilot",
-  "instagram_connected": false,
+  "instagram_connected": true,
   "editorial_mode": "documented_cases_no_editorial_opinion",
   "narration_preference": "local_neural_heart_user_selected",
   "paid_voice_connected": false,
@@ -16,8 +16,9 @@
   "motion": "fixed_frames_clean_cuts",
   "music": "original_arrangement_v2",
   "voice_selection_source": "user_confirmed",
-  "professional_account_status": "not_yet_confirmed",
-  "facebook_page_status": "not_connected_as_last_reported",
+  "professional_account_status": "creator_confirmed_by_user_screenshot",
+  "facebook_page_status": "user_reports_connected_in_meta_business_suite",
   "public_brand_name_status": "change_requested_by_user_not_verified_applied",
-  "profile_image_status": "uploaded_in_user_screenshot"
+  "profile_image_status": "uploaded_in_user_screenshot",
+  "connection_scope": "user_reports_meta_business_suite_publishing_destination_available; app_API_not_connected"
 }
