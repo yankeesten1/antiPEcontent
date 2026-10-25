@@ -1,0 +1,20 @@
+{
+  "name": "Your town. Their exit plan?",
+  "status": "draft_for_user_review_not_approved",
+  "type": "editorial_introduction_no_company_specific_claims",
+  "slides": [
+    {"layout": "hook", "background": "yellow", "headline": ["YOUR TOWN.", "THEIR EXIT", "PLAN?"], "body": "WHO WINS WHEN A\nBUSINESS IS BOUGHT?"},
+    {"layout": "stakeholders", "background": "ink", "headline": ["WHO", "BENEFITS?"], "rows": [["INVESTORS", "Returns + an eventual sale"], ["CUSTOMERS", "Prices + service"], ["WORKERS", "Pay + working conditions"]]},
+    {"layout": "questions", "background": "cream", "headline": ["FOLLOW", "THE DEAL."], "rows": [["OWNER", "Who bought the business?"], ["FINANCING", "How was the deal funded?"], ["OUTCOMES", "What changed, and why?"]]},
+    {"layout": "standard", "background": "coral", "headline": ["A BUYOUT", "ISN'T A", "VERDICT."], "body": ["Check the records.", "Separate fact from opinion.", "Correct mistakes."]},
+    {"layout": "choice", "background": "mint", "headline": ["WHAT SHOULD", "WE EXAMINE", "FIRST?"], "choices": ["HEALTHCARE", "HOUSING", "EVERYDAY SERVICES"]}
+  ],
+  "caption": "Your town. Their exit plan?\n\nWho should a business work for?\n\nOur view: the people who shop there and the people who work there belong in the story—not just investors.\n\nAt @PEUnderScrutiny, we will ask who owns the business, how a deal was financed, and what actually changed for customers and workers. A buyout alone does not prove harm. We will check the evidence and label opinion clearly.\n\nWhat should we investigate first: healthcare, housing or everyday services? Comment your pick.\n\n#PrivateEquity #WorkersRights #ConsumerRights #Competition",
+  "voiceover_optional": [
+    {"seconds": "0–4", "text": "Who wins when a business in your town gets bought?"},
+    {"seconds": "4–8", "text": "Investors, customers, and workers can have different priorities."},
+    {"seconds": "8–12", "text": "We ask who owns it, how the deal was funded, and what changed."},
+    {"seconds": "12–16", "text": "A buyout alone is not a verdict. We check the evidence."},
+    {"seconds": "16–20", "text": "What should we investigate first? Follow PE Under Scrutiny."}
+  ]
+}

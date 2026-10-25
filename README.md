@@ -4,6 +4,16 @@ A private editorial inbox for educational Instagram content about private equity
 
 ## Start with the free manual pilot
 
+**Latest visual direction:** [Download the redesigned introduction](pilot/introduction-v2.zip) or [preview its five-card carousel](pilot/introduction-preview.jpg). This replaces the plain opening card as a proposed direction: bold typography, alternating high-contrast colors, five sequential cards, and a 20-second vertical motion reel. Both are drafts for review, and the rest of the week has not yet been redesigned. The video has no audio track; optional voiceover text is included.
+
+Reproduce the new visual prototype locally:
+
+```sh
+.venv/bin/python -m antipe social --video --output .local/pilot/introduction-v2
+```
+
+FFmpeg with H.264 encoding is required for `--video`; omit that flag for carousel-only export. Rendering uses Pillow and local FFmpeg, with no model/API calls. DejaVu Sans Condensed is used when installed, with a Pillow font fallback. This video feature has been validated on the current machine, not in the optional Docker image, which does not install FFmpeg by default.
+
 The selected launch path is now **one account, seven weekly drafts, and manual Meta Business Suite scheduling**. It requires no OpenAI API key, paid hosting or developer token. The daily automation below remains an optional prototype and has not been connected to live services.
 
 Download the prepared [first-week launch kit](pilot/launch-week-01.zip), or read the [launch guide](pilot/LAUNCH.md) and [editable draft content](pilot/week-01.json) on GitHub. The ZIP contains seven graphics, matching captions and tracking sheets; its factual drafts still require source review before publication.
@@ -100,5 +110,7 @@ python -m unittest discover -s tests -v
 ```
 
 Tests cover daily deduplication, Eastern scheduling, source-reference validation, JPEG generation, approval invalidation, single-choice publication, duplicate prevention, uncertain publication and HTTP/CSRF behavior. Verify real OpenAI results, Meta authorization and public image access after connecting external services.
+
+The introduction redesign is also checked by rendering its five 1080×1350 JPEGs and inspecting the 20-second, 1080×1920, 24 fps H.264/YUV420p video with FFprobe. Its actual frames are sampled to check scene changes and movement. These checks do not establish Instagram reach or publishing success.
 
 Official references: [OpenAI web search](https://platform.openai.com/docs/guides/tools-web-search), [Meta publishing](https://developers.facebook.com/docs/instagram-platform/instagram-api-with-facebook-login/content-publishing), [Meta access tokens](https://developers.facebook.com/docs/facebook-login/guides/access-tokens).
