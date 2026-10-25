@@ -2,7 +2,19 @@
 
 A private editorial inbox for educational Instagram content about private equity's impact on customers, workers and competition. Five researched drafts per day, automatic JPEG graphics, editable captions, source links and explicit approval before publication. Defaults to **9 p.m. America/New_York** (Eastern local time, including daylight saving time).
 
-**Current editorial direction:** named, documented cases; no editorial opinion or moral labels. Read the [factual standard and source requirements](pilot/research/FACTUAL-STANDARD.md), [research queue](pilot/research/case-queue.json), and [audio plan/cost estimate](pilot/AUDIO-PLAN.md). The original weekly opinion/concept drafts and their ZIPs are archived prototypes, not the current publication plan. There are no verified case-specific posts yet: primary-source access remains blocked pending the saved network-settings update.
+**Current editorial direction:** named, documented cases; no editorial opinion or moral labels. Read the [factual standard and source requirements](pilot/research/FACTUAL-STANDARD.md), [research queue](pilot/research/case-queue.json), and [audio plan](pilot/AUDIO-PLAN.md). The original weekly opinion/concept drafts and ZIPs are archived prototypes, not the publication plan. FTC, GAO and SEC pages are now accessible; some medical-publisher/abstract requests still return access challenges.
+
+**First case for review:** [USAP case video with Heart](pilot/cases/usap/case-heart.mp4), [six-card preview](pilot/cases/usap/carousel-preview.jpg), [source notes](pilot/cases/usap/SOURCES.md), [caption](pilot/cases/usap/caption.txt), and [full review kit](pilot/cases/usap/review-kit.zip). It quotes an FTC complaint and reports the denial, dismissal, separate consent order and April 2026 preliminary agreement. The source snapshots and quote were checked against primary records; the case is **not approved, scheduled or published**. Coverage ends April 23, 2026; later docket events and final implementation were not independently verified. This is a dated case file, not a current-status news alert.
+
+Reproduce this case locally after the voice setup:
+
+```sh
+.venv/bin/python -m antipe case --file pilot/cases/usap/case.json --output .local/cases/usap-new-review
+```
+
+The renderer checks snapshot hashes, verbatim quoted wording, claim/source references and caption length before creating assets. These structural checks are not an automatic fact checker. A user must review and approve the final content before posting.
+
+**Account setup:** the user can access Instagram's profile editor and has uploaded the logo. Public-name editing, Creator conversion and the Facebook Page/Business Suite connection are covered in [the account guide](pilot/ACCOUNT-SETUP.md). A live connection or publication has not been verified.
 
 **Selected voice: Heart (`af_heart`).** [Watch the Heart-narrated cut](pilot/introduction-heart.mp4) or [download the Heart production kit](pilot/heart-production-kit.zip). Fixed frames, clean cuts and the established music mix are retained. Voice selection does not approve publication. The earlier [Sarah cut](pilot/introduction-fixed-neural.mp4) and [music-only comparison](pilot/music-only-fixed.mp4) remain available for reference. The user rejected the older Flite/zoom cut; old audio/video ZIPs remain archived and should not be treated as the latest version. The replacement uses local Kokoro neural narration and a newly arranged instrumental, with no paid speech service. See [model provenance and setup](pilot/VOICE-SOURCES.md). This is still an introduction/style preview, not a verified case report.
 

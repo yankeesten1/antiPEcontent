@@ -2,7 +2,7 @@
   "display_name": "PE Under Scrutiny",
   "handle": "PEUnderScrutiny",
   "handle_source": "user_confirmed",
-  "account_status": "appeal_pending_as_reported_2026-10-25",
+  "account_status": "user_reports_profile_access_restored_2026-10-25",
   "posting_time": "21:00",
   "timezone": "America/New_York",
   "workflow": "manual_pilot",
@@ -15,5 +15,9 @@
   "voice": "af_heart",
   "motion": "fixed_frames_clean_cuts",
   "music": "original_arrangement_v2",
-  "voice_selection_source": "user_confirmed"
+  "voice_selection_source": "user_confirmed",
+  "professional_account_status": "not_yet_confirmed",
+  "facebook_page_status": "not_connected_as_last_reported",
+  "public_brand_name_status": "change_requested_by_user_not_verified_applied",
+  "profile_image_status": "uploaded_in_user_screenshot"
 }

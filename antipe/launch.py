@@ -5,7 +5,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
-BIO = 'Private equity, examined. Customers. Workers. Competition. Evidence-led explainers. Opinion labeled. Corrections welcome.'
+BIO = 'Private equity, documented. Jobs. Communities. Competition. Named cases. Primary sources. Attributed quotes. Corrections welcome.'
 
 
 def add_launch_assets(output, batch):
@@ -30,9 +30,9 @@ def add_launch_assets(output, batch):
     (output / 'profile-copy.txt').write_text(
         f"WORKING DISPLAY NAME: {profile['display_name']}\n"
         f"HANDLE: @{profile['handle']} (confirmed by you; Instagram access is still pending).\n\n"
-        'BIO (121 characters):\n' + BIO + '\n\n'
+        f'BIO ({len(BIO)} characters):\n' + BIO + '\n\n'
         'AVATAR: profile-avatar-1080.png (square, designed for a circular crop)\n'
-        'POSITION: Critical, evidence-led commentary on private equity, centered on customers, workers and competition.\n'
+        'POSITION: Documentary case reporting on private equity, centered on jobs, communities and competition; no editorial opinions.\n'
         'CORRECTIONS: DM a source link with the post and claim you want us to check. Never send passwords, private customer records or confidential work documents.\n'
         'SCHEDULE TARGET: 9 p.m. America/New_York, after account restoration and final editorial approval.\n'
         'PROFILE STATUS: draft copy; nothing has been applied to Instagram. Appeal pending as reported on October 25, 2026; recheck the account before use.\n'

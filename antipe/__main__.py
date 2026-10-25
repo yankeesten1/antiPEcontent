@@ -33,7 +33,14 @@ def main():
     voice.add_argument('--directory')
     comparison = commands.add_parser('compare-voices', help='Export six same-script local voice auditions; no paid API calls')
     comparison.add_argument('--output', default='.local/pilot/voice-comparison')
+    case = commands.add_parser('case', help='Render a source-reviewed factual case with Heart narration')
+    case.add_argument('--file', required=True)
+    case.add_argument('--output', required=True)
     args = parser.parse_args()
+    if args.command == 'case':
+        from .cases import export_case
+        print(f'Created case review: {export_case(args.file, args.output)}')
+        return
     if args.command == 'compare-voices':
         from .voice_comparison import export_voice_comparison
         print(f'Created voice auditions: {export_voice_comparison(args.output)}')

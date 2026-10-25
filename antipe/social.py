@@ -3,6 +3,7 @@ import json
 import shutil
 import subprocess
 import tempfile
+import textwrap
 import zipfile
 from pathlib import Path
 
@@ -40,10 +41,28 @@ def draw_slide(slide, index, height=1350):
         draw.rounded_rectangle((x1, y1 + offset, x2, y2 + offset), radius=radius, fill=fill, outline=outline, width=width)
 
     text(64, 58, 'PE / UNDER SCRUTINY', 30)
-    text(899, 58, f'{index:02d}/05', 25)
+    total = slide.get('total', 5)
+    text(899, 58, f'{index:02d}/{total:02d}', 25)
     draw.line((64, 125 + offset, 1016, 125 + offset), fill=ink, width=2)
     layout = slide['layout']
-    if layout == 'hook':
+    if layout == 'case':
+        text(64, 169, slide['eyebrow'], 27)
+        for row, line in enumerate(slide['headline']):
+            text(64, 270 + row * 128, line, 112)
+        lines = []
+        for paragraph in slide['body'].splitlines():
+            lines.extend(textwrap.wrap(paragraph, width=43) or [''])
+        if len(lines) > 5:
+            raise ValueError('Case-slide copy must fit five body lines; shorten the text')
+        for row, line in enumerate(lines):
+            text(64, 710 + row * 55, line, 37, ink, False)
+        text(64, 1008, slide['qualifier'], 27)
+        panel = PALETTE['cream'] if dark else PALETTE['ink']
+        panel_text = PALETTE['ink'] if dark else PALETTE['cream']
+        box((64, 1080, 1016, 1190), panel, radius=6)
+        for row, line in enumerate(slide['source_label'].splitlines()):
+            text(84, 1099 + row * 37, line, 25, panel_text)
+    elif layout == 'hook':
         text(64, 180, slide['headline'][0], 125)
         text(64, 325, slide['headline'][1], 125)
         text(64, 455, slide['headline'][2], 194)
@@ -95,7 +114,7 @@ def draw_slide(slide, index, height=1350):
     else:
         raise ValueError('Unknown social slide layout')
     text(64, 1250, '@PEUnderScrutiny', 29)
-    text(790, 1250, 'SWIPE >' if height == 1350 and index < 5 else 'FOLLOW >', 27)
+    text(790, 1250, 'SWIPE >' if height == 1350 and index < total else 'FOLLOW >', 27)
     return image
 
 
