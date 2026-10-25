@@ -6,6 +6,7 @@ from .store import Store
 from .web import serve
 from .pilot import export_pilot, DEFAULT_BATCH
 from .social import export_social
+from .voice import DEFAULT_VOICE
 
 
 def main():
@@ -26,7 +27,7 @@ def main():
     social.add_argument('--output', default='.local/pilot/introduction-v2')
     social.add_argument('--video', action='store_true', help='Also render a 20-second reel; requires FFmpeg')
     social.add_argument('--audio-preview', action='store_true', help='Add local neural narration and original music; requires optional voice setup and FFmpeg')
-    social.add_argument('--voice', default='af_sarah', help='Local stock voice key, e.g. af_heart, af_bella, am_michael or bm_george')
+    social.add_argument('--voice', default=DEFAULT_VOICE, help='Local stock voice key; default is the user-selected af_heart')
     social.add_argument('--voice-speed', type=float, default=1.0, help='Narration speed, 0.8–1.2')
     voice = commands.add_parser('prepare-voice', help='Download and checksum-verify the optional local neural voice model')
     voice.add_argument('--directory')

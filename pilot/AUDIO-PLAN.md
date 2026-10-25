@@ -1,6 +1,6 @@
 # Music and natural narration
 
-Final narration preference: **natural AI narrator**, user-confirmed. The rejected Flite/zoom prototype is superseded by a **local Kokoro neural narrator**, fixed frames and a new arranged soundtrack. No paid narration service is connected or authorized for spending. The replacement has no per-minute speech API charge; see [VOICE-SOURCES.md](VOICE-SOURCES.md) for exact model sources, published checksums and setup. The naturalness of the voice and musical mix still need your review.
+Selected narrator: **Heart (af_heart)**, confirmed by the user. The video uses local Kokoro neural narration, fixed frames and the arranged soundtrack. No paid narration service is connected or authorized for spending. There is no per-minute speech API charge; see [VOICE-SOURCES.md](VOICE-SOURCES.md) for model sources, published checksums and setup. Selecting the voice does not approve the final video for publication.
 
 ## Planning estimate — not a verified live quote
 
@@ -19,7 +19,7 @@ Generate the final voice only after the script is approved. Do not pay to narrat
 
 ## What the replacement preview contains
 
-- Local Kokoro neural narration using its stock af_sarah voice. No cloning or paid API.
+- Local Kokoro neural narration using its user-selected af_heart voice. No cloning or paid API.
 - A newly arranged instrumental with midrange melody, harmony, bass and percussion; no sampled recordings or borrowed song.
 - Normalized music, gentler ducking under narration, voice normalization and peak limiting. A music-only comparison video is included.
 - Stationary frames with clean cuts, no zoom or camera drift.

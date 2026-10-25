@@ -6,11 +6,11 @@ import zipfile
 from html import escape
 from pathlib import Path
 
-from .voice import NeuralVoice
+from .voice import NeuralVoice, DEFAULT_VOICE
 
 SCRIPT = 'Private equity. Who owns the business, and what changed after the deal? We trace jobs, prices, and service quality using named records, exact quotations, and verified dates.'
 VOICES = [
-    ('af_sarah', 'Sarah', 'American female — current voice'),
+    ('af_sarah', 'Sarah', 'American female'),
     ('af_heart', 'Heart', 'American female'),
     ('af_bella', 'Bella', 'American female'),
     ('am_michael', 'Michael', 'American male'),
@@ -48,7 +48,8 @@ def export_voice_comparison(output):
         subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-f', 'concat', '-safe', '1', '-i', str(manifest), '-c:a', 'libmp3lame', '-b:a', '128k', str(output / 'all-six-voices.mp3')], check=True, capture_output=True)
     (output / 'script.txt').write_text(SCRIPT + '\n')
     (output / 'voices.json').write_text(json.dumps(rows, indent=2) + '\n')
-    markdown = ['# Six free local voice auditions', '', 'Same script, speed 1.0 and loudness target. Spoken sample numbers identify the voices. No music is included so the voice comparison is clear. No paid API or new model download is needed. These are stock synthetic voices, not recordings of real witnesses. The current video uses Sarah; no replacement is selected until you choose.', '', '[Listen to all six](all-six-voices.mp3)', '', '| Sample | Voice | Accent / type | Start in combined audio |', '| --- | --- | --- | --- |']
+    selected = next(name for key, name, _ in VOICES if key == DEFAULT_VOICE)
+    markdown = ['# Six free local voice auditions', '', f'Same script, speed 1.0 and loudness target. Spoken sample numbers identify the voices. No music is included so the voice comparison is clear. No paid API or new model download is needed. These are stock synthetic voices, not recordings of real witnesses. The selected voice is {selected}; auditioning does not change that selection.', '', '[Listen to all six](all-six-voices.mp3)', '', '| Sample | Voice | Accent / type | Start in combined audio |', '| --- | --- | --- | --- |']
     cards = []
     for row in rows:
         seconds = int(row['start_seconds'])
@@ -57,7 +58,7 @@ def export_voice_comparison(output):
         cards.append(f"<article><h2>{row['sample']}. {escape(row['name'])}</h2><p>{escape(row['description'])}</p><audio controls preload='none' src='{escape(row['file'])}'></audio><p><a href='{escape(row['file'])}' download>Download sample</a></p></article>")
     markdown += ['', 'Try Heart and Bella first for alternatives to Sarah; compare Michael and George if you prefer a male narrator. This is a shortlist, not a claim that every listener will prefer them.', '', 'After choosing, reproduce a video with:', '', '```sh', '.venv/bin/python -m antipe social --audio-preview --voice af_heart --voice-speed 1.0 --output .local/pilot/chosen-voice-new', '```', '', 'Change af_heart to the chosen key in voices.json. Voice speed supports 0.8–1.2; audition at 1.0 first. British voices use British-English phonemization. Local compute/storage still consume resources, but this implementation has no per-minute speech API bill.']
     (output / 'README.md').write_text('\n'.join(markdown) + '\n')
-    (output / 'listen.html').write_text("<!doctype html><html lang='en'><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>PE Under Scrutiny — voice auditions</title><style>body{max-width:900px;margin:40px auto;padding:0 20px;background:#f5f0e6;color:#24332a;font:17px/1.6 system-ui}h1{font-family:Georgia,serif;font-size:42px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}article{padding:22px;background:white;border:1px solid #d8ddd2;border-radius:8px}audio{width:100%}a{color:#a33025}</style><h1>Choose your narrator.</h1><p>Six stock local neural voices. Same script and speed; no music. Sarah is the current voice. Nothing changes until you choose.</p><p>Unzip this folder before opening the page. These players make no external requests.</p><p><audio controls preload='none' src='all-six-voices.mp3'></audio></p><div class='grid'>" + ''.join(cards) + '</div></html>')
+    (output / 'listen.html').write_text("<!doctype html><html lang='en'><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>PE Under Scrutiny — voice auditions</title><style>body{max-width:900px;margin:40px auto;padding:0 20px;background:#f5f0e6;color:#24332a;font:17px/1.6 system-ui}h1{font-family:Georgia,serif;font-size:42px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}article{padding:22px;background:white;border:1px solid #d8ddd2;border-radius:8px}audio{width:100%}a{color:#a33025}</style><h1>Choose your narrator.</h1><p>Six stock local neural voices. Same script and speed; no music. Heart is the selected account voice. Auditioning does not change your choice.</p><p>Unzip this folder before opening the page. These players make no external requests.</p><p><audio controls preload='none' src='all-six-voices.mp3'></audio></p><div class='grid'>" + ''.join(cards) + '</div></html>')
     with zipfile.ZipFile(archive, 'x', compression=zipfile.ZIP_DEFLATED) as bundle:
         for file in sorted(output.iterdir()):
             bundle.write(file, arcname=output.name + '/' + file.name)

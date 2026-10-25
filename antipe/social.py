@@ -7,6 +7,7 @@ import zipfile
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
+from .voice import DEFAULT_VOICE
 
 PALETTE = {'yellow': '#eeff58', 'ink': '#151a17', 'cream': '#f5f0e6', 'coral': '#ff674c', 'mint': '#a7f1ce'}
 SOURCE = Path(__file__).resolve().parent.parent / 'pilot' / 'introduction-v2.json'
@@ -98,7 +99,7 @@ def draw_slide(slide, index, height=1350):
     return image
 
 
-def export_social(output, video=False, audio_preview=False, voice='af_sarah', voice_speed=1.0):
+def export_social(output, video=False, audio_preview=False, voice=DEFAULT_VOICE, voice_speed=1.0):
     output = Path(output)
     archive = output.with_suffix('.zip')
     if output.exists() or archive.exists():
@@ -145,7 +146,7 @@ First-frame hook: “Your town. Their exit plan?” The five-card story asks who
     return archive
 
 
-def make_video(output, slides, narration=None, voice='af_sarah', voice_speed=1.0):
+def make_video(output, slides, narration=None, voice=DEFAULT_VOICE, voice_speed=1.0):
     # Five 4-second segments. Limit encoders to two threads so rendering does not
     # overwhelm a small development machine. Intermediate files are temporary.
     with tempfile.TemporaryDirectory(prefix='antipe-reel-') as temporary:

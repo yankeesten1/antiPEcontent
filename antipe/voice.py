@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 
 RELEASE = 'https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/'
+DEFAULT_VOICE = 'af_heart'
 # Digests published by GitHub on the upstream release's expanded asset list.
 MODELS = {
     'kokoro-v1.0.int8.onnx': 'ae315a79b623f244700e4afb9246c46a26066782e049ba174bf3ba433970ee9c',
@@ -47,7 +48,7 @@ def prepare_voice(directory=None):
 
 
 class NeuralVoice:
-    def __init__(self, directory=None, voice='af_sarah', speed=1.0):
+    def __init__(self, directory=None, voice=DEFAULT_VOICE, speed=1.0):
         if not .8 <= speed <= 1.2:
             raise ValueError('Narration speed must be between 0.8 and 1.2')
         directory = Path(directory) if directory else model_directory()

@@ -8,11 +8,12 @@
   "workflow": "manual_pilot",
   "instagram_connected": false,
   "editorial_mode": "documented_cases_no_editorial_opinion",
-  "narration_preference": "local_neural_under_user_review",
+  "narration_preference": "local_neural_heart_user_selected",
   "paid_voice_connected": false,
   "paid_voice_spend_authorized": false,
   "voice_engine": "kokoro-onnx",
-  "voice": "af_sarah",
+  "voice": "af_heart",
   "motion": "fixed_frames_clean_cuts",
-  "music": "original_arrangement_v2"
+  "music": "original_arrangement_v2",
+  "voice_selection_source": "user_confirmed"
 }

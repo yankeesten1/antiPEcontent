@@ -1,5 +1,7 @@
 # Six free local voice auditions
 
+**Selection update:** the user chose **Heart (`af_heart`)**. New videos default to Heart; Sarah was the voice before this audition. The samples below remain the original comparison recordings.
+
 Same script, speed 1.0 and loudness target. Spoken sample numbers identify the voices. No music is included so the voice comparison is clear. No paid API or new model download is needed. These are stock synthetic voices, not recordings of real witnesses. The current video uses Sarah; no replacement is selected until you choose.
 
 [Listen to all six](all-six-voices.mp3)

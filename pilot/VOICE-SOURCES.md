@@ -8,8 +8,8 @@ The replacement narrator runs Kokoro locally through kokoro-onnx. It does not ca
 - Digest source: https://github.com/thewh1teagle/kokoro-onnx/releases/expanded_assets/model-files-v1.1
 - Quantized English model: kokoro-v1.0.int8.onnx, SHA-256 `ae315a79b623f244700e4afb9246c46a26066782e049ba174bf3ba433970ee9c`.
 - Voice data: voices-v1.0.bin, SHA-256 `bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d`.
-- Voice used in the new preview: af_sarah, standard voice supplied with the model.
-- Additional stock voices already included in the same model: af_heart, af_bella, am_michael, bf_emma and bm_george. See voice-comparison/README.md for same-script samples. These require no additional model download or paid API. Sarah remains selected until the user chooses a replacement.
+- Selected voice: af_heart (Heart), confirmed by the user. The earlier cut used af_sarah.
+- Additional stock voices already included in the same model: af_heart, af_bella, am_michael, bf_emma and bm_george. See voice-comparison/README.md for same-script samples. These require no additional model download or paid API. Heart is now the default; voice auditions do not change the selected voice.
 - Upstream lists kokoro-onnx under MIT and the model under Apache 2.0. Model binaries are cached locally and not committed or bundled in the launch ZIP.
 
 Downloads use ordinary verified HTTPS and must match the upstream-published digests before loading. Existing model files with a bad checksum are rejected. No trust checks are disabled. The cache is under `.local/voice`, excluded from Git; `ANTIPE_VOICE_DIR` can select another cache directory.
