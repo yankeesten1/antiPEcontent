@@ -1,0 +1,268 @@
+{
+  "id": "usap-case-03-consumer",
+  "title": "The FTC alleged tens of millions in extra anesthesia costs",
+  "source_review": "checked_against_primary_records_by_assistant",
+  "approval": "pending_user_review",
+  "coverage": "September 2023 complaint through April 23, 2026 published update; documents retrieved October 25, 2026. Not a claim of verified current docket status.",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "FTC federal complaint, paragraphs 3, 160, 163–164",
+      "date": "2023-09-21",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/2010031usapcomplaintpublic.pdf",
+      "snapshot": "S1.txt",
+      "snapshot_sha256": "c0392b50760f793361b75c97552fbab1d0a066553ba26808f2dce69906d3e818",
+      "raw_sha256": "75f224ec419f2d92b5a8ff51f8ce681c343c8cb78ff59cf37fe5538f1cd56cd5",
+      "retrieved_at": "2026-10-25T08:42:45.887778+00:00",
+      "caption_reference": true
+    },
+    {
+      "id": "S2",
+      "title": "May 13, 2024 district-court order, reproduced in appendix to FTC appellate filing",
+      "date": "2024-05-13 (appendix filed 2024-07-19)",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/usap_-_ftc_mtd_appeal_ca5.pdf",
+      "snapshot": "S2.txt",
+      "snapshot_sha256": "cbd98885e04d15962f4339995d1c0e1d4b219392c8e79dd50ba45fd47cea7c2e",
+      "raw_sha256": "4cead32873e9bfdc32e67afd9dd16bd10230567f1d624ae45b83acba6175b03c",
+      "retrieved_at": "2026-10-25T08:42:45.888991+00:00",
+      "caption_reference": true
+    },
+    {
+      "id": "S3",
+      "title": "FTC approves final order with Welsh Carson",
+      "date": "2025-05-20",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2025/05/ftc-approves-final-order-welsh-carson",
+      "snapshot": "S3.txt",
+      "snapshot_sha256": "29296b7dfe499bb11f8c3fef738bf01508a0ecb3cf35bb8a430c1f0ed145959e",
+      "raw_sha256": "b4aa2da551f390c4992754610165a48094a39afe2592d46e21794bb9e30d8ca8",
+      "retrieved_at": "2026-10-25T08:42:45.905502+00:00",
+      "caption_reference": true
+    },
+    {
+      "id": "S4",
+      "title": "FTC and USAP joint motion to stay litigation, Document 336",
+      "date": "2026-04-23",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/USAP-JointMotiontoStayLitigation.pdf",
+      "snapshot": "S4.txt",
+      "snapshot_sha256": "f68feadf39e70244c619cc787cac62f1328b40505537ee5ac04e8bb21647de94",
+      "raw_sha256": "266ed0740c4438b36402eb6b6e8fc8ad7a063ec09d6fcb6001c1607dbe15c85e",
+      "retrieved_at": "2026-10-25T08:42:45.906365+00:00",
+      "caption_reference": true
+    },
+    {
+      "id": "S5",
+      "title": "FTC preliminary agreement announcement concerning USAP",
+      "date": "2026-04-23",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-charts-path-restore-competition-texas-anesthesia-markets-usap-litigation",
+      "snapshot": "S5.txt",
+      "snapshot_sha256": "4948299be103e90d8d2135674951785e482d9351669dfd67c3ad393c6c451d9c",
+      "raw_sha256": "75a0abdcc1eaa82edb2754bd42b7e7ed629ac269c275484cd386b999f419d360",
+      "retrieved_at": "2026-10-25T08:42:45.924094+00:00",
+      "caption_reference": true
+    },
+    {
+      "id": "S6",
+      "title": "FTC case index, last updated April 23, 2026",
+      "date": "last updated 2026-04-23; checked 2026-10-25",
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2010031-us-anesthesia-partners-inc-ftc-v",
+      "snapshot": "S6.txt",
+      "snapshot_sha256": "8300ce8a0b739de0288c490d18f90df67100bca297837ce6d436f2bf432ce4ac",
+      "raw_sha256": "3c52f860ec8752d03e26a75f4a4a78c72bd26c20039735c836827e725bd67c3d",
+      "retrieved_at": "2026-10-25T08:42:45.944245+00:00",
+      "caption_reference": false
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "kind": "quotation_as_reproduced_in_allegations",
+      "text": "The FTC complaint reproduces “Awesome! Cha-ching!” and attributes it to Capitol’s vice president of operations, who became a USAP executive, in the context of expected revenue from repricing Capitol.",
+      "source_ids": [
+        "S1"
+      ],
+      "locator": "Paragraph 164, printed page 49"
+    },
+    {
+      "id": "C2",
+      "kind": "agency_allegation_ownership_history",
+      "text": "The complaint states Welsh Carson created USAP in 2012.",
+      "source_ids": [
+        "S1"
+      ],
+      "locator": "Paragraph 3, printed page 2"
+    },
+    {
+      "id": "C3",
+      "kind": "agency_allegation",
+      "text": "The complaint identifies USAP’s acquisition of Capitol in February 2018 and alleges higher reimbursement rates for the same providers after acquisition; numerical rates and percentage changes are redacted.",
+      "source_ids": [
+        "S1"
+      ],
+      "locator": "Paragraphs 160 and 163–164, printed pages 48–49"
+    },
+    {
+      "id": "C4",
+      "kind": "judicial_procedural_order",
+      "text": "The district court granted Welsh Carson’s dismissal motion and denied USAP’s dismissal motion on May 13, 2024. This was not a final merits finding against USAP.",
+      "source_ids": [
+        "S2"
+      ],
+      "locator": "Appended district-court order, Conclusion VI, printed page 23 (PDF page 62)"
+    },
+    {
+      "id": "C5",
+      "kind": "agency_final_consent_order",
+      "text": "In May 2025 the FTC finalized a separate consent order requiring Welsh Carson to limit its involvement with USAP and notify specified future investments/acquisitions.",
+      "source_ids": [
+        "S3"
+      ],
+      "locator": "Opening paragraphs of final-order announcement"
+    },
+    {
+      "id": "C6",
+      "kind": "party_denial",
+      "text": "The April 23, 2026 joint motion records that USAP denied the allegations.",
+      "source_ids": [
+        "S4"
+      ],
+      "locator": "Paragraph 1, page 1"
+    },
+    {
+      "id": "C7",
+      "kind": "preliminary_agreement",
+      "text": "The FTC announced an agreement in principle with USAP on April 23, 2026; terms were confidential in that announcement. The joint motion states a binding term sheet existed and seeks time for implementation.",
+      "source_ids": [
+        "S4",
+        "S5"
+      ],
+      "locator": "Joint motion paragraphs 3–5; announcement opening and third paragraphs"
+    },
+    {
+      "id": "C8",
+      "kind": "scope_limitation",
+      "text": "This review covers published records through April 23, 2026. The agency case index checked October 25, 2026 still lists Pending and was last updated April 23; later docket events and final implementation were not independently verified.",
+      "source_ids": [
+        "S5",
+        "S6"
+      ],
+      "locator": "FTC case-index status and last-updated fields; April 2026 announcement"
+    },
+    {
+      "id": "C9",
+      "kind": "agency_allegation",
+      "text": "The FTC alleged that USAP’s roll-up, price-setting and market-allocation strategy caused anesthesia services from the same anesthesiologists to cost Texans tens of millions more each year than before USAP was created. This is a statewide allegation, not a quantified estimate for the Capitol transaction alone.",
+      "source_ids": [
+        "S1",
+        "S5"
+      ],
+      "locator": "Complaint paragraph 8, printed pages 4–5; April 2026 FTC announcement, second paragraph"
+    },
+    {
+      "id": "C10",
+      "kind": "agency_complaint_market_description",
+      "text": "The FTC complaint says patients rarely choose their anesthesia providers; their surgeon or operating-room assignment may determine the provider.",
+      "source_ids": [
+        "S1"
+      ],
+      "locator": "Paragraph 46, printed page 19"
+    },
+    {
+      "id": "C11",
+      "kind": "agency_complaint_financing_description",
+      "text": "The FTC complaint describes fully insured and administrative-services-only coverage and states that members ultimately finance these through premiums. It says patients and employers bear the brunt of higher prices in Texas; no specific premium increase is established here.",
+      "source_ids": [
+        "S1"
+      ],
+      "locator": "Paragraphs 65–66, printed page 23"
+    }
+  ],
+  "quotes": [
+    {
+      "exact_text": "patients rarely choose their anesthesia providers.",
+      "source_id": "S1",
+      "locator": "Paragraph 46, printed page 19",
+      "attribution": "FTC complaint’s description of the anesthesia market, not a patient interview or court finding."
+    }
+  ],
+  "slides": [
+    {
+      "background": "yellow",
+      "eyebrow": "TEXAS ANESTHESIA / FTC ALLEGATION",
+      "headline": [
+        "TENS OF MILLIONS.",
+        "MORE EACH YEAR."
+      ],
+      "body": "Extra anesthesia costs for Texans, the FTC alleged.",
+      "qualifier": "Not a court finding of liability.",
+      "source_label": "FTC complaint · paragraph 8",
+      "claim_ids": [
+        "C9"
+      ],
+      "narration": "The Federal Trade Commission alleged Texans faced tens of millions in extra anesthesia costs each year."
+    },
+    {
+      "background": "ink",
+      "eyebrow": "THE PRIVATE EQUITY LINK",
+      "headline": [
+        "BUYING UP",
+        "THE COMPETITION."
+      ],
+      "body": "The FTC alleged a consolidation strategy by U.S. Anesthesia Partners.",
+      "qualifier": "Welsh Carson created the business, the FTC says.",
+      "source_label": "FTC complaint · paragraphs 3 and 8",
+      "claim_ids": [
+        "C2",
+        "C9"
+      ],
+      "narration": "It linked those costs to a consolidation strategy by U.S. Anesthesia Partners, created by private equity firm Welsh Carson."
+    },
+    {
+      "background": "coral",
+      "eyebrow": "WHY PATIENTS SHOULD CARE",
+      "headline": [
+        "YOU RARELY",
+        "PICK THE PROVIDER."
+      ],
+      "body": "The FTC says “patients rarely choose their anesthesia providers.”",
+      "qualifier": "Members help fund coverage through premiums.",
+      "source_label": "FTC complaint · paragraphs 46 and 65–66",
+      "claim_ids": [
+        "C10",
+        "C11"
+      ],
+      "narration": "The complaint says patients rarely choose their anesthesia provider, and members help fund coverage through premiums."
+    },
+    {
+      "background": "mint",
+      "eyebrow": "THE COMPANY’S RESPONSE",
+      "headline": [
+        "THE COMPANY",
+        "DENIED IT."
+      ],
+      "body": "U.S. Anesthesia Partners denied the allegations.",
+      "qualifier": "Historical case file. Legal timeline in caption.",
+      "source_label": "Company denial recorded in joint court filing",
+      "claim_ids": [
+        "C6",
+        "C8"
+      ],
+      "narration": "U.S. Anesthesia Partners denied the allegations."
+    }
+  ],
+  "caption": "The FTC alleged Texans faced tens of millions in extra anesthesia costs each year.\n\nIts complaint tied those alleged costs to U.S. Anesthesia Partners’ consolidation and other challenged conduct across Texas—not just one acquisition. The complaint says private-equity firm Welsh Carson created the business in 2012. These are allegations, not findings of liability.\n\nWhy it matters for consumers: the complaint says “patients rarely choose their anesthesia providers” (¶46). It also describes how members help fund coverage through premiums (¶65). This does not establish a specific increase in anyone’s premium or every patient’s bill.\n\nUSAP denied the allegations. Welsh Carson was dismissed from the federal case in May 2024; USAP’s dismissal motion was denied, without a finding of liability. A separate May 2025 FTC consent order limited Welsh Carson’s USAP involvement. In April 2026, the FTC announced an agreement in principle with USAP.\n\nHistorical review through April 23, 2026. Later docket events and final implementation have not been independently verified.\n\n#PrivateEquity #Healthcare #Competition",
+  "limitations": [
+    "The allegations and the reproduced quotation are statements in the FTC pleading, not adjudicated factual findings or an independently authenticated original email.",
+    "USAP’s denial, Welsh Carson’s federal dismissal and the separate 2025 FTC consent order must remain in the story.",
+    "The April 2026 USAP agreement was preliminary and conditional. Do not describe the settlement as fully implemented.",
+    "The document linked by the FTC index as an order granting a stay is an unsigned proposed order in the reviewed PDF. This draft does not claim a judge signed or granted that proposed order.",
+    "The agency index was checked October 25, 2026 but last updated April 23. Later docket events have not been independently verified; this is explicitly a historical case file.",
+    "No claims of patient deaths, layoffs, specific price percentages or redacted dollar figures are made.",
+    "This does not establish that all private-equity ownership produces the same outcomes. The case draft and final assets still require user approval before publication."
+  ],
+  "editorial_notes": [
+    "Lead with attributed consumer impact from the complaint, not research process.",
+    "No spoken source dates, source-reading instructions or source-checking outro. Keep detailed records and legal chronology in caption.",
+    "Brief on-screen source attribution and allegation label; audible attribution and company denial.",
+    "Statewide extra-cost allegation must not be presented as the cost of the Capitol acquisition alone. No specific premium increase inferred."
+  ]
+}

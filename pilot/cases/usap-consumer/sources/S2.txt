@@ -1,0 +1,2744 @@
+     Case: 24-20270   Document: 23        Page: 1   Date Filed: 07/19/2024
+
+
+
+
+                          No. 24-20270
+
+        IN THE UNITED STATES COURT OF APPEALS
+                   FOR THE FIFTH CIRCUIT
+          –––––––––––––––––––––––––––––––––––––––––––––
+                FEDERAL TRADE COMMISSION,
+                            Plaintiff – Appellee,
+                                     v.
+        U.S. ANESTHESIA PARTNERS, INCORPORATED,
+                                 Defendant – Appellant.
+          –––––––––––––––––––––––––––––––––––––––––––––
+             On Appeal from the United States District Court
+                   for the Southern District of Texas
+                           No. 4:23-CV-03560
+                         Hon. Kenneth M. Hoyt
+        –––––––––––––––––––––––––––––––––––––––––––––
+      MOTION OF THE FEDERAL TRADE COMMISSION
+         TO DISMISS INTERLOCUTORY APPEAL
+        FOR LACK OF APPELLATE JURISDICTION
+        –––––––––––––––––––––––––––––––––––––––––––––
+
+
+
+HENRY LIU                                 ANISHA S. DASGUPTA
+  Director, Bureau of Competition           General Counsel
+BRADLEY S. ALBERT                         MATTHEW M. HOFFMAN
+  Acting Assistant Director               IMAD D. ABYAD
+DANIEL W. BUTRYMOWICZ                        Attorneys
+TIMOTHY KAMAL-GRAYSON                     FEDERAL TRADE COMMISSION
+DYLAN HERTS                               600 Pennsylvania Avenue, N.W.
+PATRICK KENNEDY                           Washington, DC 20580
+   Attorneys                              (202) 326-3579
+FEDERAL TRADE COMMISSION                  iabyad@ftc.gov
+Washington, DC 20580
+       Case: 24-20270   Document: 23       Page: 2   Date Filed: 07/19/2024
+
+
+
+
+           CERTIFICATE OF INTERESTED PERSONS
+
+     A Certificate of Interested Persons is not required, as appellee is a
+
+government agency. 5th Cir. R. 28.2.1.
+
+
+
+
+                                       i
+          Case: 24-20270           Document: 23            Page: 3     Date Filed: 07/19/2024
+
+
+
+
+                                   TABLE OF CONTENTS
+
+Certificate of Interested Persons ................................................................i
+
+Table of Authorities ................................................................................... iv
+
+Introduction ................................................................................................ 1
+
+Background ................................................................................................. 3
+
+A. The FTC’s Enforcement Authority ...................................................... 3
+
+B. The FTC’s Allegations .......................................................................... 5
+
+C. USAP’s Motion to Dismiss and the District Court’s
+   Rulings.................................................................................................. 7
+
+Legal Standards.......................................................................................... 9
+
+Argument .................................................................................................. 11
+
+I.   The District Court Ruling That the FTC Can Bring This
+     Action Without First Initiating Administrative
+     Proceedings Is Not Collaterally Reviewable..................................... 12
+
+      A. The Ruling Is Effectively Reviewable on Appeal from
+         Final Judgment........................................................................... 12
+
+      B. Whether Section 13(b) Authorizes a Standalone
+         Court Action for a Permanent Injunction Is Not a
+         “Serious and Unsettled” Question of Law. ................................ 16
+
+II. The District Court Ruling on USAP’s Constitutional
+    Argument Is Not Collaterally Reviewable. ....................................... 18
+
+      A. The Constitutional Ruling Is Effectively Reviewable
+         on Appeal from Final Judgment. ............................................... 18
+
+      B. The Constitutional Ruling Does Not Raise Serious
+         and Unsettled Questions of Law................................................ 23
+
+Conclusion................................................................................................. 26
+
+
+                                                      ii
+       Case: 24-20270    Document: 23         Page: 4   Date Filed: 07/19/2024
+
+
+
+
+Certificate of Service
+
+Certificate of Compliance
+
+Certificate of Conference
+
+Exhibit A
+
+
+
+
+                                        iii
+          Case: 24-20270         Document: 23          Page: 5    Date Filed: 07/19/2024
+
+
+
+
+                              TABLE OF AUTHORITIES
+
+CASES                                                                                          PAGE
+
+AMG Cap. Mgmt., LLC v. FTC,
+  593 U.S. 67 (2021) ............................................................................ 5, 17
+
+Axon Enter., Inc. v. FTC,
+  598 U.S. 175 (2023) ........................................................................ 21, 22
+
+Cohen v. Beneficial Indus. Loan Corp.,
+  337 U.S. 541 (1949) .......................................................................... 9, 10
+
+Collins v. Yellen,
+  594 U.S. 220 (2021) ........................................................................ 20, 23
+
+Cmty. Fin. Servs. Ass’n of Am., Ltd. v. Consumer
+  Fin. Prot. Bureau, 51 F.4th 616 (5th Cir. 2022) ........................... 20, 21
+
+Consumers’ Research v. Consumer Prod. Safety Comm’n,
+  91 F.4th 342 (5th Cir. 2024) ................................................ 8, 23, 24, 25
+
+Digital Equip. Corp. v. Desktop Direct, Inc.,
+  511 U.S. 863 (1994) ............................................................ 11, 12, 13, 14
+
+Flanagan v. United States,
+   465 U.S. 259 (1984) .............................................................................. 19
+
+FTC v. Am. Nat’l Cellular, Inc.,
+  810 F.2d 1511 (9th Cir. 1987) .............................................................. 26
+
+FTC v. Cement Inst.,
+  333 U.S. 683 (1948) ................................................................................ 4
+
+FTC v. H. N. Singer, Inc.,
+  668 F.2d 1107 (9th Cir. 1982) .............................................................. 18
+
+
+
+
+                                                  iv
+          Case: 24-20270         Document: 23         Page: 6     Date Filed: 07/19/2024
+
+
+
+
+CASES (CONT’D)                                                                                PAGE
+
+FTC v. Kochava Inc.,
+  671 F.Supp.3d 1161 (D. Idaho 2023) ................................................... 26
+
+FTC v. Syngenta Crop Protection AG,
+  No. 22-828, 2024 WL 149552 (M.D.N.C. Jan. 12, 2024) .................... 26
+
+FTC v. U.S. Oil & Gas Corp.,
+  748 F.2d 1431 (11th Cir. 1984) ............................................................ 18
+
+FTC v. Walmart Inc.,
+  664 F.Supp.3d 808 (N.D. Ill. 2023) ...................................................... 26
+
+Gulfstream Aerospace Corp. v. Mayacamas Corp.,
+  485 U.S. 271 (1988) .............................................................................. 11
+
+Henry v. Lake Charles Am. Press LLC,
+  566 F.3d 164 (5th Cir. 2009) ................................................................ 14
+
+Humphrey’s Executor v. United States,
+  295 U.S. 602 (1935) .......................................................................... 3, 23
+
+Illumina, Inc. v. FTC,
+   88 F.4th 1036 (5th Cir. 2023) ................................................ 3, 8, 23, 24
+
+In re Deepwater Horizon,
+   793 F.3d 479 (5th Cir. 2015) .......................................................... 10, 16
+
+Lauro Lines S.R.L. v. Chasser,
+  490 U.S. 495 (1989) ............................................................ 10, 13, 14, 15
+
+Leonard v. Martin,
+  38 F.4th 481 (5th Cir. 2022) ................................................ 9, 10, 12, 16
+
+
+
+
+                                                  v
+          Case: 24-20270         Document: 23          Page: 7    Date Filed: 07/19/2024
+
+
+
+
+CASES (CONT’D)                                                                                 PAGE
+
+Matter of Greene Cnty. Hosp.,
+  835 F.2d 589 (5th Cir. 1988) ................................................................ 15
+
+McClanahan v. Wilson,
+  852 Fed. App’x 145 (5th Cir. 2021)...................................................... 15
+
+Midland Asphalt Corp. v. United States,
+  489 U.S. 794 (1989) ........................................................................ 14, 19
+
+Mohawk Indus., Inc. v. Carpenter,
+  558 U.S. 100 (2009) .............................................................................. 11
+
+Nixon v. Fitzgerald,
+  457 U.S. 731 (1982) ........................................................................ 10, 16
+
+Poirrier v. Nicklos Drilling Co.,
+  648 F.2d 1063 (5th Cir. 1981) .............................................................. 16
+
+Richardson-Merrell Inc. v. Koller,
+  472 U.S. 424 (1985) .............................................................................. 13
+
+Seila Law LLC v. CFPB,
+   591 U.S. 197 (2020) .............................................................................. 23
+
+United States v. JS & A Grp., Inc.,
+  716 F.2d 451 (7th Cir. 1983) ...................................................... 8, 17, 18
+
+United States v. Valencia,
+  940 F.3d 181 (5th Cir. 2019) .................................................... 19, 20, 21
+
+United States v. Wampler,
+  624 F.3d 1330 (10th Cir. 2010) ............................................................ 26
+
+Van Cauwenberghe v. Biard,
+  486 U.S. 517 (1988) .............................................................................. 16
+
+
+
+                                                  vi
+          Case: 24-20270            Document: 23             Page: 8      Date Filed: 07/19/2024
+
+
+
+
+CASES (CONT’D)                                                                                            PAGE
+
+Will v. Hallock,
+  546 U.S. 345 (2006) .................................................................. 10, 11, 13
+
+
+STATUTES, RULES, & REGULATIONS                                                                            PAGE
+
+15 U.S.C. § 1 ................................................................................................ 4
+               § 2................................................................................................ 4
+               § 18.............................................................................................. 4
+               § 21(a) ......................................................................................... 4
+               § 21(b) ......................................................................................... 4
+               § 21(c).......................................................................................... 4
+               § 41.............................................................................................. 3
+               § 45(a) ....................................................................................... 26
+               § 45(a)(2) ..................................................................................... 3
+               § 45(b) ......................................................................................... 4
+               § 45(c).......................................................................................... 4
+               § 53(b) ................................................................... 1, 5, 14, 17, 26
+
+28 U.S.C. § 1291 ...................................................................................... 1, 9
+               § 1292(b) ................................................................................... 16
+
+
+
+
+                                                       vii
+       Case: 24-20270   Document: 23       Page: 9   Date Filed: 07/19/2024
+
+
+
+
+                           INTRODUCTION
+
+     The Federal Trade Commission moves to dismiss this appeal for
+
+want of appellate jurisdiction. Appellant, U.S. Anesthesia Partners, Inc.
+
+(USAP), seeks to appeal an interlocutory decision of the district court
+
+denying its motion to dismiss the FTC’s complaint against it. Because
+
+neither of the rulings that USAP challenges falls within the narrow
+
+scope of the collateral order doctrine, this Court lacks jurisdiction under
+
+28 U.S.C. § 1291, and the appeal must be dismissed.
+
+     The FTC has sued USAP for injunctive relief under Section 13(b)
+
+of the Federal Trade Commission Act, 15 U.S.C. § 53(b), alleging that
+
+USAP violated the antitrust laws by acquiring at least fifteen
+
+competitors since 2012 and executing anticompetitive agreements with
+
+others. USAP moved to dismiss, arguing that Section 13(b) does not
+
+permit the FTC to seek a permanent injunction in court unless it first
+
+initiates an administrative proceeding to adjudicate the same claims. In
+
+a footnote, USAP also joined a co-defendant’s argument that Section
+
+13(b) is unconstitutional because the FTC Commissioners (who
+
+authorized the filing of suit) are not removable at will by the President.
+
+The district court rejected both arguments and denied USAP’s motion to
+
+
+                                       1
+      Case: 24-20270   Document: 23       Page: 10   Date Filed: 07/19/2024
+
+
+
+
+dismiss. USAP now seeks to raise the same arguments before this Court
+
+via an interlocutory appeal.
+
+     Neither of the challenged rulings meets the strict standards for
+
+application of the collateral order doctrine. That doctrine applies to a
+
+small class of rulings that (1) conclusively determine a disputed
+
+question, (2) resolve an important issue completely separate from the
+
+merits, and (3) are effectively unreviewable on appeal from final
+
+judgment. To meet these requirements, the ruling under review must
+
+present a serious and unsettled question of law, and involve an
+
+important right that would be irreparably lost if review had to await
+
+final judgment.
+
+     The issues that USAP raises are not effectively unreviewable on
+
+appeal from a final judgment. USAP cannot show that it will suffer any
+
+cognizable harm if its arguments are not reviewed immediately.
+
+Furthermore, neither of USAP’s claims on appeal presents a serious
+
+and unsettled question of law. To the contrary, USAP’s arguments have
+
+been soundly rejected by every court that has confronted them,
+
+including the Supreme Court and this Court. Because the collateral
+
+order doctrine does not apply, USAP’s appeal must be dismissed.
+
+
+                                      2
+      Case: 24-20270    Document: 23       Page: 11   Date Filed: 07/19/2024
+
+
+
+
+                            BACKGROUND
+
+A.   The FTC’s Enforcement Authority
+
+     The FTC is a bipartisan agency charged with enforcing the
+
+antitrust laws, among other responsibilities. It consists of five
+
+Commissioners appointed by the President and confirmed by the
+
+Senate, who serve staggered terms of seven years. 15 U.S.C. § 41. No
+
+more than three Commissioners may be members of the same party. Id.
+
+Commissioners may be removed by the President only for “inefficiency,
+
+neglect of duty, or malfeasance in office.” The Supreme Court held that
+
+this for-cause removal restriction is constitutional in Humphrey’s
+
+Executor v. United States, 295 U.S. 602 (1935), and this Court recently
+
+recognized that Humphrey’s Executor remains binding on the lower
+
+courts, notwithstanding the fact that Congress has granted the FTC
+
+additional powers since 1935. Illumina, Inc. v. FTC, 88 F.4th 1036,
+
+1046-47 (5th Cir. 2023).
+
+     As relevant here, Congress “empowered and directed” the FTC to
+
+“prevent” the use of “unfair methods of competition.” 15 U.S.C.
+
+§ 45(a)(2). Unfair methods of competition include, but are not limited to,
+
+any conduct that violates the Sherman Act, including agreements in
+
+restraints of trade and attempts or conspiracies to monopolize a market.
+                                       3
+       Case: 24-20270        Document: 23       Page: 12   Date Filed: 07/19/2024
+
+
+
+
+FTC v. Cement Inst., 333 U.S. 683, 694 (1948); see 15 U.S.C. §§ 1, 2.
+
+Congress also directed the FTC to enforce the Clayton Act, which
+
+prohibits acquisitions the effect of which “may be substantially to lessen
+
+competition, or to tend to create a monopoly.” 15 U.S.C. § 18; see also id.
+
+§ 21(a).
+
+      When Congress initially established the FTC in 1914, it directed
+
+the Commission to carry out its enforcement responsibilities through
+
+administrative adjudication. Specifically, Section 5 of the FTC Act
+
+authorizes the FTC to initiate an administrative proceeding whenever it
+
+has reason to believe that a person or company has been or is using an
+
+unfair method of competition. 15 U.S.C. § 45(b); see also id. § 21(b)
+
+(analogous Clayton Act procedure). Following a hearing, if the claims
+
+are proven, the Commission will issue an appropriate cease and desist
+
+order, which is then reviewable in the federal courts of appeals. Id.
+
+§§ 45(b), (c); 21(b), (c).
+
+      In 1973, Congress concluded that the FTC required additional
+
+enforcement powers and enacted Section 13(b) of the FTC Act, which
+
+authorizes the Commission to sue in federal district court for injunctive
+
+relief whenever it has reason to believe a defendant “is violating, or is
+
+
+                                            4
+      Case: 24-20270    Document: 23       Page: 13   Date Filed: 07/19/2024
+
+
+
+
+about to violate, any provision of law enforced by the [FTC].” 15 U.S.C.
+
+§ 53(b). Section 13(b) authorizes two kinds of injunctive relief actions.
+
+The bulk of the statute concerns actions for a preliminary injunction
+
+pending an administrative determination (e.g., to block a corporate
+
+merger while the Commission considers its legality). But a separate
+
+proviso states that the Commission also “may seek, and after proper
+
+proof, the court may issue, a permanent injunction.” Id. As the Supreme
+
+Court and every other court to consider the issue has recognized, this
+
+proviso authorizes the Commission to “dispense with administrative
+
+proceedings” and seek a standalone injunction in appropriate cases.
+
+AMG Cap. Mgmt., LLC v. FTC, 593 U.S. 67, 76-77 (2021); see also id. at
+
+78 (“[T]he Commission may use § 13(b) to obtain injunctive relief while
+
+administrative proceedings are foreseen or in progress, or when it seeks
+
+only injunctive relief.”) (emphasis added).
+
+B.   The FTC’s Allegations
+
+     The FTC brought this action under Section 13(b) against USAP
+
+and its private equity sponsors (collectively referred to as “Welsh
+
+Carson”), alleging an anticompetitive scheme to consolidate the Texas
+
+hospital anesthesia market and drive up the price of anesthesia services
+
+
+                                       5
+      Case: 24-20270   Document: 23       Page: 14   Date Filed: 07/19/2024
+
+
+
+
+for patients in Texas. Cmplt. ¶1. Welsh Carson founded USAP in 2012.
+
+USAP then began a “roll-up” strategy by acquiring nearly every large
+
+anesthesia practice in Texas, beginning in Houston and then expanding
+
+to Dallas, San Antonio, Austin, Amarillo, and Tyler. To date, USAP has
+
+acquired at least 15 anesthesia practice groups with over 1,000 doctors
+
+and 750 nurses. Id. ¶¶3-4.
+
+     The FTC alleges that USAP enhanced the anticompetitive impact
+
+of its roll-up strategy by entering or maintaining price-setting
+
+arrangements with other, independent anesthesia groups with whom
+
+USAP shared key hospitals in Houston and Dallas. Cmplt. ¶6. Under
+
+these arrangements, USAP charged its own, higher prices for services
+
+that in fact were provided by those independent groups, and shared the
+
+resulting extra revenue with each independent group. Id. In addition,
+
+the FTC alleges that USAP entered into a market-allocation agreement
+
+with another large anesthesia services provider, thereby sidelining a
+
+significant USAP rival. Id. ¶7.
+
+     According to the Complaint, as a result of USAP’s multi-pronged
+
+anticompetitive conduct, USAP is now the dominant provider of
+
+hospital anesthesia services in Texas as a whole, and in many of the
+
+
+                                      6
+      Case: 24-20270   Document: 23       Page: 15   Date Filed: 07/19/2024
+
+
+
+
+state’s major metropolitan areas (controlling nearly 70% of the market
+
+in Houston and Dallas, for example, and over 52% in Austin). Id. ¶¶8,
+
+162, 261. As of 2021, USAP has outsized its second-largest rival group
+
+by four times in Houston; six times in Dallas; and nearly seven times in
+
+Texas as a whole. Id. ¶8. Moreover, USAP’s insurance reimbursement
+
+rates are double the median rate of other anesthesia providers in Texas.
+
+Id. In other words, USAP has been able to extract monopoly profits
+
+while simultaneously growing its monopoly power. Id. ¶9.
+
+C.   USAP’s Motion to Dismiss and the District Court’s
+     Rulings
+
+     USAP and Welsh Carson both moved to dismiss the complaint
+
+pursuant to Rule 12(b)(6). ECF 97, 100. As relevant to this interlocutory
+
+appeal, USAP argued that Section 13(b) of the FTC Act does not
+
+authorize the agency to sue for a permanent injunction without first
+
+initiating an administrative proceeding. ECF 97 at 12-18. In a footnote,
+
+USAP “join[ed] and incorporate[d] by reference” Welsh Carson’s
+
+argument that by enacting Section 13(b), Congress “unconstitutionally
+
+vested executive law-enforcement power in an agency whose members
+
+are not removable at will by the President.” Id. at 16 n.7.
+
+
+
+                                      7
+      Case: 24-20270   Document: 23       Page: 16   Date Filed: 07/19/2024
+
+
+
+
+     The district court rejected both arguments.1 The court noted that
+
+USAP’s claim of a required parallel administrative proceeding is
+
+precluded by “[t]he statutory language of [S]ection 13(b),” which “limits
+
+the availability of preliminary injunctive relief to situations ‘pending
+
+issuance of a complaint by the Commission’,” but contains “[n]o similar
+
+language … relating to permanent injunctive relief.” Op. 16 (quoting
+
+United States v. JS & A Grp., Inc., 716 F.2d 451, 456 (7th Cir. 1983)).
+
+The court further noted that its reading of Section 13(b) was consistent
+
+with the Supreme Court’s analysis in AMG. Op. 17.
+
+     The district court also rejected the constitutional argument that
+
+USAP had borrowed “with no elaboration” from Welsh Carson’s motion.
+
+Op. 21 n.5. The court held that the argument is foreclosed by
+
+Humphrey’s Executor and decisions of this Court, including Illumina, 88
+
+F.4th at 1047, and Consumers’ Research v. Consumer Prod. Safety
+
+Comm’n, 91 F.4th 342 (5th Cir. 2024). Op. 21.
+
+     USAP has appealed these interlocutory rulings, asserting that
+
+this Court has appellate jurisdiction under the collateral order doctrine.
+
+
+
+ 1 The district court granted Welsh Carson’s motion to dismiss on other
+
+grounds not relevant to this appeal. Op. 9-16.
+                                      8
+      Case: 24-20270    Document: 23       Page: 17   Date Filed: 07/19/2024
+
+
+
+
+The notice of appeal frames the issues as (1) “whether the [FTC] has
+
+statutory authority to file this federal court action for permanent
+
+injunctive relief without first initiating administrative proceedings,”
+
+and (2) “if so, whether the exercise of that quintessentially executive
+
+power is constitutional given that the FTC is an independent agency
+
+whose Commissioners cannot be removed at will by the President.” ECF
+
+153 at 1 (internal quotation marks and citations omitted).
+
+                         LEGAL STANDARDS
+
+     Under 28 U.S.C. § 1291—the only basis for appellate jurisdiction
+
+USAP asserts here—this Court has jurisdiction over appeals from “final
+
+decisions” of the district courts. See, e.g., Leonard v. Martin, 38 F.4th
+
+481, 485 (5th Cir. 2022). In general, a “final decision” is one that “ends
+
+the litigation on the merits and leaves nothing more for the court to do
+
+but execute the judgment.” Id. (cleaned up). Nonetheless, there is a
+
+“small class” of rulings that “finally determine claims of right separable
+
+from, and collateral to, rights asserted in the action” that are deemed
+
+final decisions. Cohen v. Beneficial Indus. Loan Corp., 337 U.S. 541, 546
+
+(1949). Although not disposing of the litigation, these collateral orders
+
+are immediately appealable because they are “too important to be
+
+
+                                       9
+       Case: 24-20270   Document: 23    Page: 18   Date Filed: 07/19/2024
+
+
+
+
+denied review and too independent of the cause itself to require that
+
+appellate consideration be deferred until the whole case is adjudicated.”
+
+Id.; see also Will v. Hallock, 546 U.S. 345, 349-51 (2006).
+
+     To qualify for appeal under the collateral order doctrine, the
+
+district court’s ruling “must” (1) “conclusively determine the disputed
+
+question”; (2) “resolve an important issue completely separate from the
+
+merits”; and (3) “be effectively unreviewable on appeal from a final
+
+judgment.” Will, 546 U.S. at 349; accord Leonard, 38 F.4th at 486.
+
+Additionally, “a collateral appeal of an interlocutory order must present
+
+a ‘serious and unsettled question’.” Nixon v. Fitzgerald, 457 U.S. 731,
+
+742 (1982) (quoting Cohen, 337 U.S. at 547); accord In re Deepwater
+
+Horizon, 793 F.3d 479, 490 (5th Cir. 2015). This requirement, which
+
+goes to the importance of the issue, “has sometimes been characterized
+
+as a discrete fourth requirement and other times been wrapped up in an
+
+analysis of both the second and third requirements.” Deepwater
+
+Horizon, 793 F.3d at 484; see also Lauro Lines S.R.L. v. Chasser, 490
+
+U.S. 495, 502 (1989) (Scalia, J., concurring) (“The importance of the
+
+right asserted has always been a significant part of [the] collateral
+
+order doctrine.”).
+
+
+                                       10
+      Case: 24-20270    Document: 23    Page: 19   Date Filed: 07/19/2024
+
+
+
+
+     These conditions for collateral review are “stringent.” Digital
+
+Equip. Corp. v. Desktop Direct, Inc., 511 U.S. 863, 868 (1994). An order
+
+that “fails to satisfy any one of these requirements … is not appealable
+
+under the collateral-order exception to § 1291.” Gulfstream Aerospace
+
+Corp. v. Mayacamas Corp., 485 U.S. 271, 276 (1988). Otherwise, the
+
+collateral order exception will “swallow the general rule that a party is
+
+entitled to a single appeal, to be deferred until final judgment has been
+
+entered.” Digital Equip., 511 U.S. at 868. Accordingly, “the class of
+
+collaterally appealable orders must remain ‘narrow and selective in its
+
+membership’.” Mohawk Indus., Inc. v. Carpenter, 558 U.S. 100, 113
+
+(2009) (quoting Will, 546 U.S. at 350).
+
+
+                              ARGUMENT
+
+     USAP’s interlocutory appeal should be dismissed because the
+
+district court’s order denying USAP’s motion to dismiss does not end the
+
+case, and neither of the two district court rulings that USAP challenges
+
+is a “final decision” under the collateral order doctrine.
+
+
+
+
+                                       11
+      Case: 24-20270    Document: 23    Page: 20   Date Filed: 07/19/2024
+
+
+
+
+I.   THE DISTRICT COURT RULING THAT THE FTC CAN BRING
+     THIS ACTION WITHOUT FIRST INITIATING ADMINISTRATIVE
+     PROCEEDINGS IS NOT COLLATERALLY REVIEWABLE.
+
+     The first district court ruling that USAP challenges—the holding
+
+that the FTC can seek a permanent injunction under Section 13(b)
+
+without first initiating administrative proceedings—is not a final
+
+decision under the collateral order doctrine because it can be effectively
+
+reviewed on appeal from a final judgment and does not involve a serious
+
+and unsettled question of law.
+
+     A.    The Ruling Is Effectively Reviewable on Appeal
+           from Final Judgment.
+
+     USAP’s argument that the FTC cannot sue under Section 13(b)
+
+without first initiating an administrative action is not effectively
+
+unreviewable on appeal from a final judgment, and USAP will not lose
+
+any important rights if the appeal does not proceed now. Even if USAP
+
+could show it is burdened by being required to litigate only in a federal
+
+forum rather than in a federal forum and an administrative forum,
+
+“[a]n order is not ‘effectively unreviewable’ just because it ‘may burden
+
+litigants in ways that are only imperfectly reparable by appellate
+
+reversal of a final district court judgment’.” Leonard, 38 F.4th at 486
+
+(quoting Digital Equip., 511 U.S. at 872). Rather, the “decisive
+
+                                       12
+      Case: 24-20270    Document: 23    Page: 21   Date Filed: 07/19/2024
+
+
+
+
+consideration is whether delaying review until the entry of final
+
+judgment ‘would imperil a substantial public interest’ or ‘some
+
+particular value of a high order’.” Id. (quoting Will, 546 U.S. at 352-53).
+
+This is the case only “where the order at issue involves an asserted
+
+right the legal and practical value of which would be destroyed if it were
+
+not vindicated before trial.” Id. (internal quotation marks and citations
+
+omitted). Courts “must make this determination on a categorical basis,
+
+looking only at whether the class of claims, taken as a whole, can be
+
+vindicated by other means than immediate appeal.” Id. (internal
+
+quotation marks and citations omitted).
+
+     The fact that the appellant may incur additional legal costs—even
+
+substantial ones—if review proceeds in the ordinary course after final
+
+judgment is not enough to justify interlocutory review. The Supreme
+
+Court has “declined to find the costs associated with unnecessary
+
+litigation to be enough to warrant allowing the immediate appeal of a
+
+pretrial order.” Lauro Lines, 490 U.S. at 499; see also Richardson-
+
+Merrell Inc. v. Koller, 472 U.S. 424, 436 (1985) (“[T]he possibility that a
+
+ruling may be erroneous and may impose additional litigation expense
+
+
+
+
+                                       13
+      Case: 24-20270    Document: 23    Page: 22   Date Filed: 07/19/2024
+
+
+
+
+is not sufficient to set aside the finality requirement imposed by
+
+Congress” in § 1291).
+
+     The quintessential example of an issue that is effectively
+
+unreviewable and hence appealable under the collateral order doctrine
+
+is where the appellant claims immunity from suit—i.e., the right not to
+
+be tried at all. See, e.g., Lauro, 490 U.S. at 499.2 But USAP is not
+
+claiming an immunity from suit. It does not argue that it should not
+
+have to answer the FTC charges at all. Rather, USAP’s argument is
+
+that the FTC lacks authority to sue for a permanent injunction in
+
+district court under Section 13(b) unless the FTC also files a parallel
+
+administrative proceeding—raising the same claims and seeking the
+
+same relief.3
+
+     USAP’s argument boils down to a claim that the FTC failed to
+
+comply with a purported procedural requirement to issue an
+
+
+2 The Supreme Court has cautioned that “claims of a ‘right not to be
+
+tried’” should be viewed “with skepticism, if not a jaundiced eye.”
+Digital Equip., 511 U.S. at 873. “A right not to be tried in the sense
+relevant to the Cohen exception rests upon an explicit statutory or
+constitutional guarantee that trial will not occur.” Henry v. Lake
+Charles Am. Press, LLC, 566 F.3d 164, 178 (5th Cir. 2009) (quoting
+Midland Asphalt Corp. v. United States, 489 U.S. 794, 801 (1989)).
+  3 Under Section 13(b), initiation of an administrative case neither
+
+precludes nor suspends ongoing judicial proceedings. 15 U.S.C. § 53(b).
+                                       14
+         Case: 24-20270   Document: 23    Page: 23   Date Filed: 07/19/2024
+
+
+
+
+administrative complaint before going to court. USAP does not contest
+
+that the court proceedings could then still go on all the way to final
+
+judgment. That is not an issue that imperils a substantial public
+
+interest or some other order of a high value. It is a garden-variety claim
+
+of procedural error that is properly addressed on appeal from a final
+
+judgment. Indeed, even if the issuance of an administrative complaint
+
+were viewed as a jurisdictional requirement (which it is not), that would
+
+not make the order immediately appealable. Questions of subject
+
+matter jurisdiction are “far from unreviewable on appeal from a final
+
+judgment.” Matter of Greene Cnty. Hosp., 835 F.2d 589, 596 (5th Cir.
+
+1988); accord McClanahan v. Wilson, 852 Fed. App’x 145 (5th Cir.
+
+2021).
+
+     Insofar as USAP contends that adjudication of the FTC charges
+
+should take place administratively instead of in district court—an
+
+argument that cannot be squared with Section 13(b)’s text—the order is
+
+still not effectively unreviewable. A claimed entitlement not to be sued
+
+in a particular court is “different in kind” than “a right not to be sued at
+
+all.” Lauro Lines, 490 U.S. at 501. Thus, courts do not permit immediate
+
+appeal from orders denying motions to enforce a contractual forum
+
+
+                                         15
+      Case: 24-20270   Document: 23    Page: 24   Date Filed: 07/19/2024
+
+
+
+
+selection clause, id. at 500, or denying motions to dismiss on forum non
+
+conveniens grounds, Van Cauwenberghe v. Biard, 486 U.S. 517, 527
+
+(1988); see also Leonard, 38 F.4th at 487; Deepwater Horizon, 793 F.3d
+
+at 485. Likewise, an “order denying remand of a case removed to federal
+
+court is not a final order within the meaning of 28 U.S.C. § 1291” and is
+
+not collaterally reviewable. Poirrier v. Nicklos Drilling Co., 648 F.2d
+
+1063, 1064-65 (5th Cir. 1981) (denial of motion to remand to state court
+
+“cannot be appealed unless certified” under 28 U.S.C. § 1292(b)).
+
+Similarly here, insofar as USAP is arguing that the FTC’s claims must
+
+be adjudicated in an administrative forum rather than a court, that is
+
+not an issue that is effectively unreviewable on appeal from a final
+
+judgment.
+
+     B.     Whether Section 13(b) Authorizes a Standalone
+            Court Action for a Permanent Injunction Is Not a
+            “Serious and Unsettled” Question of Law.
+
+     The district court’s ruling that the FTC can sue for a permanent
+
+injunction under Section 13(b) without first initiating an administrative
+
+action is also collaterally unreviewable because it presents no “serious
+
+and unsettled question.” Nixon, 457 U.S. at 742; Deepwater Horizon,
+
+793 F.3d at 490. To begin with, the Supreme Court recognized in AMG
+
+
+                                      16
+      Case: 24-20270   Document: 23    Page: 25   Date Filed: 07/19/2024
+
+
+
+
+that the language of Section 13(b) reasonably can be read as allowing
+
+the Commission to “dispense with administrative proceedings.” 593 U.S.
+
+at 76-77. The Court observed that “the Commission may use § 13(b) to
+
+obtain injunctive relief while administrative proceedings are foreseen or
+
+in progress, or when [the Commission] seeks only injunctive relief.” Id.
+
+at 78 (emphasis added). That is, the Court recognized that the FTC may
+
+seek permanent injunctive relief in court even where administrative
+
+proceedings are not “foreseen or in progress.”
+
+     Every court of appeals to have considered the issue has likewise
+
+concluded that the plain text of Section 13(b)’s “permanent injunction”
+
+proviso allows the FTC to sue in court without also filing a duplicative
+
+administrative case. As the Seventh Circuit has explained, “[t]he
+
+statutory language of section 13(b) limits the availability of preliminary
+
+injunctive relief to situations ‘pending issuance of a complaint by the
+
+Commission’,” but “[n]o similar language is found in the second proviso
+
+relating to permanent injunctive relief.” JS & A Grp., 716 F.2d at 456
+
+(quoting 15 U.S.C. § 53(b)). “Had Congress intended the initiation or not
+
+of an administrative cease and desist proceeding to affect the ability of
+
+the Commission to seek permanent injunctive relief, it undoubtedly
+
+
+                                      17
+      Case: 24-20270   Document: 23    Page: 26   Date Filed: 07/19/2024
+
+
+
+
+would have included language similar to that found in the provision
+
+governing preliminary injunctive relief.” Id. Other courts of appeals
+
+have reached the same conclusion. See, e.g., FTC v. U.S. Oil & Gas
+
+Corp., 748 F.2d 1431, 1434-35 (11th Cir. 1984); FTC v. H. N. Singer,
+
+Inc., 668 F.2d 1107, 1110-11 (9th Cir. 1982). And no court has reached
+
+the opposite conclusion.
+
+II.   THE DISTRICT COURT RULING ON USAP’S CONSTITUTIONAL
+      ARGUMENT IS NOT COLLATERALLY REVIEWABLE.
+
+      USAP’s other claim on interlocutory appeal—that the FTC’s
+
+exercise of executive power violates Article II of the Constitution
+
+because the FTC “is an independent agency whose Commissioners
+
+cannot be removed at will by the President,” ECF 153 at 1—is
+
+collaterally unreviewable for the same reasons. The issue is not
+
+effectively unreviewable on appeal from a final judgment and does not
+
+present a serious and unsettled question.
+
+      A.   The Constitutional Ruling Is Effectively
+           Reviewable on Appeal from Final Judgment.
+
+      USAP’s argument that Section 13(b) is unconstitutional because
+
+the FTC is prohibited from exercising executive power (i.e., filing suit
+
+under Section 13(b)) is not effectively unreviewable on appeal from a
+
+final judgment. Constitutional challenges like this are commonplace,
+                                      18
+      Case: 24-20270   Document: 23    Page: 27   Date Filed: 07/19/2024
+
+
+
+
+but unless they fit into the narrow class of collaterally reviewable
+
+claims (e.g., claims of immunity from trial), they must adhere to the
+
+rule of finality in appeals. As the Supreme Court has emphasized, not
+
+“every violation of [constitutional] protections” amounts to “a defect so
+
+fundamental” that it warrants collateral review. Midland Asphalt, 489
+
+U.S. at 802. “There is a crucial distinction between a right not to be
+
+tried and a right whose remedy requires the dismissal of charges.” Id. at
+
+801 (internal quotation marks and citations omitted); see also Flanagan
+
+v. United States, 465 U.S. 259, 259-60 (1984) (despite Sixth Amendment
+
+rights at risk, order disqualifying counsel in criminal case not
+
+collaterally reviewable). Here, even if the FTC’s action were deemed
+
+unconstitutional, USAP will suffer no cognizable and irreparable harm
+
+from denial of an immediate appeal, for the reasons discussed above.
+
+     Insofar as USAP is arguing that the FTC Commissioners lack any
+
+enforcement authority because they are not removable at will, that
+
+claim likewise is effectively reviewable on appeal from a final judgment.
+
+This Court addressed a similar issue in United States v. Valencia, 940
+
+F.3d 181 (5th Cir. 2019), where a criminal defendant sought to appeal
+
+the denial of his motion to dismiss his indictment on the grounds that
+
+
+                                      19
+      Case: 24-20270    Document: 23    Page: 28   Date Filed: 07/19/2024
+
+
+
+
+the Acting Attorney General was unconstitutionally appointed. The
+
+Court held that the order was not effectively unreviewable and the
+
+defendant would “have the opportunity to raise these same issues when
+
+appealing any adverse final judgment per § 1291.” Id. at 183.
+
+     USAP’s argument for collateral review is even weaker than the
+
+claim in Valencia because, here, USAP does not and cannot argue that
+
+any of the FTC Commissioners were improperly appointed. Unlike an
+
+improper appointment, an improper removal restriction voids agency
+
+action only when the challenging party shows that the removal
+
+restriction actually caused harm. Collins v. Yellen, 594 U.S. 220, 257-
+
+260 (2021); see also Cmty. Fin. Servs. Ass’n of Am., Ltd. v. Consumer
+
+Fin. Prot. Bureau, 51 F.4th 616, 631 (5th Cir. 2022) (“[T]he challenging
+
+party must demonstrate not only that the removal restriction violates
+
+the Constitution but also that ‘the unconstitutional removal provision
+
+inflicted harm’.”) (quoting Collins, 594 U.S. at 260), rev’d on other
+
+grounds, 144 S. Ct. 1474 (2024).4
+
+
+ 4 To secure relief from allegedly improper removal restrictions, the
+
+challenging party must demonstrate “three requisites for proving harm:
+(1) a substantiated desire by the President to remove the
+unconstitutionally insulated actor, (2) a perceived inability to remove
+
+                                       20
+      Case: 24-20270   Document: 23    Page: 29   Date Filed: 07/19/2024
+
+
+
+
+     If claims of unconstitutional appointments of federal enforcement
+
+officials are collaterally unreviewable, see Valencia, 940 F.3d at 183,
+
+then challenges like USAP’s to the removal protections for such officials
+
+are certainly collaterally unreviewable. Whereas challenges to the
+
+appointment of officials typically raise a purely legal question that
+
+courts could easily address on an interlocutory appeal, challenges to
+
+officials’ removal restrictions are inextricably connected to the
+
+underlying facts. Specifically, proving harm from an allegedly improper
+
+removal protection implicates, at a minimum, the factual circumstances
+
+of an attempted presidential removal, see supra note 4, which renders
+
+the issue altogether inappropriate for collateral review.
+
+     The Supreme Court’s decision in Axon Enterprise, Inc. v. FTC, 598
+
+U.S. 175 (2023), does not alter the collateral review analysis here. See
+
+ECF 153 (Notice of Appeal), at 1 (USAP invoking Axon). In Axon, the
+
+respondent in an FTC administrative proceeding brought a freestanding
+
+declaratory judgment action in federal district court against the FTC,
+
+
+
+the actor due to the infirm provision, and (3) a nexus between the desire
+to remove and the challenged actions taken by the insulated actor.”
+Cmty. Fin. Servs., 51 F.4th at 632. USAP never even alleged below any
+of these requisites for proving harm.
+                                      21
+      Case: 24-20270    Document: 23    Page: 30   Date Filed: 07/19/2024
+
+
+
+
+asserting facial constitutional challenges to the FTC’s administrative
+
+process. Axon, 598 U.S. at 183. The Court noted the “extraordinary”
+
+nature of Axon’s claims, id. at 180, describing them as “far-reaching,”
+
+id. at 185, attacking a “fundamental aspect of the Commission’s
+
+structure,” id. at 182, and going “to the core of the FTC’s existence,” id.
+
+at 189. The Court held that claims of that nature—“fundamental, even
+
+existential” challenges to the very structure of administrative
+
+agencies—were not precluded by the judicial review scheme in the FTC
+
+Act, which would have channeled those claims through the agency to
+
+the courts of appeals, on review of a cease and desist order. Id. at 180.
+
+     But the collateral order doctrine was not at issue in Axon and
+
+indeed the Court specifically cautioned: “Nothing we say today portends
+
+newfound enthusiasm for interlocutory review.” Id. at 192. Axon thus
+
+did not purport to alter the longstanding rules limiting the application
+
+of the collateral order doctrine in appeals from interlocutory orders of
+
+district courts. Moreover, unlike Axon, USAP is not asserting a right
+
+not to be tried in an administrative proceeding; to the contrary, USAP’s
+
+argument (discussed above) is that the Commission should be required
+
+to issue an administrative complaint. USAP also does not challenge the
+
+
+                                       22
+      Case: 24-20270   Document: 23    Page: 31   Date Filed: 07/19/2024
+
+
+
+
+district court’s jurisdiction to try the case. Nor is USAP challenging the
+
+Commission’s existence—merely its authority to proceed under a
+
+particular statute. Axon, therefore, does not aid USAP’s cause.
+
+     B.    The Constitutional Ruling Does Not Raise
+           Serious and Unsettled Questions of Law.
+
+     USAP’s argument that Section 13(b) is unconstitutional because
+
+the FTC Commissioners are not removable at will also does not present
+
+a serious and unsettled question of law. First, as the district court has
+
+noted, Op. 21, both the Supreme Court and this Court have upheld the
+
+constitutionality of the FTC Commissioners’ removal restrictions. The
+
+Supreme Court first upheld those restrictions in Humphrey’s Executor,
+
+295 U.S. at 625, and has since expressly declined to overrule that
+
+decision on many occasions, most recently in Collins, 594 U.S. at 255-56
+
+& n.21, and Seila Law LLC v. CFPB, 591 U.S. 197, 203-04 (2020). And
+
+this Court, twice in the past year, has held that Humphrey’s Executor
+
+remains binding on the lower courts. Consumers’ Research, 91 F.4th at
+
+352 & n.51, reh’g en banc denied, 98 F.4th 646 (5th Cir. 2024); Illumina,
+
+88 F.4th at 1047.
+
+     USAP’s argument that the FTC’s exercise of executive powers is
+
+unconstitutional is just a repackaging of the arguments this Court
+
+                                      23
+      Case: 24-20270   Document: 23    Page: 32   Date Filed: 07/19/2024
+
+
+
+
+rejected in Illumina and Consumers’ Research. Specifically, the
+
+Illumina petitioners argued that “the FTC unconstitutionally exercised
+
+executive powers while insulated from presidential removal in violation
+
+of Article II.” Illumina, 88 F.4th at 1046-47. They acknowledged
+
+Humphrey’s Executor, but argued that subsequent decisions by
+
+Congress granting the FTC additional executive authority meant that
+
+the statutory scheme now violated Article II. This Court rejected the
+
+argument, explaining that “although the FTC’s powers may have
+
+changed since Humphrey’s Executor was decided, the question of
+
+whether the FTC’s authority has changed so fundamentally as to render
+
+Humphrey’s Executor no longer binding is for the Supreme Court, not
+
+us, to answer.” Id. at 1047. Thus the Court found no Article II violation
+
+based on existing and controlling Supreme Court precedent.
+
+     The Court reached the same conclusion in Consumers’ Research.
+
+That case involved the Consumer Product Safety Commission (CPSC),
+
+which has a statutory structure that is the “mirror image” of the FTC’s,
+
+including the provision that the President may remove Commissioners
+
+only for cause. 91 F.4th at 346. The plaintiffs argued that this scheme
+
+violates Article II because the CPSC exercises executive powers—
+
+
+                                      24
+      Case: 24-20270   Document: 23    Page: 33   Date Filed: 07/19/2024
+
+
+
+
+including the power to “commence civil actions in federal court”—even
+
+though the Commissioners are not removable at will. Id. at 346-47. This
+
+Court agreed that the CPSC “exercises substantial executive power (in
+
+the modern sense),” id. at 353-54, but nonetheless held that Humphrey’s
+
+Executor still controlled. Id. 354-56. The Court thus again found no
+
+Article II violation under existing and controlling Supreme Court
+
+precedent.
+
+     Here, USAP is making the same argument that the Court has
+
+twice rejected. It contends that by enacting Section 13(b) in 1973,
+
+Congress conferred new executive power on the FTC, and that the
+
+exercise of this authority violates Article II because the Commissioners
+
+are not removable at will. But Illumina makes clear that Humphrey’s
+
+Executor remains binding on the lower courts notwithstanding the fact
+
+that the Commission’s powers have changed since 1935. And
+
+Consumers’ Research holds that even where an independent agency like
+
+the CPSC or the FTC exercises “substantial executive power,” the fact
+
+that Commissioners are not removable at will does not violate Article II.
+
+USAP’s argument in this case cannot be squared with these recent
+
+precedents. Likewise, all other courts presented with USAP’s argument
+
+
+                                      25
+      Case: 24-20270    Document: 23    Page: 34   Date Filed: 07/19/2024
+
+
+
+
+that Section 13(b) is unconstitutional because of the Commissioners’
+
+removal protections have rejected the argument.5 Against this
+
+background, there is no plausible argument for interlocutory review.
+
+                                  *****
+
+     “In case after case in year after year, the Supreme Court has
+
+issued increasingly emphatic instructions that the class of cases capable
+
+of satisfying [the collateral order doctrine’s] stringent test should be
+
+understood as small, modest, and narrow.” United States v. Wampler,
+
+624 F.3d 1330, 1334 (10th Cir. 2010) (internal quotation marks and
+
+citations omitted). Neither of USAP’s claims satisfies that test, and thus
+
+neither qualifies for interlocutory review.
+
+                             CONCLUSION
+
+     For the foregoing reasons, USAP’s appeal must be dismissed.
+
+
+
+
+ 5 The Ninth Circuit, for example, has held “the enforcement statutes
+
+of the [FTC] Act, 15 U.S.C. §§ 45(a) and 53(b)” to be “constitutional,
+under Humphrey’s Executor.” FTC v. Am. Nat’l Cellular, Inc., 810 F.2d
+1511, 1513-14 (9th Cir. 1987); accord FTC v. Syngenta Crop Prot. AG,
+No. 22-828, 2024 WL 149552, *27-*28 (M.D.N.C. Jan. 12, 2024); FTC v.
+Kochava Inc., 671 F.Supp.3d 1161, 1178-79 (D. Idaho 2023); FTC v.
+Walmart Inc., 664 F.Supp.3d 808, 843-45 (N.D. Ill. 2023).
+                                       26
+     Case: 24-20270   Document: 23    Page: 35    Date Filed: 07/19/2024
+
+
+
+
+                                          Respectfully submitted,
+
+HENRY LIU                                 ANISHA S. DASGUPTA
+  Director, Bureau of Competition           General Counsel
+BRADLEY S. ALBERT                         MATTHEW M. HOFFMAN
+  Acting Assistant Director                 Attorney
+DANIEL W. BUTRYMOWICZ
+TIMOTHY KAMAL-GRAYSON                      /s/ Imad Abyad
+DYLAN HERTS                               IMAD D. ABYAD
+PATRICK KENNEDY                                Attorney
+   Attorneys                              FEDERAL TRADE COMMISSION
+                                          600 Pennsylvania Avenue, N.W.
+FEDERAL TRADE COMMISSION                  Washington, DC 20580
+Washington, DC 20580                      (202) 326-3579
+                                          iabyad@ftc.gov
+
+
+
+
+                                     27
+      Case: 24-20270    Document: 23   Page: 36   Date Filed: 07/19/2024
+
+
+
+
+                       CERTIFICATE OF SERVICE
+
+     I certify that on July 19, 2024, I served the foregoing motion on
+
+counsel of record using the Court’s electronic case filing system. All
+
+counsel of record are registered ECF filers.
+
+
+
+July 19, 2024                     /s/ Imad Abyad
+                                  IMAD D. ABYAD
+                                  Attorney
+                                  FEDERAL TRADE COMMISSION
+                                  600 PENNSYLVANIA AVENUE, N.W.
+                                  WASHINGTON, D.C. 20580
+      Case: 24-20270   Document: 23   Page: 37   Date Filed: 07/19/2024
+
+
+
+
+                 CERTIFICATE OF COMPLIANCE
+
+     I certify that the foregoing motion complies with the volume
+
+limitations of Fed. R. App. P. 27(d)(2)(A) because it contains 5,139
+
+words, excluding the parts exempted by Fed. R. App. P. 32(f). I certify
+
+further that it complies with the typeface and type style requirements
+
+of Fed. R. App. P. 27(d)(1)(E) because it was prepared using Microsoft
+
+Word 2010 in 14-point Century Schoolbook.
+
+
+
+July 19, 2024                     /s/ Imad Abyad
+                                  IMAD D. ABYAD
+                                  Attorney
+                                  FEDERAL TRADE COMMISSION
+                                  600 PENNSYLVANIA AVENUE, N.W.
+                                  WASHINGTON, D.C. 20580
+       Case: 24-20270    Document: 23   Page: 38   Date Filed: 07/19/2024
+
+
+
+
+                  CERTIFICATE OF CONFERENCE
+
+      Pursuant to 5th Cir. Rule 27.4, I certify that I have attempted to
+
+contact the counsel of record for appellant U.S. Anesthesia Partners,
+
+Inc. (USAP). I have not heard back from USAP’s counsel as of the time
+
+of this filing. In light of the dispositive nature of this mation, it is
+
+reasonable to assume that USAP plans to file an opposition.
+
+
+
+July 19, 2024                       /s/ Imad Abyad
+                                    IMAD D. ABYAD
+                                    Attorney
+                                    FEDERAL TRADE COMMISSION
+                                    600 PENNSYLVANIA AVENUE, N.W.
+                                    WASHINGTON, D.C. 20580
+Case: 24-20270   Document: 23   Page: 39   Date Filed: 07/19/2024
+
+
+
+
+                        EXHIBIT A
+
+[DISTRICT COURT’S MEMORANDUM OPINION AND ORDER]
+         Case:
+      Case     24-20270 Document
+           4:23-cv-03560 Document: 23 Filed
+                                 146     Page: 40 DateinFiled:
+                                            on 05/13/24 TXSD07/19/2024
+                                                               Page 1 of 23
+                                                                                             United States District Court
+                                                                                               Southern District of Texas
+
+                                                                                                  ENTERED
+                                                                                                  May 13, 2024
+                              UNITED STATES DISTRICT COURT
+                                                                                               Nathan Ochsner, Clerk
+                               SOUTHERN DISTRICT OF TEXAS
+                                   HOUSTON DIVISION
+
+ FEDERAL TRADE COMMISSION,       §
+                                 §
+         Plaintiff,              §
+                                 §
+ VS.                             §                         CIVIL ACTION NO. 4:23-CV-03560
+                                 §
+ U.S. ANESTHESIA PARTNERS, INC., §
+ et al.,                         §
+                                 §
+         Defendants.             §
+
+                         MEMORANDUM OPINION AND ORDER
+
+ I.      INTRODUCTION
+
+         Before the Court are the defendants’, U.S. Anesthesia Partners, Inc. (“USAP”)
+
+ and Welsh Carson,1 motions to dismiss (DEs 99 & 100). The plaintiff, the Federal Trade
+
+ Commission (“FTC”), has responded to the motions (DEs 119 & 120), and the
+
+ defendants have replied (DEs 124 & 126). After reviewing the filings and the applicable
+
+ law, the Court determines that Welsh Carson’s motion should be GRANTED, and
+
+ USAP’s motion should be DENIED.
+
+II.      FACTUAL BACKGROUND
+
+         This antitrust case concerns the monopolization of Texas’ hospital anesthesia
+
+ market. We begin with a brief explanation of the hospital anesthesia market, as provided
+
+ by the FTC. Hospitals need anesthesiologists on-hand 24/7 for surgical procedures.
+
+ 1 Seven defendants are Welsh Carson entities. Because their distinction is not crucial to this analysis, the
+
+ Court frequently refers to them all as “Welsh Carson” for ease of reference.
+       Case:
+    Case     24-20270 Document
+         4:23-cv-03560 Document: 23 Filed
+                               146     Page: 41 DateinFiled:
+                                          on 05/13/24 TXSD07/19/2024
+                                                             Page 2 of 23
+
+
+
+
+Some hospitals directly employ anesthesiologists, but many contract with outside
+
+groups to be their exclusive providers. Anesthesiologists are primarily compensated
+
+through reimbursement by insurers or insurers’ clients (employers). Insurers’ main
+
+leverage while negotiating reimbursement rates is the threat of network exclusion.
+
+Insurers select favored anesthesia groups to join their networks. Anesthesia groups
+
+strive to participate in these networks because network exclusion can endanger hospital
+
+relationships and make it more difficult to obtain payment. Thus, if groups raise their
+
+rates too high, the insurance company will remove them from the network. But this
+
+threat is credible only if the insurer has feasible alternatives with which to replace them.
+
+If a group grows so large that it becomes indispensable, the threat of network removal
+
+loses its bite, leaving patients with the burden of paying higher rates. That is what the
+
+FTC alleges has happened regarding USAP.
+
+       USAP
+
+       In 2012, USAP was created by a private equity firm called Welsh Carson and
+
+several physician partners. USAP’s goal was to drive profits by consolidating Texas’
+
+hospital anesthesia market. Accordingly, USAP quickly began an aggressive
+
+acquisition strategy. Its first target, Greater Houston Anesthesiology, was the largest
+
+practice in Houston, billing itself as “20 times the size of the second largest local
+
+competitor.” Welsh Carson put $100 million toward the purchase, with third-party
+
+lenders providing the rest. After this first acquisition, USAP started planning more,
+
+                                             2
+       Case:
+    Case     24-20270 Document
+         4:23-cv-03560 Document: 23 Filed
+                               146     Page: 42 DateinFiled:
+                                          on 05/13/24 TXSD07/19/2024
+                                                             Page 3 of 23
+
+
+
+
+targeting groups that already had exclusive contracts with hospitals. Through “tuck-in
+
+clauses,” USAP would apply its higher rates to the same services already offered by its
+
+acquisitions.
+
+      Thus, USAP soon bought three other practices in Houston. Each had strong
+
+relationships with important hospitals, and each had previously competed with USAP.
+
+After each acquisition, USAP raised the acquired group’s rates to match its own higher
+
+rates. In 2014, USAP took this strategy to Dallas, buying the area’s largest practice,
+
+followed by six more. USAP soon expanded to Tyler, Austin, Amarillo, and San
+
+Antonio. In each of these markets, the FTC alleges that USAP used its dominance to
+
+raise prices at patients’ expense. To date, USAP has acquired at least fifteen anesthesia
+
+groups in Texas.
+
+      Apart from USAP’s acquisitions and price increases, the FTC also alleges that
+
+USAP maintains price-setting agreements with several competitors. Under these
+
+agreements, USAP bills for work that its competitors perform, but it bills under USAP’s
+
+higher rates, as if the competitors’ anesthesiologists were USAP’s. This practice has the
+
+effect of increasing USAP’s bargaining power and eliminating potential savings for
+
+patients. USAP inherited two such ongoing agreements and executed a third agreement
+
+that has since expired.
+
+      Finally, the FTC alleges that USAP paid Envision Healthcare to stay out of the
+
+Dallas market. Envision is a national healthcare company that also provides anesthesia
+
+                                           3
+          Case:
+       Case     24-20270 Document
+            4:23-cv-03560 Document: 23 Filed
+                                  146     Page: 43 DateinFiled:
+                                             on 05/13/24 TXSD07/19/2024
+                                                                Page 4 of 23
+
+
+
+
+services to hospitals. While USAP initially sought to persuade Envision not to compete
+
+anywhere in Texas, Envision limited its agreement to not competing in Dallas for five
+
+years in return for $9 million.
+
+          Today, USAP is the largest anesthesia practice in Texas, including in many of its
+
+metro areas.2 It controls nearly 70% of the commercially insured, hospital-only
+
+anesthesia market in Houston, a similar share in Dallas, and over 52% in Austin. USAP
+
+handles nearly half of all hospital-only anesthesia cases in Texas, and earns almost 60%
+
+of all hospital anesthesia revenue paid by Texas insurers, employers, and patients.
+
+USAP’s negotiating leverage has grown along with its market share, and USAP has
+
+used this leverage to raise prices across Texas. The FTC alleges that this has resulted in
+
+patients and their employers paying tens of millions of dollars more each year for
+
+anesthesia than they otherwise would pay.
+
+          Welsh Carson
+
+          The mastermind behind USAP is allegedly Welsh Carson, a private equity firm
+
+that invests in healthcare and technology. Welsh Carson operates through various
+
+corporate entities that share personnel and resources. Hence, one set of entities houses
+
+the firm’s employees and manages its investments, while another set, known as “funds,”
+
+makes and holds Welsh Carson’s investments, while a separate set controls these funds.
+
+
+
+
+2
+    USAP currently operates in eight states, with Texas remaining its largest market.
+                                                       4
+       Case:
+    Case     24-20270 Document
+         4:23-cv-03560 Document: 23 Filed
+                               146     Page: 44 DateinFiled:
+                                          on 05/13/24 TXSD07/19/2024
+                                                             Page 5 of 23
+
+
+
+
+The FTC alleges that all of these corporations operate together, as a single company, to
+
+hatch and carry out USAP’s monopolization scheme.
+
+      In early 2012, Welsh Carson decided to enter Texas’ hospital-based anesthesia
+
+market. Brian Regan, a partner at Welsh Carson, spearheaded this strategy. He
+
+explained that the plan was to “consolidate practices with high market share in a few
+
+key markets,” which would offer “negotiating leverage with commercial payors.” Over
+
+the next few months, Welsh Carson employees set up the company that would effect
+
+this scheme—USAP. Welsh Carson initially owned 50.2% of USAP, and saw itself as
+
+USAP’s “control investors.” Welsh Carson chose USAP’s leadership, including its
+
+CEO, CFO, COO, and head of human resources. Each of these officers had previously
+
+been employed at other Welsh Carson entities. USAP’s CEO, Kristen Bratberg, had led
+
+a previous Welsh Carson consolidation strategy in the neonatology sector. Brian Regan,
+
+himself, served as a USAP director from its creation until 2022.
+
+      After creating USAP, Welsh Carson actively participated in its acquisitions.
+
+USAP’s internal rules required that proposed acquisitions be approved by Welsh
+
+Carson. Welsh Carson employees researched anesthesia practices for USAP to acquire.
+
+Welsh Carson also worked with a consultant to develop a modeling tool for identifying
+
+promising acquisition targets. Welsh Carson funded USAP’s first acquisition. Welsh
+
+Carson negotiated USAP’s first acquisition in Dallas, and Brian Regan led the
+
+negotiations for USAP’s agreement with Envision, initially proposing that USAP pay
+
+                                           5
+          Case:
+       Case     24-20270 Document
+            4:23-cv-03560 Document: 23 Filed
+                                  146     Page: 45 DateinFiled:
+                                             on 05/13/24 TXSD07/19/2024
+                                                                Page 6 of 23
+
+
+
+
+Envision $9 million annually to not provide anesthesia services in Texas. This
+
+ultimately became the price tag for Envision’s exclusion from Dallas.
+
+         In 2017, Welsh Carson sold about half its stake in USAP. A Welsh Carson entity
+
+This left Fund XII, a Welsh Carson entity with 23% ownership of USAP. Fund XII
+
+appoints two of the fourteen board seats in USAP. In 2021, the FTC began a two-year
+
+investigation of Welsh Carson and USAP. It brought this suit on September 21, 2023
+
+to permanently enjoin the defendants’ anticompetitive conduct under Section 13(b) of
+
+the FTC Act. The Court held a hearing on the present motions to dismiss on April 8,
+
+2024.
+
+III.     CONTENTIONS OF THE PARTIES
+
+         Welsh Carson argues that the FTC cannot bring this suit under Section 13(b) of
+
+the FTC Act because Welsh Carson is not violating antitrust laws, nor is it about to.
+
+USAP makes the same argument, adding that Section 13(b) requires a concomitant
+
+administrative proceeding, which the FTC has not begun. USAP further asserts that the
+
+FTC is unconstitutional because its commissioners are not removable at will by the
+
+President. Finally, USAP argues that the FTC’s claims are based on a myopic market
+
+definition, and that USAP has not raised prices above competitive levels.
+
+         The FTC responds that both Welsh Carson and USAP are currently violating
+
+antitrust laws, and that both are about to violate antitrust laws. The FTC insists that
+
+13(b) does not require an administrative proceeding before a suit can be filed.
+
+                                            6
+         Case:
+      Case     24-20270 Document
+           4:23-cv-03560 Document: 23 Filed
+                                 146     Page: 46 DateinFiled:
+                                            on 05/13/24 TXSD07/19/2024
+                                                               Page 7 of 23
+
+
+
+
+Regarding the argument that it is unconstitutional, the FTC points to Fifth Circuit
+
+precedent holding otherwise. The FTC defends its market definition of commercially
+
+insured hospital-only anesthesia, asserting that non-hospital anesthesia is not an
+
+available substitute. Finally, the FTC maintains that it has alleged super-competitive
+
+pricing due to the defendants’ uncompetitive behavior.
+
+IV.     STANDARD OF REVIEW
+
+        Federal Rule of Civil Procedure 12(b)(6) authorizes a motion to dismiss for
+
+“failure to state a claim upon which relief can be granted.” Under the difficult standard
+
+of a Rule 12(b)(6) motion, “[t]he plaintiff’s complaint is to be construed in a light most
+
+favorable to the plaintiff, and the allegations contained therein are to be taken as true.”
+
+Oppenheimer v. Prudential Sec., Inc., 94 F.3d 189, 194 (5th Cir. 1996). Dismissal is
+
+appropriate only if the “[f]actual allegations [are not] enough to raise a right to relief
+
+above the speculative level, on the assumption that all the allegations in the complaint
+
+are true (even if doubtful in fact).” Bell Atl. Corp. v. Twombly, 550 U.S. 544, 555
+
+(2007). A court’s review is limited to the allegations in the complaint and any
+
+documents attached to a defendant’s motion to dismiss, if they are both referred to in
+
+the complaint and central to the claims. Causey v. Sewell Cadillac-Chevrolet, Inc., 394
+
+F.3d 285, 288 (5th Cir. 2004).
+
+
+
+
+                                            7
+        Case:
+     Case     24-20270 Document
+          4:23-cv-03560 Document: 23 Filed
+                                146     Page: 47 DateinFiled:
+                                           on 05/13/24 TXSD07/19/2024
+                                                              Page 8 of 23
+
+
+
+
+V.      ANALYSIS & DISCUSSION
+
+        Section 13(b)
+
+        The FTC’s statutory authority for seeking this injunction lies in 15 U.S.C. § 53(b)
+
+(commonly referred to as “Section 13(b)”). Section 13(b) allows the FTC to “bring suit
+
+in a district court of the United States to enjoin” allegedly unlawful conduct only where
+
+it has “reason to believe . . . that any person, partnership, or corporation is violating, or
+
+is about to violate, any provision of law enforced by the [FTC].” (Emphasis added).
+
+Section 13(b) is not a catch-all statute. Rather, Section 13(b) “addresses a specific
+
+problem, namely, that of stopping seemingly unfair practices from taking place while
+
+the [FTC] determines their lawfulness [through its own administrative proceedings].”
+
+AMG Cap. Mgmt., 593 U.S. at 76. See S. Rep. No. 93-151, at 30 (1973). The FTC is
+
+authorized to conduct its agency actions through Section 5(b) of the FTC Act, which is
+
+a much broader grant of antitrust authority, and looks backward, while Section 13(b)
+
+looks forward. Section 13(b) therefore “does not permit the FTC to bring a claim based
+
+on long-past conduct without some evidence that the defendant ‘is’ committing or ‘is
+
+about to’ commit another violation.” Federal Trade Commission v. Shire ViroPharma,
+
+Inc., 917 F.3d 147, 156 (3d Cir. 2019). If “the FTC wants to recover for a past violation
+
+— where an entity ‘has been’ violating the law — it must use Section 5(b).” Id. at 159
+
+(quoting 15 U.S.C. § 45(b)).3 What the FTC cannot do is “use the most advantageous
+
+        3 Of course, the FTC is not alone in enforcing antitrust law. The Department of Justice has broad
+
+authority to enforce antitrust law, including for past acts. See 15 U.S.C. §§ 4, 25.
+                                                       8
+       Case:
+    Case     24-20270 Document
+         4:23-cv-03560 Document: 23 Filed
+                               146     Page: 48 DateinFiled:
+                                          on 05/13/24 TXSD07/19/2024
+                                                             Page 9 of 23
+
+
+
+
+aspects of each statutory provision—to punish [a defendant] for a past violation using
+
+the less onerous enforcement mechanism [of Section 13(b)].” Id.
+
+       A) Welsh Carson
+
+       A) 1) The FTC Has Not Adequately Alleged that Welsh Carson “is violating”
+
+             Antitrust Law
+
+       The FTC argues that Welsh Carson is currently violating antitrust laws. The FTC
+
+insists that “USAP continues to hold the illegally acquired practices, uses the resulting
+
+leverage to raise prices, and shares its profits with Welsh Carson.” But the FTC does
+
+not cite any authority for the proposition that receiving profits from an entity that may
+
+be violating antitrust laws is itself a violation of antitrust laws. Indeed, “profits, sales,
+
+and other benefits accrued as the result of an initial wrongful act are not treated as
+
+‘independent acts.’” Z Techs. Corp. v. Lubrizol Corp., 753 F.3d 594, 600 (6th Cir.
+
+2014). Thus, the act of receiving profits from USAP is not an ongoing antitrust
+
+violation.
+
+       The FTC also argues that Welsh Carson commits ongoing antitrust violations by
+
+continuing to hold stock in USAP. The FTC insists that “an injunction under Section
+
+13(b) is a theoretically available remedy in a Section 2 challenge to long-ago mergers
+
+so long as the defendant still holds the purchased assets or stock.” Fed. Trade Comm’n
+
+v. Facebook, Inc., 560 F. Supp. 3d 1, 32 (D.D.C. 2021). Thus, the FTC’s argument that
+
+
+
+                                             9
+   CaseCase: 24-20270 Document
+        4:23-cv-03560  Document:
+                               14623 Filed
+                                        Page:  49 Date
+                                           on 05/13/24 in Filed:
+                                                          TXSD 07/19/2024
+                                                                 Page 10 of 23
+
+
+
+
+Welsh Carson is committing ongoing antitrust violations boils down to this: 1) Welsh
+
+Carson holds stock in USAP; 2) holding assets that result in reduced competition is an
+
+ongoing violation of antitrust laws; and 3) Section 13(b) permits the FTC to address
+
+ongoing violations.
+
+          The first and third steps are not in serious dispute. The substance therefore is in
+
+the second step of the argument. The FTC is correct that holding assets can constitute
+
+an ongoing violation of antitrust laws: “[A]ny acquisition by one corporation of all or
+
+any part of the stock of another corporation, competitor or not, is within the reach of
+
+[Section 2] whenever the reasonable likelihood appears that the acquisition will result
+
+in a restraint of commerce or in the creation of a monopoly of any line of commerce.”
+
+United States v. E. I. du Pont de Nemours & Co., 353 U.S. 586, 592 (1957). Section 7
+
+of the Clayton Act prohibits mergers or acquisitions, “directly or indirectly,” if the
+
+effect “may be substantially to lessen competition, or to tend to create a monopoly.” 15
+
+U.S.C. § 18 (2000). In du Pont, the Court determined that a supplier to General Motors
+
+leveraged stock that it had bought to entrench itself as General Motors’ primary
+
+supplier. 353 U.S. at 592. The differences between du Pont and the present case, though,
+
+are that du Pont involved a direct acquisition, Section 13(b) was not in play, and du
+
+Pont did not involve a defendant with a minority, noncontrolling stake in the purchasing
+
+entity.
+
+
+
+                                              10
+   CaseCase: 24-20270 Document
+        4:23-cv-03560  Document:
+                               14623 Filed
+                                        Page:  50 Date
+                                           on 05/13/24 in Filed:
+                                                          TXSD 07/19/2024
+                                                                 Page 11 of 23
+
+
+
+
+       Since 2017, only one of the Welsh Carson entities—Fund XII—has owned stock
+
+in USAP. Fund XII’s 23% ownership entitles it to appoint two of the fourteen directors
+
+to the USAP board: one-seventh of the board, disproportionately small compared to its
+
+almost one-quarter ownership. The FTC does not explain how Fund XII’s minority
+
+stake—as distinct from USAP’s acquisitions of anesthesiology practices—is a violation
+
+of Section 2 of the Sherman Act or Section 7 of the Clayton Act. Indeed, at oral
+
+argument, the FTC conceded “we still have to prove that Welsh Carson’s conduct
+
+substantially lessens competition . . . we are not seeking to hold Welsh Carson liable
+
+merely because they have an ownership stake.” But that ownership stake is the FTC’s
+
+only hook for an “ongoing violation” under Section 13(b). Section 13(b) requires more
+
+than the FTC’s concession; Welsh Carson’s ongoing conduct must reduce competition.
+
+It is not clear how owning a minority share in a company that reduces competition
+
+satisfies the statute.
+
+       What du Pont and Facebook indicate is that if an acquisition was itself a violation
+
+of antitrust laws, the FTC may use Section 13(b) to address it. Indeed, the “Clayton Act
+
+is concerned with whether an acquisition or merger itself may cause antitrust injury.”
+
+Geneva Pharms. Tech. Corp. v. Barr Lab’ys Inc., 386 F.3d 485, 511 (2d Cir. 2004)
+
+(citing Cargill, Inc. v. Monfort of Colorado, Inc., 479 U.S. 104, 115–17 (1986)). The
+
+FTC’s authorities discuss only one merger to roll back, where rolling back the merger
+
+resolves the ongoing violation. Not so here; The FTC’s theory would require rolling
+
+                                            11
+   CaseCase: 24-20270 Document
+        4:23-cv-03560  Document:
+                               14623 Filed
+                                        Page:  51 Date
+                                           on 05/13/24 in Filed:
+                                                          TXSD 07/19/2024
+                                                                 Page 12 of 23
+
+
+
+
+back Welsh Carson’s acquisition of USAP stock and USAP’s own acquisitions. The
+
+analogous merger to du Pont is not USAP’s acquisitions, but Fund XII’s 2017 purchase
+
+of 23% of USAP. And there is no allegation that that acquisition itself violated antitrust
+
+laws. Thus, the FTC’s conflation of Fund XII’s stake in USAP with USAP’s
+
+acquisitions of anesthesia groups is unavailing.
+
+       The closest case to the present one appears to be Cmty. Publishers, Inc. v. Donrey
+
+Corp., 882 F. Supp. 138 (W.D. Ark. 1995). There, the court determined that Section 7
+
+applied to a parent company that acquired stock through its subsidiarity. The key
+
+difference, though, is that the parent and subsidiary had “substantially overlapping
+
+ownership.” Id. at 139. Indeed, 99% of the parent stock was owned by an entity called
+
+“SGI,” which was owned entirely by a family trust. The subsidiary, meanwhile, was
+
+owned 95.5% by the very same family trusts. Furthermore, the parent, the subsidiary,
+
+and SGI were all chaired by the same man, who was a member of the family who owned
+
+the trusts.
+
+       There is a stark contrast between Donrey and the present case, in which Fund XII
+
+owns 23% of USAP and has only two out of fourteen board seats. The fact that other
+
+Welsh Carson entities that do not own stock in USAP helped create both USAP and its
+
+acquisition strategy does not change the analysis. The FTC has not cited a case in which
+
+a minority, noncontrolling investor—however hands-on—is liable under Section 13(b)
+
+because the company it partially owned made anticompetitive acquisitions. Such a
+
+                                           12
+   CaseCase: 24-20270 Document
+        4:23-cv-03560  Document:
+                               14623 Filed
+                                        Page:  52 Date
+                                           on 05/13/24 in Filed:
+                                                          TXSD 07/19/2024
+                                                                 Page 13 of 23
+
+
+
+
+construal of Sections 7 and 13(b) would expand the FTC’s reach further than any court
+
+has yet seen fit; it would also expand liability to minority investors whose subsidiaries
+
+reduce competition. This Court will not adopt this novel interpretation.
+
+      A) 2) The FTC Has Not Adequately Alleged that Welsh Carson Is “About To
+
+          Violate” Antitrust Law
+
+      The second stage of the Section 13(b) analysis is whether the FTC has adequately
+
+pled that Welsh Carson is “about to” violate antitrust law. The FTC alleges that nothing
+
+“prevent[s] Welsh Carson from re-upping its investment in USAP, retaking formal
+
+control of the company, and directing yet more anticompetitive positions.” The FTC
+
+also points to Welsh Carson’s investments in the emergency medicine and radiology
+
+markets as evidence of intent to further consolidate the anesthesia market.
+
+      The parties disagree as to the proper interpretation of Section 13(b)’s “about to
+
+violate.” The FTC insists that the Fifth Circuit held that Section 13(b)’s “about to
+
+violate” requirement can be satisfied by alleging facts that give a “fair inference of a
+
+reasonable expectation of continued violations.” F.T.C. v. Sw. Sunsites, Inc., 665 F.2d
+
+711, 723 (5th Cir. 1982) (citing Securities and Exchange Commission v. Manor Nursing
+
+Center, Inc., 458 F.2d 1082, 1100-01 (2d Cir. 1972)). It is not clear that this was the
+
+holding of Sunsites. The court mentioned this standard without analysis, discussion of
+
+the statute, or any other support. The entire relevant paragraph reads:
+
+      The district court acted well within its discretion in ordering appellees to
+      cease and desist from further violations of the Act. This is particularly true
+                                           13
+   CaseCase:           Document:
+             24-20270 Document
+        4:23-cv-03560          14623 Filed
+                                        Page:  53 Date
+                                           on 05/13/24 in Filed:
+                                                          TXSD 07/19/2024
+                                                                 Page 14 of 23
+
+
+
+
+      when the evidence developed to date suggests a large-scale systematic
+      scheme tainted by fraudulent and deceptive practices, giving rise to a “fair
+      inference of a reasonable expectation of continued violations” absent
+      restraint.
+
+      Id. Regardless, it is unclear how much light is shined by interpreting “about to
+
+violate” as “giving rise to a fair inference of a reasonable expectation of continued
+
+violations.” Indeed, the consensus is that “[a]side from analyzing the facts at issue, the
+
+Sunsites court did not provide extensive guidance to district courts on applying § 13(b)’s
+
+threshold requirement.” Fed. Trade Comm’n v. Educare Ctr. Servs., Inc., 433 F. Supp.
+
+3d 1008, 1014 (W.D. Tex. 2020). The facts at issue in Sunsites were quite distinct from
+
+those before this Court. There, the FTC sought to enjoin a party from persisting in a
+
+“continuing” fraudulent scheme executed by that party. Here, there is no allegation of
+
+fraud, and Welsh Carson’s activity is not continuing. Indeed, the FTC does not allege
+
+any conduct by Welsh Carson in the past six years that is a plausible antitrust violation.
+
+      Instead, the FTC argues that Welsh Carson designed and implemented a large,
+
+systematic scheme that still exists. This argument is to mean, if anything, that the
+
+violation is ongoing, rather than likely to recur. The only sense in which the scheme
+
+still exists is that USAP still exists, and that USAP still consolidates the market and
+
+reduces competition. But that goes to USAP’s violations, not Welsh Carson’s; Sunsites
+
+said nothing about derivate liability for another company’s actions.
+
+      Besides, this long-past conduct does not raise a fair inference that Welsh Carson
+
+will soon do so again, even if such conduct were an antitrust violation. Indeed, it is
+                                           14
+   CaseCase: 24-20270 Document
+        4:23-cv-03560  Document:
+                               14623 Filed
+                                        Page:  54 Date
+                                           on 05/13/24 in Filed:
+                                                          TXSD 07/19/2024
+                                                                 Page 15 of 23
+
+
+
+
+unclear what an act of recurrence would mean: creating another vehicle for anesthesia
+
+consolidation to compete with USAP? The FTC insists that Welsh Carson’s having the
+
+“blueprints, finances, and personnel to continue this scheme” satisfy Section 13(b)’s
+
+“about to violate” standard. But the mere capacity to do something does not meet the
+
+requirement that the thing is likely to recur. As in Facebook, “[t]here are no facts alleged
+
+. . . suggesting that the antitrust ‘scrutiny’ the company is facing is ‘about to’ pass or
+
+indeed will pass at any time in the foreseeable future.” Fed. Trade Comm’n v.
+
+Facebook, Inc., 560 F. Supp. 3d 1, 26–27 (D.D.C. 2021). See Shire ViroPharma, 917
+
+F.3d at 153, 160 (finding allegation that “[a]bsent an injunction, there is a cognizable
+
+danger that [defendant] will engage in similar conduct” because it has the “incentive
+
+and opportunity” to do so. Such an argument, without evidence, is “woefully inadequate
+
+to state a claim under Section 13(b).”).
+
+       The Court will quickly address two more arguments from the FTC. First,
+
+comments from Welsh Carson executives indicating a desire to consolidate other
+
+healthcare markets do not show that Welsh Carson is about to violate antitrust laws.
+
+The FTC has not sufficiently pled information about those plans to pursue a Section
+
+13(b) case to enjoin Welsh Carson from activities in those non-anesthesia markets.
+
+Second, Welsh Carson’s “lack of contrition” does not indicate an impending violation,
+
+either; the law does not require defendants to admit liability and apologize in order to
+
+avoid an injunction.
+
+                                            15
+   CaseCase: 24-20270 Document
+        4:23-cv-03560  Document:
+                               14623 Filed
+                                        Page:  55 Date
+                                           on 05/13/24 in Filed:
+                                                          TXSD 07/19/2024
+                                                                 Page 16 of 23
+
+
+
+
+       The Court repeats that Congress’ purpose in enacting Section 13(b) was to
+
+“address[] a specific problem, namely, that of stopping seemingly unfair practices from
+
+taking place while the [FTC] determines their lawfulness.” AMG Cap. Mgmt., 593 U.S.
+
+at 76. Again, this Court will not be the first to use this specialized statute to expand
+
+antitrust liability to reach active investors in companies that are alleged to violate
+
+antitrust law. The FTC does not articulate why it cannot return with a new lawsuit under
+
+Section 13(b) if and when Welsh Carlson signals—beyond mere speculation and
+
+conjecture—that it is actually about to violate the law. The Court’s analysis should not
+
+be construed to offer any opinion on Welsh Carson’s conduct except as Section 13(b)
+
+applies to it.
+
+       B) USAP
+
+       B) 1) The FTC Need Not Bring A Concomitant Administrative Proceeding
+
+       USAP’s first argument is that the FTC overreached its authority under Section
+
+13(b) by bringing this suit without initiating a concomitant administrative proceeding.
+
+USAP marshals eloquent and thorough arguments of statutory interpretation to this end.
+
+But as far as the Court is aware, every court to consider this issue has disagreed that
+
+such a proceeding is necessary, including three circuit courts. As the Seventh Circuit
+
+explained:
+
+       The statutory language of section 13(b) limits the availability of
+       preliminary injunctive relief to situations ‘pending issuance of a complaint
+       by the Commission.’ No similar language is found in the second proviso
+       relating to permanent injunctive relief . . . Had Congress intended the
+                                           16
+   CaseCase:           Document:
+             24-20270 Document
+        4:23-cv-03560          14623 Filed
+                                        Page:  56 Date
+                                           on 05/13/24 in Filed:
+                                                          TXSD 07/19/2024
+                                                                 Page 17 of 23
+
+
+
+
+      initiation or not of an administrative cease and desist proceeding to affect
+      the ability of the Commission to seek permanent injunctive relief, it
+      undoubtedly would have included language similar to that found in the
+      provision governing preliminary injunctive relief.
+
+United States v. JS & A Grp., Inc., 716 F.2d 451, 456 (7th Cir. 1983). See F.T.C. v. H.
+
+N. Singer, Inc., 668 F.2d 1107 (9th Cir. 1982) & F.T.C. v. U.S. Oil & Gas Corp., 748
+
+F.2d 1431 (11th Cir. 1984).
+
+      USAP invokes AMG to argue that this Court should resist these authorities. AMG
+
+Cap. Mgmt., LLC v. Fed. Trade Comm’n, 593 U.S. 67 (2021). The problem is that AMG
+
+indicates the opposite. There, the Supreme Court held that the FTC may not use Section
+
+13(b) to authorize monetary relief. While the Court thus focused on a different issue
+
+than the present one, its analysis included several observations on the FTC’s injunction
+
+authority. Interpreting Section 13(b), the Court opined that the words “permanent
+
+injunction” “might also be read, for example, as granting authority for the Commission
+
+to . . . dispense with administrative proceedings to seek what the words literally say
+
+(namely, an injunction).” Id. at 76. Lest there be any doubt, two pages later, the Court
+
+declared: “the Commission may use § 13(b) to obtain injunctive relief while
+
+administrative proceedings are foreseen or in progress, or when it seeks only injunctive
+
+relief.” Id. at 78 (emphasis added). The FTC seeks only injunctive relief in this case.
+
+      Undaunted, USAP brushes this aside as dicta. Even if it is dicta, dicta acquires a
+
+certain luster when it comes from the U.S. Supreme Court. Indeed, “we are generally
+
+bound by Supreme Court dicta, especially when it is ‘recent and detailed.’” Hollis v.
+                                           17
+   CaseCase: 24-20270 Document
+        4:23-cv-03560  Document:
+                               14623 Filed
+                                        Page:  57 Date
+                                           on 05/13/24 in Filed:
+                                                          TXSD 07/19/2024
+                                                                 Page 18 of 23
+
+
+
+
+Lynch, 827 F.3d 436, 448 (5th Cir. 2016) (quoting Gearlds v. Entergy Servs., Inc., 709
+
+F.3d 448, 452 (5th Cir. 2013)). AMG is only three years old, and the Court repeated the
+
+point twice. This Court will not gainsay it.
+
+      B) 2) The FTC Alleges Ongoing Violations Under Section 13(b)
+
+      Next, like Welsh Carson, USAP argues that the FTC has not alleged that USAP
+
+is currently or about to violate antitrust laws. USAP therefore argues that Section 13(b)
+
+is not the appropriate vehicle for these claims, and that the FTC has exceeded its
+
+statutory authority. The Court has already laid out the framework of this analysis above
+
+with regard to Welsh Carson. Applying it to USAP, however, yields a different result.
+
+      The FTC alleges multiple instances of ongoing conduct: USAP continues to own
+
+the anesthesia groups it unlawfully acquired and continues to charge high prices; USAP
+
+currently maintains two price-setting arrangements that result in higher prices; and
+
+USAP’s overall monopolization scheme remains intact.
+
+      USAP’s acquisitions constitute ongoing conduct. USAP acquired at least 15
+
+anesthesia groups over the last 12 years. USAP continues to hold these companies. Even
+
+though the acquisitions themselves have closed, maintaining the assets of these
+
+companies could constitute a violation of antitrust law appropriately pursued under
+
+Section 13(b). As explained above, “an injunction under Section 13(b) is a theoretically
+
+available remedy in a Section 2 challenge to long-ago mergers so long as the defendant
+
+still holds the purchased assets or stock.” Fed. Trade Comm’n v. Facebook, Inc., 560 F.
+
+                                           18
+   CaseCase: 24-20270 Document
+        4:23-cv-03560  Document:
+                               14623 Filed
+                                        Page:  58 Date
+                                           on 05/13/24 in Filed:
+                                                          TXSD 07/19/2024
+                                                                 Page 19 of 23
+
+
+
+
+Supp. 3d 1, 32 (D.D.C. 2021). This is because, for antitrust purposes, acquisitions do
+
+not always end with the close of the deal:
+
+      We need not go beyond the Clayton Act itself to conclude that
+      ‘acquisition’ as used in [§] 7 of the Act means holding as well as obtaining
+      assets. The Act provides that the FTC, if it finds a violation of [§] 7, can
+      require a party to ‘divest itself of the stock, or other share capital, or assets,
+      held . . . contrary to the provisions of ([§] 7).’ Thus, the framers of the Act
+      did not regard the terms ‘acquire’ and ‘acquisition’ as unambiguously
+      banning only the initial transaction of acquisition; rather, they read the ban
+      against ‘acquisition’ to include a ban against holding certain assets.
+
+United States v. ITT Cont’l Baking Co., 420 U.S. 223, 240–41 (1975) (cleaned up).
+
+USAP seeks to distinguish ITT because it concerned “materially different factual
+
+circumstances.” USAP highlights that ITT upheld a fine for an ongoing violation of a
+
+consent decree, rather than an antitrust violation. The consent decree is different, USAP
+
+says, because it covered “both the initial transaction and the maintenance of the rights”
+
+acquired in the transaction. But this is misleading, and indeed begs the whole question.
+
+The consent decree did not say that it covered the maintenance of the rights. Rather, the
+
+Supreme Court decided that it covered the maintenance of those rights based on its own
+
+definition of “acquisition” in Du Pont. United States v. ITT Cont’l Baking Co., 420 U.S.
+
+223, 241 (1975) (citing United States v. E. I. du Pont de Nemours & Co., 353 U.S. 586,
+
+592 (1957)). Thus, the distinction USAP points to is not a valid difference.
+
+      On the other hand, USAP’s authorities illustrate a distinction with a true
+
+difference. USAP points to cases from the 8th and 6th circuits for the proposition that
+
+mergers do not constitute continuing violations once they are complete: Midwestern
+                                             19
+    CaseCase: 24-20270 Document
+         4:23-cv-03560  Document:
+                                14623 Filed
+                                         Page:  59 Date
+                                            on 05/13/24 in Filed:
+                                                           TXSD 07/19/2024
+                                                                  Page 20 of 23
+
+
+
+
+Mach. Co. v. Nw. Airlines, Inc., 392 F.3d 265 (8th Cir. 2004); Z Techs. Corp. v. Lubrizol
+
+Corp., 753 F.3d 594 (6th Cir. 2014). How do these cases coexist with Du Pont and ITT?
+
+The titles of these cases provide the answer: they do not involve the FTC. Instead, they
+
+feature private plaintiffs, and thus implicate the statute of limitations. The government,
+
+however, is not constrained by a statute of limitations. See Fed. Trade Comm’n v. Credit
+
+Bureau Ctr., LLC, 937 F.3d 764, 783 (7th Cir. 2019) (“[S]ection 13b has no statute of
+
+limitations.”). Thus, these cases are neither binding nor superior to the United States
+
+Supreme Court’s opinion. Moreover, their reasoning was based on a statutory
+
+mechanism not in play here.
+
+        Because these acquisitions constitute ongoing activity and plausibly contribute
+
+to the monopoly power and unfair competition that the FTC’s complaint alleges, the
+
+FTC is within its statutory authority to bring claims I-VIII. The FTC’s ninth claim of
+
+price fixing and tenth claim of market allocation are plausibly part of the “large-scale
+
+systematic scheme” alleged by the FTC and supported by the alleged acquisitions.
+
+F.T.C. v. Sw. Sunsites, Inc., 665 F.2d 711, 723 (5th Cir. 1982). Thus, the FTC is within
+
+its statutory authority to bring these claims.4
+
+B) 3) The FTC Is Not An Unconstitutionally Constituted Entity
+
+
+
+
+4 It is worth distinguishing USAP’s conduct from Welsh Carson’s. Welsh Carson owned a noncontrolling
+
+piece of a company that acquired another company; the acquisitions at issue here were thus derivative of a
+company in which one Welsh Carson entity owned 23% and had disproportionally few board seats. That is
+very different from the direct, wholesale acquisition of one company by its competitor.
+                                                   20
+    CaseCase: 24-20270 Document
+         4:23-cv-03560  Document:
+                                14623 Filed
+                                         Page:  60 Date
+                                            on 05/13/24 in Filed:
+                                                           TXSD 07/19/2024
+                                                                  Page 21 of 23
+
+
+
+
+       The Court need not spend many words on the constitutional argument.5 The
+
+defendants ask this Court to declare the FTC is unconstitutionally constituted because
+
+its commissioners are not removable at will by the President. Precedent forecloses this
+
+argument.
+
+       Almost 90 years ago, the Supreme Court held that the President’s inability to
+
+remove FTC commissioners at will was constitutional. Humphrey’s Ex’r v. United
+
+States, 295 U.S. 602 (1935). The defendants argue that the FTC’s authority has grown
+
+such that Humphrey’s no longer makes sense. But just last year, the Fifth Circuit
+
+rejected this argument: “[A]lthough the FTC’s powers may have changed since
+
+Humphrey’s Executor was decided, the question of whether the FTC’s authority has
+
+changed so fundamentally as to render Humphrey’s Executor no longer binding is for
+
+the Supreme Court, not us, to answer.” Illumina, Inc. v. Fed. Trade Comm’n, 88 F.4th
+
+1036, 1047 (5th Cir. 2023). See also Consumers’ Rsch. v. Consumer Prod. Safety
+
+Comm’n, 91 F.4th 342 (5th Cir. 2024). It is not for this Court to answer, either.
+
+       C) The Merits
+
+       On the merits, USAP argues that the FTC’s market definition of “hospital-only
+
+anesthesia services” is improper and unsupported by the factual allegations.
+
+Specifically, USAP argues that the FTC does not address interchangeability or cross-
+
+elasticity of demand, and that the market should also include out-of-hospital
+
+5
+  USAP did not spend many words, either. Instead, USAP incorporated Welsh Carson’s constitutional
+argument into its own brief with no elaboration.
+                                               21
+   CaseCase: 24-20270 Document
+        4:23-cv-03560  Document:
+                               14623 Filed
+                                        Page:  61 Date
+                                           on 05/13/24 in Filed:
+                                                          TXSD 07/19/2024
+                                                                 Page 22 of 23
+
+
+
+
+anesthesiologists. But the FTC’s complaint does address this by saying that hospital
+
+patients get no say in their anesthesiologist; “Patients requiring hospital care cannot
+
+switch to outpatient anesthesia regardless of price.” Thus, it does not matter if,
+
+theoretically, out-of-patient anesthesiologists could perform the same services within
+
+the hospital, because as a practical matter once a patient requires treatment in a hospital,
+
+out-of-hospital anesthesiology services are off the table. The complaint alleges that
+
+industry participants, including USAP and insurers, recognize the distinctions between
+
+in- and out-patient anesthesia care. The complaint also alleges that out-patient
+
+anesthesia services do not adequately constrain prices for in-patient care because
+
+anesthesiologists face significantly different working conditions in hospitals, and
+
+hospitals often have sticky and exclusive anesthesia services contracts. At this stage,
+
+the Court cannot say the FTC has failed to allege a plausible market definition.
+
+        Next, USAP argues that the FTC has not sufficiently alleged that USAP enjoys
+
+monopoly power. The FTC quotes an insurance executive describing USAP’s
+
+consolidation strategy as “tak[ing] the highest rate of all . . . and then peanut butter
+
+spread that across the entire state of Texas.” The FTC alleges that USAP has raised
+
+prices significantly, charging the highest rates in Houston and Dallas, and double the
+
+median rate in Texas. No anesthesia group could achieve this before USAP began its
+
+consolidation strategy. USAP also alleges that payors tried to constrain USAP’s high
+
+rates but failed due to insufficient alternatives. Whether USAP charges above a
+
+                                            22
+      CaseCase: 24-20270 Document
+           4:23-cv-03560  Document:
+                                  14623 Filed
+                                           Page:  62 Date
+                                              on 05/13/24 in Filed:
+                                                             TXSD 07/19/2024
+                                                                    Page 23 of 23
+
+
+
+
+competitive price or enjoys monopoly power are factual disputes. These considerations
+
+also apply to USAP’s argument that the FTC has failed to allege anticompetitive
+
+conduct under the Sherman Act or the Clayton Act. The FTC has plausibly alleged
+
+acquisitions resulting in higher prices for consumers, along with a market allocation
+
+and price-setting scheme. It would be premature to dismiss these claims at this stage.
+
+VI.      CONCLUSION
+
+         Based on the foregoing analysis and discussion, the Court GRANTS Welsh
+
+Carson’s motion to dismiss and DENIES USAP’s motion to dismiss.
+
+         It is so ORDERED.
+                                               -rP·~
+         SIGNED on May 13, 2024, at Houston, Texas.
+
+
+                                                ______________________________
+                                                Kenneth M. Hoyt
+                                                United States District Judge
+
+
+
+
+                                          23
+

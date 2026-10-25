@@ -39,3 +39,9 @@ Use clear documentary narration, with music below speech. Quotes are read as att
 Build each short reel around one outcome or allegation, using three or four cards with one main idea each. Keep card bodies to one short sentence where possible. Retain attribution, material denials and necessary qualifications in the reel; put the detailed procedural chronology in the caption and source notes. Never simplify a claim into a stronger assertion than the evidence supports.
 
 Write narration to be spoken naturally: spell out unfamiliar acronyms, avoid sound-effect words such as “cha-ching,” and do not force a quotation into the voiceover. An exact quote can stay in the source record without appearing in the reel. Preview the actual speech before approving a post. The simplified USAP revision is `pilot/cases/usap-simple/`; the original dense cut remains archived in `pilot/cases/usap/`.
+
+## Consumer relevance and quiet sourcing (user feedback)
+
+Lead with a specific consumer consequence supported by the complaint, investigation summary or other primary record. Explain the mechanism in familiar terms (for example, limited provider choice and how coverage is funded), without turning an alleged total cost into a verified bill or premium increase. FTC allegations can establish what the plaintiff alleged, not that the alleged harm was adjudicated true.
+
+Do not narrate source dates, document numbers, source-checking process or instructions to read the sources. Keep brief on-screen attribution and necessary allegation labels; put full URLs, dates, historical coverage and legal chronology in the caption and review notes. A historical story must not imply current breaking news. Include the material company response in the reel. The current consumer-focused USAP review is `pilot/cases/usap-consumer/`.
