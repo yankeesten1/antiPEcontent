@@ -6,6 +6,8 @@ A private editorial inbox for educational Instagram content about private equity
 
 **Replacement video:** [neural narration + music, with fixed frames](pilot/introduction-fixed-neural.mp4), [music-only comparison](pilot/music-only-fixed.mp4), and [the updated production ZIP](pilot/fixed-frame-production-kit.zip). The user rejected the older Flite/zoom cut; old audio/video ZIPs remain archived and should not be treated as the latest version. The replacement uses local Kokoro neural narration and a newly arranged instrumental, with no paid speech service. See [model provenance and setup](pilot/VOICE-SOURCES.md). This is still an introduction/style preview, not a verified case report.
 
+**Free voice choices:** [compare six same-script auditions](pilot/voice-comparison/README.md), [listen to the combined MP3](pilot/voice-comparison/all-six-voices.mp3), or [download the audition pack](pilot/voice-comparison.zip). It includes Sarah (current), Heart, Bella, Michael, Emma and George. The default remains Sarah until you choose. To export auditions locally: `.venv/bin/python -m antipe compare-voices --output .local/pilot/voices-new`. To render a selected voice, add `--voice af_heart --voice-speed 1.0` to the social audio command (using the selected key). British voices use British-English phonemization. No paid speech service or additional model download is needed for these voices.
+
 ## Start with the free manual pilot
 
 **Latest visual direction:** [preview the five-card carousel](pilot/introduction-preview.jpg). Videos now use stationary frames and clean cuts, with no slow zoom, pan or scale animation. The fixed-frame/neural-audio links above are the current cuts. Both formats remain drafts for review, and the rest of the week has not yet been redesigned.

@@ -47,7 +47,9 @@ def prepare_voice(directory=None):
 
 
 class NeuralVoice:
-    def __init__(self, directory=None, voice='af_sarah'):
+    def __init__(self, directory=None, voice='af_sarah', speed=1.0):
+        if not .8 <= speed <= 1.2:
+            raise ValueError('Narration speed must be between 0.8 and 1.2')
         directory = Path(directory) if directory else model_directory()
         for name, expected in MODELS.items():
             path = directory / name
@@ -65,8 +67,10 @@ class NeuralVoice:
         session = runtime.InferenceSession(str(directory / 'kokoro-v1.0.int8.onnx'), sess_options=options, providers=['CPUExecutionProvider'])
         self.engine = Kokoro.from_session(session, str(directory / 'voices-v1.0.bin'))
         self.voice = voice
+        self.speed = speed
 
     def write(self, text, destination):
         import soundfile
-        audio, rate = self.engine.create(text, voice=self.voice, speed=1.0, lang='en-us')
+        language = 'en-gb' if self.voice.startswith('b') else 'en-us'
+        audio, rate = self.engine.create(text, voice=self.voice, speed=self.speed, lang=language)
         soundfile.write(str(destination), audio, rate, subtype='PCM_16')

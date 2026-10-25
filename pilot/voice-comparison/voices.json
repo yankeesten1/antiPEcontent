@@ -1,0 +1,56 @@
+[
+  {
+    "sample": 1,
+    "name": "Sarah",
+    "voice": "af_sarah",
+    "description": "American female \u2014 current voice",
+    "start_seconds": 0,
+    "duration_seconds": 13.57,
+    "file": "01-sarah.mp3"
+  },
+  {
+    "sample": 2,
+    "name": "Heart",
+    "voice": "af_heart",
+    "description": "American female",
+    "start_seconds": 13.57,
+    "duration_seconds": 13.85,
+    "file": "02-heart.mp3"
+  },
+  {
+    "sample": 3,
+    "name": "Bella",
+    "voice": "af_bella",
+    "description": "American female",
+    "start_seconds": 27.42,
+    "duration_seconds": 14.03,
+    "file": "03-bella.mp3"
+  },
+  {
+    "sample": 4,
+    "name": "Michael",
+    "voice": "am_michael",
+    "description": "American male",
+    "start_seconds": 41.45,
+    "duration_seconds": 15.66,
+    "file": "04-michael.mp3"
+  },
+  {
+    "sample": 5,
+    "name": "Emma",
+    "voice": "bf_emma",
+    "description": "British female",
+    "start_seconds": 57.11,
+    "duration_seconds": 12.73,
+    "file": "05-emma.mp3"
+  },
+  {
+    "sample": 6,
+    "name": "George",
+    "voice": "bm_george",
+    "description": "British male",
+    "start_seconds": 69.84,
+    "duration_seconds": 14.79,
+    "file": "06-george.mp3"
+  }
+]

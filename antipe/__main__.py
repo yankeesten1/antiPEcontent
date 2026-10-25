@@ -26,15 +26,23 @@ def main():
     social.add_argument('--output', default='.local/pilot/introduction-v2')
     social.add_argument('--video', action='store_true', help='Also render a 20-second reel; requires FFmpeg')
     social.add_argument('--audio-preview', action='store_true', help='Add local neural narration and original music; requires optional voice setup and FFmpeg')
+    social.add_argument('--voice', default='af_sarah', help='Local stock voice key, e.g. af_heart, af_bella, am_michael or bm_george')
+    social.add_argument('--voice-speed', type=float, default=1.0, help='Narration speed, 0.8–1.2')
     voice = commands.add_parser('prepare-voice', help='Download and checksum-verify the optional local neural voice model')
     voice.add_argument('--directory')
+    comparison = commands.add_parser('compare-voices', help='Export six same-script local voice auditions; no paid API calls')
+    comparison.add_argument('--output', default='.local/pilot/voice-comparison')
     args = parser.parse_args()
+    if args.command == 'compare-voices':
+        from .voice_comparison import export_voice_comparison
+        print(f'Created voice auditions: {export_voice_comparison(args.output)}')
+        return
     if args.command == 'prepare-voice':
         from .voice import prepare_voice
         print(f'Verified voice model cache: {prepare_voice(args.directory)}')
         return
     if args.command == 'social':
-        print(f'Created social media concept: {export_social(args.output, args.video, args.audio_preview)}')
+        print(f'Created social media concept: {export_social(args.output, args.video, args.audio_preview, args.voice, args.voice_speed)}')
         return
     if args.command == 'pilot':
         print(f'Created offline launch kit: {export_pilot(args.output, args.batch, args.launch_assets)}')

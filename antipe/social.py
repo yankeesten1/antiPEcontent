@@ -98,7 +98,7 @@ def draw_slide(slide, index, height=1350):
     return image
 
 
-def export_social(output, video=False, audio_preview=False):
+def export_social(output, video=False, audio_preview=False, voice='af_sarah', voice_speed=1.0):
     output = Path(output)
     archive = output.with_suffix('.zip')
     if output.exists() or archive.exists():
@@ -125,14 +125,14 @@ def export_social(output, video=False, audio_preview=False):
     (output / 'storyboard.json').write_text(json.dumps(content, indent=2, ensure_ascii=False) + '\n')
     (output / 'optional-voiceover.txt').write_text('\n\n'.join(f"{line['seconds']} seconds: {line['text']}" for line in content['voiceover_optional']) + '\n')
     if video:
-        make_video(output, content['slides'], content['voiceover_optional'] if audio_preview else None)
+        make_video(output, content['slides'], content['voiceover_optional'] if audio_preview else None, voice, voice_speed)
     (output / 'READ-ME.md').write_text('''# Introduction redesign — draft, not approved
 
 The carousel and reel are alternative versions of the SAME introduction. Choose one first; do not post both back-to-back as different stories.
 
 - Carousel: upload carousel-01.jpg through carousel-05.jpg in numbered order as one Instagram multi-image post. Each is 1080×1350.
 - Reel (if included): introduction-reel.mp4 uses stationary 1080×1920 frames, clean cuts and no zoom/pan animation, at 24 fps. It has no audio track. Silent-only exports are 20 seconds; an audio preview extends scene timing as needed.
-- Audio preview (if included): introduction-audio-preview.mp4 adds local neural narration (Kokoro, af_sarah) and an original arranged instrumental. music-only-preview.mp4 is a separate soundtrack check. These are new review cuts, not approved final posts. narration-preview.wav and music-original.wav are separate tracks. No paid voice API, witness/company recording or sampled song is used. Model provenance and licenses are documented in pilot/VOICE-SOURCES.md in the repository.
+- Audio preview (if included): introduction-audio-preview.mp4 adds local neural narration (see voice-settings.json for the chosen voice/speed) and an original arranged instrumental. music-only-preview.mp4 is a separate soundtrack check. These are new review cuts, not approved final posts. narration-preview.wav and music-original.wav are separate tracks. No paid voice API, witness/company recording or sampled song is used. Model provenance and licenses are documented in pilot/VOICE-SOURCES.md in the repository.
 - Use caption.txt, review the exact images/video and approve the final version before posting. This is an editorial introduction, not evidence about a named company. No statistics, fake customer quotes or company-specific allegations are asserted.
 - This replaces the plain first-post concept as a proposed visual direction. The rest of the week's content has not yet been redesigned or source-verified. Nothing has been scheduled or published.
 - Once account access returns, inspect Instagram's crop and interface overlays before posting. Motion and brighter graphics do not guarantee reach. Compare several posts before deciding which format works.
@@ -145,7 +145,7 @@ First-frame hook: “Your town. Their exit plan?” The five-card story asks who
     return archive
 
 
-def make_video(output, slides, narration=None):
+def make_video(output, slides, narration=None, voice='af_sarah', voice_speed=1.0):
     # Five 4-second segments. Limit encoders to two threads so rendering does not
     # overwhelm a small development machine. Intermediate files are temporary.
     with tempfile.TemporaryDirectory(prefix='antipe-reel-') as temporary:
@@ -156,7 +156,8 @@ def make_video(output, slides, narration=None):
                 raise ValueError('Each video scene requires one narration line')
             from .sound import speak_line, join_narration, original_music
             from .voice import NeuralVoice
-            speaker = NeuralVoice()
+            speaker = NeuralVoice(voice=voice, speed=voice_speed)
+            (output / 'voice-settings.json').write_text(json.dumps({'engine': 'kokoro-onnx', 'voice': voice, 'speed': voice_speed}, indent=2) + '\n')
             spoken = [speak_line(line['text'], work, index, speaker) for index, line in enumerate(narration, 1)]
             counts = [count for _, count in spoken]
             join_narration([line for line, _ in spoken], counts, output / 'narration-preview.wav')
