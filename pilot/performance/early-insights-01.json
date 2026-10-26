@@ -1,0 +1,31 @@
+{
+  "source": "user_supplied_insights_screenshot",
+  "platform": "unconfirmed_facebook_reaction_icons_visible",
+  "possibly_related_post_url": "https://www.instagram.com/p/De7ovZEgCqq/",
+  "post_match": "not_confirmed",
+  "captured_at": null,
+  "hours_since_publication": null,
+  "metrics": {
+    "views": 361,
+    "viewers": 342,
+    "average_watch_time_seconds_displayed": 2,
+    "total_watch_time_seconds": 650,
+    "15_second_views": 6,
+    "likes_and_reactions": 1,
+    "comments": 0,
+    "shares": 0,
+    "follows": 0,
+    "saves": null,
+    "interactions_total": null,
+    "link_clicks": null
+  },
+  "retention_notice": "Most of your audience dropped off at the 0:04 mark and your average watch time is 0:02.",
+  "limitations": [
+    "Do not substitute viewers for accounts reached without platform confirmation.",
+    "Unavailable values shown as dashes are unknown, not zero.",
+    "The graph spans approximately three hours; the actual age and reporting window are not confirmed.",
+    "Six 15-second views are not six completions.",
+    "Keep this observation separate from confirmed Instagram metrics until platform and post are confirmed."
+  ],
+  "interpretation": "Early attention is weak in this screenshot. A stronger consumer-first opening is a testable hypothesis; these observations do not establish the cause or predict a better result."
+}
